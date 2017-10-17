@@ -1,0 +1,299 @@
+\section{Cas des sph\`eres euclidiennes $\mathbb{S}^n$}
+
+\emph{%
+Dans ce paragraphe, on classifie compl\g{e}tement, pour tout entier positif $n$, les $G-$fibr\'es au-dessus de $\mathbb{S}^n$ %
+\g{a} l'aide de la topologie du groupe de structure $G$, connexe par arcs, choisi. %
+Le cas o\g{u} $G=\mathbb{U}$ et $n=3$, particuli\g{e}rement \'eclairant, sera ensuite \'etudi\'e de fa\c con d\'etaill\'ee.%
+}
+
+%\setcounter{subsection}{-1}
+
+\subsection{Pr\'eliminaires topologiques : rel\g{e}vements homotopiques}
+
+
+\subsection{Classification des $G-$fibr\'es au-dessus de $\mathbb{S}^n$}
+
+Dans la sous-section qui suit, $n$ est un entier positif et $G$ un groupe topologique connexe par arcs.
+
+\subsubsection{Une construction utile : fonction caract\'eristique}
+
+Soit $n$ un entier naturel non nul.
+
+
+\dotfill
+
+L'existence de la rétraction $r$ permet de remonter, depuis une fonction continue définie à l'équateur, %
+à une application continue de la bande $\mathcal{B}$ qui prend globalement les mêmes valeurs. %
+D'après le théorème de reconstruction des fibrés principaux, %
+on en déduit que toute application $T$ définie comme précédemment est caractéristique, pour un $G$-fibré au-dessus de $\mathbb{S}^n$.
+\par
+Cette construction, non univoque a priori, va nous permettre de définir un invariant d'équivalence, pour des $G$-fibrés au-dessus de $\mathbb{S}^n$.
+
+\subsubsection{Un invariant complet pour la classification}
+
+\begin{theo}\label{tinv}
+Soient $G \hookrightarrow P_\tc{I} \xrightarrow{\mathcal{P}_\tc{I}} \mathbb{S}^n$ et $G \hookrightarrow P_\tc{II} \xrightarrow{\mathcal{P}_\tc{II}} \mathbb{S}^n$ %
+deux fibrés principaux sur un groupe $G$ connexe par arcs. %
+On construit comme précédemment deux fonctions caractéristiques $T_\text{I}$ et $T_\tc{II}$.
+\par
+Si les deux fibrés sont équivalents alors $T_\text{I}$ et $T_{\text{II}}$ sont homotopes relativement à $\{x_0\}$.
+\end{theo}
+
+%\begin{center}
+%\emph{Nous avons ainsi construit un invariant d'\'equivalence pour les fibr\'es au-dessus des sph\`eres.}
+%\end{center}
+
+\begin{proof}
+\dots
+\end{proof}
+
+\begin{theo}\label{tinvc}
+L'invariant d\'efini au th\'eor\g{e}me \ref{tinv} est complet.
+\end{theo}
+
+\begin{proof}
+\dots
+\end{proof}
+
+\section{$U(1)\hookrightarrow\mathbb{S}^3\twoheadrightarrow\mathbb{S}^2$ et $SU(2)\hookrightarrow\mathbb{S}^7\twoheadrightarrow\mathbb{S}^4$}
+
+\subsection{Une famille de $\mathbb{U}-$fibr\'es au-dessus de $\mathbb{S}^2$}
+
+\subsubsection{Pr\'eambule : quotients par le groupe $\mathbb{U}_k$ des racines $k-$i\`emes de l'unit\'e}\label{ltk}
+
+\textit{%
+Dans cette section, on construit, \`a l'aide de chacune des projections $\mathcal{P}^+$ et $\mathcal{P}^-$ et en quotientant par le groupe $\mathbb{U}_k$, %
+une famille de $\mathbb{U}-$ fibr\'es non isomorphes entre eux au-dessus de $\mathbb{S}^2$, index\'ee par l'ensemble des entiers naturels non nuls. %
+Ici encore, nous nous cantonnerons \`a la projection $\mathcal{P}^+$ comme point de d\'epart, le cas \og{}n\'egatif\fg{} se traite de la m\^eme mani\`ere.%
+}
+
+\emph{Dans cette section et la suivante, $k$ d\'esigne un entier naturel non nul et $\mathbb{U}_k$ le groupe des racines $k-$i\`emes de l'unit\'e dans $\mathbb{C}$.}
+
+\paragraph{Des endomorphismes du groupe topologique $\mathbb{U}$ :}~\\
+\par
+Voici un petit r\'esultat facile, mais int\'eressant pour la suite.
+\par
+L'endomorphisme $\omega\mapsto\omega^k$ du groupe topologique $\mathbb{U}$ se factorise canoniquement :
+\[\xymatrix{%
+\mathbb{U} \ar[r]^{\omega\mapsto\omega^k} \ar[d]_{:\mathbb{U}_k}&\mathbb{U}\\%
+\dfrac{\mathbb{U}}{\mathbb{U}_k} \ar[ru]_{h_k}&%
+}\]%
+Puisque $\mathbb{U}$ est compact, c'est \'egalement le cas du quotient $\frac{\mathbb{U}}{\mathbb{U}_k}$ sur lequel ce groupe topologique se projette. %
+$h_k$ est donc une bijection continue et ferm\'ee qui relie $\frac{\mathbb{U}}{\mathbb{U}_k}$ et $\mathbb{U}$, %
+image de lui-m\^eme par le morphisme $\omega\mapsto\omega^k$ - pour v\'erifier sa surjectivit\'e et donc celle de $h_k$, il suffit de repr\'esenter un \'el\'ement de l'ensemble image par une exponentielle complexe, %
+puis de diviser son argument par $k$.
+\par
+On peut en conclure que $h_k$ est un isomorphisme de groupes topologiques. En particulier, %
+\emph{%
+les groupes topologiques $\mathbb{U}$ et $\dfrac{\mathbb{U}}{\mathbb{U}_k}$ sont isomorphes.%
+}
+\ligneinter
+\dots enrouler le groupe $\mathbb{U}$, en $k$ tours, sur lui-m\^eme.
+
+\begin{rema}
+On peut utiliser le th\'eor\`eme de rel\`evement et la monog\'en\'eit\'e des sous-groupes ferm\'es de $\mathbb{R}$ pour montrer que les \emph{seuls} %
+endomorphismes non triviaux de $\mathbb{U}$ sont de la forme $\omega\mapsto\omega^k$ o\`u $k$ est un entier relatif.
+\end{rema}
+
+\paragraph{Cas de la sph\`ere $\mathbb{S}^3$}~\\
+\par
+L'action, par multiplication scalaire, de $\mathbb{U}$ sur $\mathbb{S}^3$ induit \'evidemment une action du groupe discret $\mathbb{U}_k$ sur cette sph\`ere. %
+On peut donc quotienter $\mathbb{S}^3$ par $\mathbb{U}_k$, on note $[\; ]_k$ la projection canonique de la shp\`ere de dimension $3$ sur l'espace $\lt$ ainsi d\'efini, %
+par analogie avec $\mathbb{S}^3\xrightarrow{[\; ]}\mathbb{P}^1(\mathbb{C})$.
+\par
+L'espace topologique, d\'efini \`a hom\'eomorphisme pr\`es par le quotient $\lt$ est un cas d'\emph{espace lenticulaire}, not\'e parfois $\mathcal{L}(k,1)$. %
+Par exemple, $SO(3)$ ou $\lt[2]$, est hom\'eomorphe \`a $\mathcal{L}(2,1)$. Sch\'ematiquement, les complexes lenticulaires sont des sortes de \og{}sph\`eres tordues\fg{}.
+
+\subsubsection{Construction d'une famille de $\mathbb{U}-$ fibr\'es au-dessus de $\mathbb{S}^2$}\label{lt1}
+
+\paragraph{Actions de groupes sur le quotient $\lt$ :}~\\
+\par
+Nous allons construire une \emph{action-quotient}, simple, de $\dfrac{\mathbb{U}}{\mathbb{U}_k}$ sur $\lt$. Soit tout d'abord $\gamma$ l'action de $\mathbb{U}$, %
+que nous noterons \`a droite par coh\'erence avec \dots , image de la multiplication scalaire par la projection $[\; ]_k$. Cette action poss\`ede un noyau non trivial : $\mathbb{U}_k$.
+\par
+En effet, soit : $\alpha\in\mathbb{U}_k$. Soit de plus $(z_1,z_2)$ un \'el\'ement de $\mathbb{S}^3$, qui d\'efinit un \'el\'ement $[z_1,z_2]_k$ de $\lt$. %
+On note que $[z_1,z_2]_k=\text{Im}((z_1\cdot\omega ,z_2\cdot\omega ))_{\omega\in\mathbb{U}_k}$. %
+De m\^eme, $\gamma ([z_1,z_2]_k,\alpha)=\text{Im}((z_1\alpha\cdot\omega ,z_2\alpha\cdot\omega ))_{\omega\in\mathbb{U}_k}$. %
+Puisque $\mathbb{U}_k$ est globalement invariant par la translation \`a droite par son \'el\'ement $\alpha$, les deux images \'ecrites pr\'ec\'edemment sont identiques.
+\par
+R\'eciproquement, soit $\alpha$ un \'el\'ement de $\ker\gamma$. On remarque que : $\gamma([1,1]_k,\alpha)=[1,1]_k$ soit
+\[\pl{\alpha}{\alpha}=\pl{1}{1}\]
+En particulier : \[\exists\omega\in\mathbb{U}_k|\alpha\cdot\omega=1\]
+Il s'ensuit que $\alpha=\omega^{-1}$, donc $\alpha\in\mathbb{U}_k$.
+\par
+On note $\gk$ l'action-quotient de $\gamma$ par son noyau $\mathbb{U}_k$, elle est simple et v\'erifie :
+\[\gk([z_1,z_2]_k,\omega\cdot\mathbb{U}_k)=\gamma([z_1,z_2]_k,\omega)\]
+autrement dit
+\[\gk([z_1,z_2]_k,\omega\cdot\mathbb{U}_k)=\pl[\omega ']{z_1\omega}{z_2\omega}\]
+L'action $\gk$ fait donc commuter le diagramme suivant :
+\[%
+\xymatrixrowsep{1in}              %%% Attention avec Quickpreview
+\xymatrixcolsep{1in}
+\xymatrix%
+{%
+\mathbb{U}\times\mathbb{S}^3\ar[d]_{\left(\cdot\mathbb{U}_k,\cdot\mathbb{U}_k\right)}\ar[r]_{\text{scalaire}}^{\text{multiplication}}&\mathbb{S}^3\ar[d]^{[\; ]}\\%
+\dfrac{\mathbb{U}}{\mathbb{U}_k}\times\lt\ar@{-->}[r]_{\gk}&\lt%
+}%
+\]
+%%% Modèle pris sur l'Internet
+%\[
+%\xymatrixrowsep{1in}
+%\xymatrixcolsep{2in}
+%\xymatrix
+%{
+%A\ar[r]\ar[d] & B\ar[d]\\
+%C\ar[r] & D
+%}
+%\]
+On en d\'eduit que $\gk\circ \left(\cdot\mathbb{U}_k,\cdot\mathbb{U}_k\right)$ est continue. %
+Par ailleurs, $\left(\cdot\mathbb{U}_k,\cdot\mathbb{U}_k\right)$ est une application ouverte de $\mathbb{U}\times\mathbb{S}^3$ vers $\dfrac{\mathbb{U}}{\mathbb{U}_k}$ %
+comme les projections canoniques de $\mathbb{U}$ et $\mathbb{S}^3$ sur leurs quotients respectifs par $\mathbb{U}_k$.
+\par
+Soit maitenant $O$ un ouvert de $\lt$. On note que
+\[\left(\gk\circ\left(\cdot\mathbb{U}_k,\cdot\mathbb{U}_k\right)\right)^{-1}(O)=%
+\left(\cdot\mathbb{U}_k,\cdot\mathbb{U}_k\right){-1}\left(\gk^{-1}(O)\right)\]
+cet ouvert de $\mathbb{U}\times\mathbb{S}^3$ sera not\'e $O'$ .%
+La surjectivit\'e de $\left(\cdot\mathbb{U}_k,\cdot\mathbb{U}_k\right)$ permet d'en d\'eduire que
+\[\left(\cdot\mathbb{U}_k,\cdot\mathbb{U}_k\right)(O')=\gk^{-1}(O)\]
+il s'ensuit que $\gk^{-1}(O)$ est un ouvert de $\dfrac{\mathbb{U}}{\mathbb{U}_k}\times\lt$ car $\left(\cdot\mathbb{U}_k,\cdot\mathbb{U}_k\right)$ est une application ouverte.
+\par
+Conclusion : $\gk$ est une action simple, \textbf{continue} de $\dfrac{\mathbb{U}}{\mathbb{U}_k}$ sur $\lt$.
+\par
+On peut enfin construire, \`a l'aide de $\gk$ et du paragraphe pr\'ec\'edent, une action simple $\delta_k$ de $\mathbb{U}$ sur $\lt$ en posant :
+\[\forall ([z_1,z_2]_k,\omega)\in\lt\times\mathbb{U},\delta_k([z_1,z_2]_k,\omega)=\gk([z_1,z_2]_k,h_k^{-1}(\omega))\]
+On remarque que :
+\[\delta_k\left([z_1,z_2]_k,\omega^k\right)=\gamma([z_1,z_2]_k,\omega)\text{ soit }\delta_k\left([z_1,z_2]_k,\omega^k\right)=[z_1\cdot\omega,z_2\cdot\omega]_k\]
+quels que soient $(z_1,z_2)$, $\omega$, dans $\mathbb{S}^3$ ou $\mathbb{U}$.
+\par
+\emph{Nous avons ainsi construit \textbf{deux} actions continues $\gk$ et $\delta_k$, \textbf{simples}, respectivement de $\dfrac{\mathbb{U}}{\mathbb{U}_k}$ et $\mathbb{U}$, %
+\textbf{sur} $\mathbf{\lt}$.}
+\par
+\emph{L'action $\mathbf{\gk}$ agit \`a droite par \textbf{classes \`a gauche} modulo $\mathbb{U}_k$. %
+Cela est possible car $\mathbb{U}_k$ est un sous-groupe \textbf{distingu\'e} de $\mathbb{U}$.}
+
+\paragraph{D\'efinition, \`a l'aide de $\mathcal{P}^+$, d'une projection de $\lt$ sur $\mathbb{S}^2$ :}~\\
+\par
+On remarque que $\mathbb{U}_k$ est un sous-groupe de $\mathbb{U}$ : les projections $\mathcal{P}^+$ et $\mathcal{P}^-$ se factorisent \`a droite par $[\; ]$ selon les diagrammes suivants :
+\[%
+\xymatrix{%
+\mathbb{S}^3\ar[d]_{[\; ]_k}^{:\mathbb{U}_k}\ar[r]^{\mathcal{P}^+}_{:\mathbb{U}}&\mathbb{S}^2\\%
+\lt\ar[ru]_{\mathcal{P}^{+k}}&%
+}%
+\qquad\text{et}\qquad%
+\xymatrix{%
+\mathbb{S}^3\ar[d]_{[\; ]_k}^{:\mathbb{U}_k}\ar[r]^{\mathcal{P}^-}_{:\mathbb{U}}&\mathbb{S}^2\\%
+\lt\ar[ru]_{\mathcal{P}^{-k}}&%
+}%
+\]
+Nous venons de d\'efinir deux projections, $\mathcal{P}^+$ et $\mathcal{P}^-$, de $\lt$ sur $\mathbb{S}^2$.
+\par
+Par ailleurs, la d\'efinition de $\gk$ d'une part, et la relation :
+\[[z_1,z_2]_k\in\left(\mathcal{P}^{+k}\right)^{-1}(p)\Rightarrow (z_1,z_2)\in\left(\mathcal{P}^+\right)^{-1}(p)\]\label{inc}
+valable pour tout point $p$ de $\mathbb{S}^2$ d'autre part, entra\^inent que les fibres de la projection $\mathcal{P}^{+k}$ sont exactement les orbites, dans $\lt$, de l'action $\gk$.
+\par
+La m\^eme chose est vraie, bien s\^ur, pour la projection $\mathcal{P}^{-k}$ ; d'ailleurs les fibres de deux projections sont aussi les orbites de $\lt$ sous l'action $\delta$.
+
+\paragraph{Structures de fibr\'es principaux :}~\\
+\par
+Nous allons encore construire une structure de fibr\'e principal, de groupe de structure isomorphe \`a $\mathbb{U}$, au-dessus de $\mathbb{S}^2$. %
+On utilise pour cela la construction pr\'ec\'edente, d\'etaill\'ee ici seulement avec $\mathcal{P}^{+k}$ ; le cas de $\mathcal{P}^{-k}$ se traite de la m\^eme man\`ere et donne un autre fibr\'e de m\^eme espace de phases et m\^eme groupe de structure.
+\par
+Il suffit, pour notre construction, d'exhiber deux sections $\se{S}{+k}$ et $\se{N}{+k}$, les ouverts de trivialisation $U_S$ et $U_N$ que pour la structude de $\mathbb{U}-$fibr\'e d\'efinie \`a partir de $\mathcal{P}^+$.
+\par
+On note, tout d'abord, $\mathcal{U}_S^k$ et $\mathcal{U}_N^k$ les images r\'eciproques respectives, par $\mathcal{P}^{+k}$, des ouverts $U_S$ et $U_N$ de $\mathbb {S}^2$. %
+%D'apr\`es la remarque pr\'ec\'edente concernant les fibres de $\mathcal{P}^{+k}$ et celles de $\mathcal{P}^+$, on note que $\mathcal{U}_s^k=[\mathcal{U}_S]_k$ et $\mathcal{U}_n^k=[\mathcal{U}_N^k]_k$.
+Soit maintenant $\underline{q}\in\mathcal{U}_S$. On note d'apr\`es \ref{inc} que pour tout ant\'ec\'edent $q$ de $\underline{q}$ par la projection $[\; ]_k$, %
+$q\in\mathcal{U}_S$. Nous venons de montrer que $\mathcal{U}_S^k\subseteq [\mathcal{U}_S]_k$. R\'eciproquement, soit $q\in\mathcal{U}_S$. %
+Par d\'efinition de $\mathcal{P}^{+k}$, $\mathcal{P}^{+k}([q]_k)=\mathcal{P}^+(q)$ donc $\mathcal{P}^{+k}([q]_k)\in U_S$. Ainsi $[\mathcal{U}_S]_k\subseteq\mathcal{U}_S^k$.
+\par
+On \'etablit de la m\^eme mani\`ere que $\mathcal{U}_N^k=[\mathcal{U}_N]_k$.
+\par
+On pose maintenant, pour tout poit $p$ de $U_S$ : 
+\[%
+\left\{\begin{array}{rccl}%
+\forall (\phi,\theta )\in U_S&\se{S}{+k}(p)&=&\pl{\cos\frac{\phi}{2}\ec{\theta}}{\sin\frac{\phi}{2}}\\%
+\forall (\phi,\theta )\in U_N&\se{N}{+k}(p)&=&\pl{\cos\frac{\phi}{2}}{\sin\frac{\phi}{2}\ec{(-\theta )}}%
+\end{array}\right.%
+\]
+Ainsi, les sections $\se{S}{+k}$ et $\se{N}{+k}$ sont d\'efinies de sorte que les diagrammes :
+\[%
+\xymatrix{%
+\mathcal{U}_S\ar[d]_{[\; ]_k}&U_S\ar[l]_{\se{S}{+}}\ar[ld]^{\se{S}{+k}}\\%
+\mathcal{U}_S^k&%
+}%
+%\qquad%
+\text{\hspace{1.5cm}et\hspace{1.5cm}}%\qquad%
+\xymatrix{%
+\mathcal{U}_N\ar[d]_{[\; ]_k}&U_N\ar[l]_{\se{N}{+}}\ar[ld]^{\se{N}{+k}}\\%
+\mathcal{U}_N^k&%
+}%
+\]
+sont commutatifs.
+\par
+On d\'efinit alors naturellement les fonctions r\'eciproques de trivialisation $\Phi_S^{+k}$ et $\Phi_N^{+k}$. %
+Tout d'abord, d'apr\`es l'observation qui pr\'ec\`ede concernant les fibres de $\mathcal{P}^{+k}$, on munit $\lt$ de l'action $\gk$. %
+On pose ensuite, pour tout r\'eel $\xi$ :
+\[\Phi_S^{+k}\left((\phi,\theta);\ec{\xi}\mathbb{U}_k\right)=\pla{\cos\frac{\phi}{2}\ec{\theta+\xi}}{\sin\frac{\phi}{2}\ec{\xi}}\]
+ce qui s'\'ecrit encore :
+\[\Phi_S^{+k}\left((\phi,\theta);\ec{\xi}\mathbb{U}_k\right)=\left[\st{\phi}{\theta+\xi}{\xi}\right]_k\]
+soit :
+\[\Phi_S^{+k}\left((\phi,\theta),\ec{\xi}\mathbb{U}_k\right)=\left[\Phi_S^+\left((\phi,\theta),\ec{\xi}\right)\right]_k\]
+On remarque que $\se{S}{+k}=[\; ]_k\circ\se{S}{+}$ donc la section $\se{S}{+k}$ est continue. %
+La continuit\'e de $\gk$ permet d'en d\'eduire que $\Phi_S^{+k}$ est continue ; le cas de $\Phi_N^{+k}$ se traite de la m\^eme mani\`ere.
+\par
+Il reste \`a prouver la continuit\'e des fonctions de phase $\psi_S^{+k}$ et $\psi_N^{+k}$, %
+qui vont de $\mathcal{U}_S^k$ et $\mathcal{U}_N^k$ respectivement, vers $\dfrac{\mathbb{U}}{\mathbb{U}_k}$.
+\par
+On remarque que : \[\forall (z_1,z_2)\in\mathbb{S}^3 , %
+\left\{\begin{array}{lcr}%
+\psi_S^{+k}\left(\left[z_1,z_2\right]_k\right)&=&\psi_S^+(z_1,z_2)\cdot\mathbb{U}_k\\%
+\psi_N^{+k}\left(\left[z_1,z_2\right]_k\right)&=&\psi_N^+(z_1,z_2)\cdot\mathbb{U}_k%
+\end{array}\right\}\]
+Autrement dit les deux diagrammes :
+\[%
+\xymatrix{\mathcal{U}_S\ar[d]_{[\; ]_k}\ar[r]^{\psi_S^+}&\mathbb{U}\ar[d]^{\cdot\mathbb{U}_k}\\%
+\mathcal{U}_S^k\ar[r]_{\psi_S^{+k}}&\dfrac{\mathbb{U}}{\mathbb{U}_k}%
+}%
+\text{ et }%
+\xymatrix{\mathcal{U}_N\ar[d]_{[\; ]_k}\ar[r]^{\psi_N^+}&\mathbb{U}\ar[d]^{\cdot\mathbb{U}_k}\\%
+\mathcal{U}_N^k\ar[r]_{\psi_N^{+k}}&\dfrac{\mathbb{U}}{\mathbb{U}_k}%
+}%
+\]
+sont commutatifs.
+\par
+Or les applications $\psi_S^+$ et $\psi_N^+$ sont continues d'apr\`es la sous-section\ref{fis}, %
+de m\^eme que la projection canonique de $\mathbb{U}$ sur $\dfrac{\mathbb{U}}{\mathbb{U}_k}$ ; %
+$[\; ]_k$ est une application ouverte.
+\par
+Le raisonnement utilis\'e pour d\'emontrer la continuit\'e de l'action $\gk$ permet de conculre que les fonctions $\psi_S^{+k}$ et $\psi_N^{+k}$ sont continues.
+\etoile
+\emph{Nous avons construit un fibr\'e principal de base $\mathbb{S}^2$ et de groupe de structure $\dfrac{\mathbb{U}}{\mathbb{U}_k}$, %
+\`a l'aide des deux ouverts de trivialisation $U_S$ et $U_N$, l'espace de phases est $\lt$, muni de l'action $\gk$}.
+\par
+Pour construire un $\mathbb{U}-$fibr\'e \`a l'aide de la structure qui pr\'ed\`ede en utilisant l'identification entre $\dfrac{\mathbb{U}}{\mathbb{U}_k}$ et $\mathbb{U}$ \'etabli au d\'ebut de la section, %
+on consid\`ere l'action $\delta_k$ de $\mathbb{U}$ sur $\lt$ et on compose les fonctions de phase $\psi_S^{+k}$ et $\psi_N^{+k}$ \`a gauche par $h_k$ ; %
+on note $\left(\lt ,\mathbb{S}^2,\mathcal{P}^{+k},\mathbb{U}\right)$ le fibr\'e ainsi d\'efini.
+\ligneinter
+Bien s\^ur, la construction qui pr\'ec\`ede est possible \`a partir de la projection $\mathcal{P}^-$. %
+On note que $\se{S}{-k}(\phi,\theta)=\pla{\cos\frac{\phi}{2}\ec{(-\theta)}}{\sin\frac{\phi}{2}}$ et $\se{N}{-k}(\phi,\theta)=\pla{\cos\frac{\phi}{2}}{\sin\frac{\phi}{2}\ec{\theta}}$.
+\par
+\emph{Il existe ainsi une famille $\left(\lt[\abs{k}],\mathbb{S}^2,\mathcal{P}^k,\mathbb{U}\right)_k$, index\'ee par $\mathbb{Z}\setminus\{0\}$, de fibr\'es principaux de base $\mathbb{S}^2$ et de groupe de structure $\mathbb{U}$. %
+De plus, nous allons voir que ces fibr\'es sont \emph{non isomorphes} deux \`a deux.} -on identifie $\mathbb{S}^3$ \`a $\lt[1]$.
+
+\paragraph{Fonctions de transition pour les fibr\'es $\left(\lt[\abs{k}],\mathbb{S}^2,\mathcal{P}^k,\mathbb{U}\right)_k$ : actions $\gk$ et $\delta_k$.}~\\
+\par
+Les formules qui pr\'ec\g{e}dent concernant $\se{S}{+k}$, $\se{N}{+k}$, $\se{S}{-k}$ et $\se{N}{-k}$ nous donnent, avec la notation idoine pour $g_{SN}^{+k}$ et $g_{SN}^{-k}$ :
+\[g_{SN}^{+k}(\phi ,\theta)=\ec{\theta}\cdot\mathbb{U}_k\text{ et }g_{SN}^{-k}(\phi ,\theta)=\ec{(-\theta)}\cdot\mathbb{U}_k\]
+quels que soient les r\'eels $\phi$ et $\theta$ tels que : $\phi\in ]0,\pi[$.
+\ligneinter
+Les fonctions de transition $g_{SN}^{k,\delta_{\abs{k}}}$ des fibr\'es de la famille $\left(\lt[\abs{k}],\mathbb{S}^2,\mathcal{P}^k,\mathbb{U}\right)_{k\in\mathbb{Z}\setminus\{0\}}$ %
+s'en d\'eduisent via le morphisme de groupes topologiques $h_k$ :
+\[\boxed{\forall (\phi,\theta)\in ]0,\pi [,g_{SN}^{k,\delta_{\abs{k}}}(\phi,\theta)=\ec{k\theta}}\]
+
+\subsubsection{Rev\^etements et espaces lenticulaires :}
+
+\subsection{$SU(2)-$fibr\'es au-dessus de $\mathbb{S}^4$}
+
+%Document \'eponyme.
+
+\end{document}
