@@ -16,16 +16,88 @@ Le cas o\g{u} $G=\mathbb{U}$ et $n=3$, particuli\g{e}rement \'eclairant, sera en
 Dans la sous-section qui suit, $n$ est un entier positif et $G$ un groupe topologique connexe par arcs.
 
 \subsection{Une construction utile : fonction caract\'eristique}
+%Soit $n$ un entier naturel non nul.
+%
+%Venons-en maintenant à la classification des fibrés principaux au-dessus des sphères euclidiennes.\\
 
-Soit $n$ un entier naturel non nul.
+On note, dans la suite de ce paragraphe, $n$ un entier naturel non nul, et on se fixe un groupe topologique $G$ connexe par arcs. %
+On s'intéresse aux $G$-fibrés principaux au-dessus de $\mathbb{S}^n$, nous allons construire un invariant complet pour ces objets.
 
+\par
+Soit $P \xrightarrow{\mathcal{P}} \mathbb{S}^n$ un tel fibré. On définit, pour un réel strictement positif $\varepsilon$ :
+\[
+V_1^{\varepsilon} := \{(x_i) \in \mathbb{S}^n | x_{n+1} \in ]-\varepsilon , 1]\}%
+\]
+%
+\[
+V_2^{\varepsilon} := \{(x_i) \in \mathbb{S}^n | x_{n+1} \in [-1,\varepsilon [ \}%
+\]
+avec le repérage canonique de $\mathbb{S}^n$ dans $\mathbb{R}^{n+1}$.
 
-\dotfill
+\par
+Ces ouverts sont deux calottes de la sphère, nord et sud respectivement, %
+chacune incluant l'équateur $\mathbb{S}^{n-1}$ et empiétant légèrement sur l'hémisphère opposé. %
+En particulier ces deux ouverts s'intersectent sur la bande $\mathcal{B}$ de $\mathbb{S}^n$, %
+dont les points sont repérés dans $\mathbb{R}^{n+1}$ avec une dernière coordonnée comprise, strictement, entre $-\varepsilon$ et $\varepsilon$.
+
+\par
+On remarque que la projection stéréographique $\varphi_S$ de $\mathbb{S}^n$, depuis son pôle nord, envoie $\mathcal{B}$ dans la couronne :
+\[
+\left\{ X \in \mathbb{R}^n | \|X\| \in \left] \frac{1-\varepsilon}{1+\varepsilon}^{\frac{1}{2}} , \frac{1+\varepsilon}{1-\varepsilon}^{\frac{1}{2}} \right[ \right\}
+\]
+
+Par convexité cette couronne se rétracte, de manière homotopique, sur la sphère-unité de $\mathbb{R}^n$, %
+il existe donc une rétraction continue $r$ de $\mathcal{B}$ sur l'équateur $\mathbb{S}^{n-1}$ de $\mathbb{S}^n$.
+
+\par
+Les adhérences respectives de $V_1^{\varepsilon}$ et $V_2^{\varepsilon}$ sont, via les projections stéréographiques $\varphi_S$ et $\varphi_N$ respectivement, %
+homéomorphes à une boule fermée de l'espace euclidien $\mathbb{R}^n$, donc également au cube $[0,1]^n$.
+
+\par
+On en déduit, pour les fibrés induits par $G \hookrightarrow P \xrightarrow{\mathcal{P}_{\Box}} \mathbb{S}^n$ sur ces deux fermés, %
+l'existence de deux sections globales $\tilde{s_1}$ et $\tilde{s_2}$.
+
+\par
+On note encore $\tilde{s_1}$ et $\tilde{s_2}$ les restrictions aux ouverts $V_1^{\varepsilon}$ et $V_2^{\varepsilon}$ de ces sections de fibré. On note :
+\[(V_1^{\varepsilon},(\mathcal{P},\tilde{\psi_1}))\text{ et }(V_2^{\varepsilon},(\mathcal{P},\tilde{\psi_2}))\]
+
+les deux trivialisations ainsi définies pour notre fibré, elles recouvrent la base $\mathbb{S}^n$ comme $\varepsilon$ est strictement positif.
+
+\par
+Intéressons-nous aux fonctions de transition pour ce fibré, associées à cette famille de trivialisations. On pose par définition :
+\[
+\forall x \in V_1^{\varepsilon} \cap V_2^{\varepsilon} , \tilde{\psi_2}(\tilde{s_2}(x)) = \tilde{g_{21}}(x) \tilde{\psi_1}(\tilde{s_1}(x))
+\]
+autrement dit par $G$-équivariance à droite :
+
+\[\forall p \in \mathcal{P}^{-1}(V_1^{\varepsilon} \cap V_2^{\varepsilon}) , \tilde{\psi_2}(p) = \tilde{g_{21}}(x) \tilde{\psi_1}(p)\]
+avec la notation habituelle pour $x$ et $p$.
+
+\par
+La propriété de cocycle permet de réduire notre connaissance de $(\tilde{g_{11}},\tilde{g_{12}},\tilde{g_{21}},\tilde{g_{22}}$ à la seule connaissance de $\tilde{g_{21}}$.
+
+\par
+On normalise maintenant la famille de fonctions de transitions associée aux deux trivialisations qui précèdent, %
+au-dessus d'un point $x_0$ choisi arbitrairement sur l'équateur. On pose :
+\[\tilde{g_{21}}(x_0) = a\text{ Déphasage : }\psi_1 = a \tilde{\psi_1}\]
+
+Ainsi : $\tilde{\psi_2}(x_0) = \psi_1(x_0)$.
+
+La famille $(g_{ji})$ des fonctions de transition définie par $(\psi_1,\tilde{\psi_2})$, %
+d'après l'égalité qui précède et par propriété de cocycle vérifie : $g_{ji}(x_0) = e_G$, pour chacun de ses termes.
+
+\par
+On définit maintenant l'application :
+\[T : (\mathbb{S}^{n-1},x_0) \rightarrow (G,e_G) : x \mapsto g_{21}(r(x))\]
+que nous appellerons fonctions caractéristique pour le fibré.
 
 L'existence de la rétraction $r$ permet de remonter, depuis une fonction continue définie à l'équateur, %
-à une application continue de la bande $\mathcal{B}$ qui prend globalement les mêmes valeurs. %
+à une application continue de la bande $\mathcal{B}$ qui prend globalement les mêmes valeurs.
+
+\par
 D'après le théorème de reconstruction des fibrés principaux, %
 on en déduit que toute application $T$ définie comme précédemment est caractéristique, pour un $G$-fibré au-dessus de $\mathbb{S}^n$.
+
 \par
 Cette construction, non univoque a priori, va nous permettre de définir un invariant d'équivalence, pour des $G$-fibrés au-dessus de $\mathbb{S}^n$.
 
@@ -44,7 +116,46 @@ Si les deux fibrés sont équivalents alors $T_\text{I}$ et $T_{\text{II}}$ sont
 %\end{center}
 
 \begin{proof}
-\dots
+On adopte les notations usuelles pour les trivialisations des deux fibrés en écrivant leurs indices, $I$ et $II$, en exposant, %
+on définit $\lambda_1$, $\lambda_2$ à la manière du paragraphe sur l'équivalence de fibrés, par la correspondance entre les deux familles de trivialisations.
+
+\par
+Par définition :
+\[\forall x \in \mathcal{B} , g_{21}^{II}(x) = (\lambda_2(x))^{-1} g_{21}^I(x) \lambda_1(x)\]
+ce qui entraîne :
+\[\forall x \in \mathbb{S}^{n-1} , T_{II}(x) = (\lambda_2(x))^{-1} T_I(x) \lambda_1(x)\]
+
+\etoile
+On veut maintenant se débarasser des facteurs en $\lambda_i$, nous allons pour cela utiliser des homotopies sur $\mathbb{S}^{n-1}$ relativement à $x_0$.
+
+\par
+On remarque que $\lambda_1$ et $\lambda_2$ coïncident en $x_0$, nous noterons $a_0$ la valeur commune de ces applications en ce point.
+
+\par
+Afin de réaliser une homotopie de $T_{II}$ vers $T_I$ relativement à $x_0$ on plonge l'espace d'arrivée $\mathbb{S}^{n-1}$, %
+respectivement dans les demi-sphères fermées, supérieure $D_1$ et inférieure $D_2$, de $\mathbb{S}^n$, %
+dans lesquelles vivent resectivement $\lambda_1$ et $\lambda_2$.
+
+\par
+Chacune de ces demi-sphères fermées, que l'on peut envover sur une partie étoilée de $\mathbb{R}^n$ par projection stéréographique, %
+est contractile donc d'après l'annexe \ref{an} : l'inclusion de $\mathbb{S}^{n-1}$ dans $D_1$, %
+et l'application qui envoie chaque point de l'équateur sur $x_0$, toujours dans cet hémisphère, %
+sont homotopes relativement à $x_0$, via une homotopie que nous noterons $H_1$.
+
+\par
+$\lambda_1 \circ H_1$ réalise une homotopie, sur $D_1$, entre $\lambda_1$ et l'application constante $\tilde{a_0}$ relativement à $x_0$, %
+pointée en $a_0$ dans $G$. Nous notons $K_1$ cette homotopie.
+
+\par
+On définit, de même, une homotopie $K_2$ entre $\lambda_2$ et $\tilde{a_0}$ relativement à $x_0$.
+
+\[\mathbb{S}^{n-1} \times [0,1] : (x,t) \mapsto (K_2(x,t))^{-1} T_I(x) K_1(x,t)\]
+réalise une homotopie de $T_{II}$ vers $a_0^{-1} T_I a_0$, relativement à $x_0$.
+
+\par
+Enfin par hypothèse, il existe un chemin $\alpha$ de $a_0$ vers $e_G$,
+\[(x,t) \mapsto \alpha(t)^{-1} T_I(x) \alpha(t)\]
+réalise une homotopie de $a_0^{-1} T_I a_0$ vers $T_I$, relativement à $x_0$.
 \end{proof}
 
 \begin{theo}\label{tinvc}
@@ -52,7 +163,60 @@ L'invariant d\'efini au th\'eor\g{e}me \ref{tinv} est complet.
 \end{theo}
 
 \begin{proof}
-\dots
+On suppose construites, pour deux fibrés $G \hookrightarrow P_I \xrightarrow{\mathcal{P}_I} \mathbb{S}^n$ %
+et $G \hookrightarrow P_{II} \xrightarrow{\mathcal{P}_{II}} \mathbb{S}^n$, %
+les deux fonctions caractéristiques $T_I$ et $T_{II}$ selon la notation précédente, %
+et on émet l'hypothèse que ces deux fonctions sont homotopes, sur $\mathbb{S}^{n-1}$, relativement à $x_0$.
+
+\par
+Montrons que nos deux fibrés sont équivalents, en utilisant le critère du théorème \ref{fbl}.
+
+\par
+On remarque que l'application $T_I T_{II}^{-1}$ de l'équateur $\mathbb{S}^{n-1}$ dans $G$ est homotope à l'application constante sur $\mathbb{S}^{n-1}$, %
+de valeur le neutre $e_G$ de $G$ -on ne s'intéresse pas aux points-base $x_0$ et $e_G$.
+
+\par
+On montre avec le lemme\ref{hsd} et en composant par la projection stéréographique $\varphi_N$ %
+que cette application se prolonge sur $D_1$ en une fonction $\nu$ continue, à valeurs dans $G$.
+
+\par
+On construit par recollement, sur $V_1^{\varepsilon}$, une application continue $\lambda_1$ et à valeurs dans $G$, telle que :
+\[\forall x \in D_i , \lambda_1(x) = \nu(x)\text{ et }\forall x \in V_1^{\varepsilon} \cap U_2 , \lambda_1 (x) = g^{I}_{21}(x) (g^{II}_{21}(x))^{-1}\]
+où $U_2$ est la demi-sphère ouverte sud de $\mathbb{S}^n$.
+
+On munit alors les fibrés des trivialisations :
+
+\[(V_1^{\varepsilon},(\mathcal{P}_I,\psi_1^{\varepsilon , I}))\text{ et }(U_2,(\mathcal{P}_1,\psi_2^I))\]
+pour le premier,
+
+\[(V_1^{\varepsilon},(\mathcal{P}_{II},\psi_1^{\varepsilon , II}))\text{ et }(V_1^{\varepsilon},(\mathcal{P}_2,\psi_2^{II}))\]
+pour le deuxième, où $\psi_2^I$ et $\psi_2^{II}$ sont les phases induites sur $U_2$, %
+par les trivialisations des deux fibrés au-dessus de $V_2^{\varepsilon}$ que nous supposons construites préalablement à cette démonstration.
+
+\par
+On définit, de manière équivalente à ces familles de trivialisations, %
+les deux fonctions de transition $g_{21}^I$ et $g_{21}^{II}$, sur l'intersection $V_1^{\varepsilon} \cap U_2$, par :
+
+\[\forall p \in \mathcal{P}_I^{-1}(V_1^{\varepsilon}) , \psi_2^I(p) (\psi_1^{\varepsilon , I}(p))^{-1} = g_{21}^I(\mathcal{P}_I(p))\]
+et la formule symétrique pour le fibré $II$.
+
+\par
+Construisons enfin une équivalence $\tilde{f}$ du fibré $I$ vers le fibré $II$, à l'aide des deux couples de trivialisations locales qui précèdent :
+\[\forall p \in \mathcal{P}_I^{-1}(V_1^{\varepsilon}) , \psi_1^{\varepsilon , II}(\tilde{f}(p) = \lambda_1(\mathcal{P}_I(p)) \psi_1^{\varepsilon , I}(p)%
+\text{ et }%
+\forall p \in \mathcal{P}_I^{-1}(U_2) , \psi_2^{II}(\tilde{f}(p) = \lambda_1(\mathcal{P}_I(p)) \psi_2^I(p)\]
+
+Montrons que cette définition est cohérente : il s'agit de vérifier que les deux formules qui précèdent sont équivalentes, au-dessus de $V_1^{\varepsilon} \cap U_2$.
+
+\par
+Par définition de $\tilde{f}$:
+\[\forall p \in V_1^{\varepsilon} , \psi_2^{II}(\tilde{f}(p))(\psi_1^{\varepsilon , II}(\tilde{f}(p)))^{-1} = \psi_2^I(p) (\psi_1^{\varepsilon , I}(p))^{-1} (\lambda_1(x))^{-1}\]
+
+On en déduit : $\forall p \in V_1^{\varepsilon} , \psi_2^{II}(\tilde{f}(p))(\psi_1^{\varepsilon , II}(\tilde{f}(p)))^{-1} = g_{21}^I(\mathcal{P}_I(p))(\lambda_1(x))^{-1}$, puis :
+
+\[\forall p \in V_1^{\varepsilon} , \psi_2^{II}(\tilde{f}(p))(\psi_1^{\varepsilon , II}(\tilde{f}(p)))^{-1} = g_{21}^{II}(\mathcal{P}_{II}(\tilde{f}(p)))\]
+
+comme les fibres au-dessus de $\mathcal{P_I}$ et $\mathcal{P}_{II}$ se confondent.
 \end{proof}
 
 \section{$U(1)\hookrightarrow\mathbb{S}^3\twoheadrightarrow\mathbb{S}^2$ et $SU(2)\hookrightarrow\mathbb{S}^7\twoheadrightarrow\mathbb{S}^4$}
@@ -289,6 +453,11 @@ quels que soient les r\'eels $\phi$ et $\theta$ tels que : $\phi\in ]0,\pi[$.
 Les fonctions de transition $g_{SN}^{k,\delta_{\abs{k}}}$ des fibr\'es de la famille $\left(\lt[\abs{k}],\mathbb{S}^2,\mathcal{P}^k,\mathbb{U}\right)_{k\in\mathbb{Z}\setminus\{0\}}$ %
 s'en d\'eduisent via le morphisme de groupes topologiques $h_k$ :
 \[\boxed{\forall (\phi,\theta)\in ]0,\pi [,g_{SN}^{k,\delta_{\abs{k}}}(\phi,\theta)=\ec{k\theta}}\]
+
+\begin{rema}
+Les espaces topologiques de la famille $(\mathcal{L}(k,1))_{k\in\mathbb{N}^{\ast}}$, d\'efinis \g{a} hom\'eomorphisme pr\g{e}s, %
+sont \'etudi\'es dans \cite{Lens}.
+\end{rema}
 
 \subsubsection{Rev\^etements et espaces lenticulaires :}
 

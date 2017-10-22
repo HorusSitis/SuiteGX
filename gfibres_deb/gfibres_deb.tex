@@ -1,6 +1,6 @@
 \chapter{Fibr\'es localement triviaux, fibr\'es principaux}
 
-\subsection{D\'efinitions, premiers exemples}
+\section{D\'efinitions, premiers exemples}
 
 \begin{defi}
 Soient $X$ un espace topologique et $G$ un groupe topologique, éventuellement discret. On suppose que ces deux espaces sont séparés.\\
@@ -86,7 +86,7 @@ Les propri\'et\'es toplogiques des fibr\'es localement triviaux diff\g{e}rent, n
 
 %Exemples pour des fibr\'es principaux : $z\mapsto z^2$ etc ? On \'evoque une g\'en\'eralisation avec le projectif r\'eel.
 
-\subsubsection{Sections locales de fibr\'es}
+\subsection{Sections locales de fibr\'es}
 
 \begin{prop}\label{stV1}
 Soit \Fig un fibr\'e principal. Soit de plus $U$ un ouvert de $X$ et soit $s_U$ une section continue de $\mathcal{P}$ d\'efinie sur $U$.
@@ -152,9 +152,9 @@ plus riches que celles de $G-$espace ou de groupe topologique.
 
 %Exemple avec $\{-1,1\}$, constructions alg\'ebriques : papier Actions de groupes.
 
-\subsection{Exemples importants}
+\section{Exemples importants}
 
-\subsubsection{Espaces projectifs}
+\subsection{Espaces projectifs}
 
 Ici, $\mathbb{K}$ d\'esigne l'un des trois corps r\'eels $\mathbb{R}$, $\mathbb{C}$ et $\mathbb{H}$.
 
@@ -337,7 +337,7 @@ en un sens que nous verrons plus tard, \g{a} $\{-1,1\}\hookrightarrow\mathbb{U}\
 \par
 \emph{En particulier, $\mathbb{P}^1(\mathbb{R})$ est hom\'eomorphe \g{a} $\mathbb{S}^1$.}
 
-\subsubsection{Au-dessus de la sph\g{e}re $\mathbb{S}^2$ : fibrations de Hopf}
+\subsection{Au-dessus de la sph\g{e}re $\mathbb{S}^2$ : fibrations de Hopf}
 
 La projection canonique $[\;]$ de $\mathbb{C}^2\setminus\{(0,0)\}$ sur $\mathbb{P}^1(\mathbb{C})$ va nous permettre de construire %$\mathbb{C}^2\setminus\{(0,0)\}\overset{[ \; ]}{\longrightarrow}\mathbb{P}^1(\mathbb{C})$
 \textbf{deux} fibr\'es principaux, de groupe de structure $\mathbb{U}$, au-dessus de $\mathbb{S}^2$ ; elles sont souvent appel\'ees \emph{fibrations de Hopf}.
@@ -423,51 +423,65 @@ $\lambda^c$ est la colatitude du point $P$, obtenu par projection stéréographi
 On note que : $p_3^S=\cos \lambda^c$ soit $\lambda^c=\arccos p_3^S$.
 \end{multicols}
 Par d\'efinition de la sph\`ere-unit\'e : $(p_1^S)^2+(p_2^S)^2+(p_3^S)^2=1$.
+
 \par
 On peut lire sur le sch\'ema pr\'ec\'edent, avec le th\'eor\`eme de Thal\`es, que : %
 $(p_1^S)^2+(p_2^S)^2=(1-p_3^S)^2\times\cot^2\frac{\phi}{2}$ ce qui entra\^ine $1-(p_3^S)^2=(1-p_3^S)^2\times\cot^2 \frac{\phi}{2}$
 puis $\dfrac{1+p_3^S}{1-p_3^S}=\cot^2\frac{\phi}{2}$ et enfin $p_3^S=\dfrac{\cot^2 \frac{\phi}{2}-1}{\cot^2 \frac{\phi}{2}+1}$ %
 -on retrouve un proc\'ed\'e d'inversion pour les fonctions homographiques.
+
 \par
 Moyennant une multiplication, au num\'erateur et au d\'enominateur, par la quantit\'e $\sin^2\frac{\phi}{2}$ qui est non nulle par hypoth\`ese sur $\phi$, %
 la derni\`ere \'egalit\'e qui pr\'ec\`ede devient : %
 $p_3^S=\dfrac{\cos^2 \frac{\phi}{2}-\sin^2\frac{\phi}{2}}{\cos^2\frac{\phi}{2}+\sin^2 \frac{\phi}{2}}$ soit \fbox{$p_3^S=\cos\phi$}
+
 \par
 On en d\'eduit l'\'egalit\'e : \[\phi=\lambda^c\]
-Autrement dit, l\'el\'ement $\st{\phi}{\xi_1}{\xi_2}$ de $\mathbb{S}^3\setminus\mathbb{U}\times\{0\}$ est envoy\'e sur le point de $\mathbb{S}^2$ rep\'er\'e par les coordonn\'ees sph\'eriques $(\phi,\xi_1-\xi_2)$.
+Autrement dit, l\'el\'ement $\st{\phi}{\xi_1}{\xi_2}$ de $\mathbb{S}^3\setminus\mathbb{U}\times\{0\}$ est envoy\'e sur %
+le point de $\mathbb{S}^2$ rep\'er\'e par les coordonn\'ees sph\'eriques $(\phi,\xi_1-\xi_2)$.
+
 \par
 R\'eciproquement, tout couple de coordonn\'ees $(\lambda^c,\theta)$ de $]0,\pi]\times\mathbb{R}$ admet, entre autres, l'\'el\'ement $\st{\lambda^c}{\theta}{0}$ %
 comme ant\'ec\'edent par $\mathcal{P}_S$. \emph{nous venons de d\'efinir une surjection continue de $\mathcal{U}_S$ sur $U_S$, %
 dont les fibres sont les traces sur $\mathbb{S}^3$ des droites vectorielles de $\mathbb{C}^2$, donc les fibres de $\mathbb{S}^3$ sous l'action de $\mathbb{U}$.}
+
 \par
 On peut d\'efinir de la m\^eme mani\`ere la projection $\mathcal{P}_N$ de $\mathbb{S}^3\setminus\{0\}\times\mathbb{U}$ sur $\mathbb{S}^2\setminus\{(0,0,-1)\}$ %
 -on note respectivement $\mathcal{U}_N$ et $U_N$ ces deux ouverts de $\mathbb{S}^3$ et $\mathbb{S}^2$ respectivement-, %
 en composant l'application $\st{\phi}{\xi_1}{\xi_2}$ par une identification de $\{0\}\times\mathbb{C}$ \`a $\mathbb{C}$ puis \`a $\mathbb{R}^2\times\{(0,0)\}$, %
 et enfin par l'inverse de la projection st\'er\'eorgaphique $\varphi_N$ de $\mathbb{S}^2\setminus\{(0,0,-1)\}$ sur $\mathbb{R}^2\times\{0\}$.
+
 \par
 Cette construction pr\'esente toutefois l'inconv\'enient que : $\mathcal{P}_N\left(\st{\phi}{\xi_1}{\xi_2}\right)=(\phi ,\xi_2-\xi_1)$, %
 autrement dit $\mathcal{P}_S$ et $\mathcal{P}_N$ diff\`erent, sur $\mathcal{U}_S\cap\mathcal{U}_N$, de ce qu'elles attribuent, en un m\^eme point de $\mathbb{S}^3$, %
 deux \'el\'ements de $\mathbb{S}^2$ de m\^eme colatitude mais de longitudes \emph{oppos\'ees}.
+
 \par
 On rem\'edie \`a cela en intercalant, entre l'identification de $\{(0,0)\}\times\mathbb{C}$ \`a $\mathbb{C}$ et celle de $\mathbb{C}$ \`a ($\mathbb{R}^2$ puis) $\mathbb{R}^2\times\{0\}$, %
 la conjugaison complexe pour construire, au lieu de $\mathcal{P}_N$, une projection $\mathcal{P}_{\overline{N}}$ de $\mathbb{U}_N$ sur $U_N$. %
 On remarque que les fibres de $\mathcal{P}_{\overline{N}}$ sont toujours des orbites de $\mathbb{S}^3$ sous l'action de $\mathbb{U}$.
+
 \ligneinter
 On note $\mathcal{P}^+$ la projection de $\mathbb{S}^3$ sur $\mathbb{S}^2$ construite par recollement de $\mathcal{P}_S$ et de $\mathcal{P}_{\overline{N}}$. %
 On remarque que $\mathcal{P}^+$ est continue, surjective et ferm\'ee, par ailleurs ses fibres sont exactement les orbites de $\mathbb{S}^3$ sous l'action de $\mathbb{U}$.
+
 \ligneinter
 Par ailleurs, on r\'ealise une deuxi\`eme projection $\mathcal{P}^-$ de $\mathbb{S}^3$ sur $\mathbb{S}^2$ en recollant l'application $\mathcal{P}_N$ qui pr\'ec\`ede %
 et la projection $\mathcal{P}_{\overline{S}}$, elle-m\^eme d\'efinie en intercalant la conjugaison complexe, %
 de la m\^eme mani\`ere que pour $\mathcal{P}_{\overline{N}}$, dans la construction de la projection $\mathcal{P}_S$.
+
 \etoile
 Dans toute la suite du texte, on notera indiff\'eremment un point de $\mathbb{S}^2$ et ses coordonn\'es \og{}colatitude , longitude\fg{} $(\lambda^c,\theta)$, %
 on notera par ailleurs $\phi$ la colatitude qui correspond invariablement au param\`etre du m\^eme nom pour les \'el\'ements de $\mathbb{S}^3$.
+
 \par
-%\subsection{Structures de fibr\'es principaux}\label{fis}
-\emph{\textbf{Structures de fibr\'es principaux :}}
+\subsubsection{Structures de fibr\'es principaux}\label{fis}
+%\emph{\textbf{Structures de fibr\'es principaux :}}
+
 \par
 Montrons maintenant que la projection $\mathcal{P}^+$ de $\mathbb{S}^3$ sur $\mathbb{S}^2$, elle-m\^eme munie du recouvrement d'ouverts $(U_S,U_N)$, %
 d\'efinit une structure de fibr\'e principal de groupe de structure $\mathbb{U}$.
+
 \par
 Il suffit pour cela d'exhiber deux sections, que nous noterons $\se{S}{+}$ et $\se{N}{+}$ respectivement, %
 de la projection $\mathcal{P}^+$, d\'efinies sur les calottes $U_S$ et $U_N$ de $\mathbb{S}^2$. On pose pour cela :
@@ -481,27 +495,34 @@ On peut encore \'ecrire :
 \[\Phi_S^+((\phi,\theta),\ec{\xi})=\st{\phi}{(\theta+\xi)}{\xi}\text{ et }%
 \Phi_N^+((\phi,\theta),\ec{\xi})=\st{\phi}{\xi}{(\xi-\theta)}\]
 pour tous $\phi$ et $\theta$ pour lesquels ces expressions sont d\'efinies, et tout r\'eel $\xi$.
+
 \par
 Pour \'etablir la continuit\'e de $\Phi_S^+$, il suffit de d\'emontrer celle de la section $\se{S}{+}$, %
-qui se v\'erifie sur $U_S\setminus\{S\}$ qui est localement diff\'eomorphe \`a $]0,\pi [\times\mathbb{R}$ via $(\phi,\theta )\mapsto\left(\cos\theta\sin\phi ,\sin\theta\sin\phi ,1-\cos\phi\right)$, %
-puis \og{}manuellement\fg{} en $S$.
+qui se v\'erifie sur $U_S\setminus\{S\}$ qui est localement diff\'eomorphe \`a $]0,\pi [\times\mathbb{R}$ via %
+$(\phi,\theta )\mapsto\left(\cos\theta\sin\phi ,\sin\theta\sin\phi ,1-\cos\phi\right)$, puis \og{}manuellement\fg{} en $S$.
+
 \par
 On peut d\'efinir les inverses respectifs $\Psi_S^+$ et $\Psi_N^+$ de $\Phi_S^+$ et $\Phi_N^+$ par :
 \[\Psi_S^+\st{\phi}{\xi_1}{\xi_2}=\left((\phi,\xi_1-\xi_2),\ec{\xi_2}\right)\text{ et }\Psi_N^+\st{\phi}{\xi_1}{\xi_2}=\left((\phi,\xi_1-\xi_2),\ec{\xi_1}\right)\]
 qui vont respectivement de $\mathcal{U}_S$ vers $U_S\times\mathbb{U}$ et de $\mathcal{U}_N$ vers $U_N\times\mathbb{U}$.
+
 \par
 Par construction : $\Phi_S^+\circ\Psi_S^+=Id_{\mathcal{U}_S}$ et $\Phi_N^+\circ\Psi_N^+=Id_{\mathcal{U}_N}$, %
 de m\^eme $\Psi_S^+\circ\Phi_S^+=Id_{U_S\times\mathbb{U}}$ et $\Psi_N^+\circ\Phi_N^+=Id_{U_N\times\mathbb{U}}$.
+
 \par
 $\Phi_S^+$ et $\Psi_S^+$, respectivement $\Phi_N^+$ et $\Psi_N^+$, sont des hom\'eomorphismes r\'eciproques %
 entre $U_S\times\mathbb{U}$ et $\mathcal{U}_S$, respectivement $U_N\times\mathbb{U}$ et $\mathcal{U}_N$.
+
 \par
 Enfin, les applications $\psi_S^+:(z_1,z_2)\mapsto\dfrac{z_2}{\abs{z_2}}$ et $\psi_N^+:(z_1,z_2)\mapsto\dfrac{z_1}{\abs{z_1}}$ sont $\mathbb{U}-$\'equivariantes \`a droite %
 -par d\'efinition $\Psi_S^+=(\mathcal{P}^+,\psi_S^+)$ et $\Psi_N^+=(\mathcal{P}^+,\psi_N^+)$.
 %de la $\mathbb{U}-$\'equivariance qui r\'esulte de la d\'efinition de $\Phi_S^+$ et $\Phi_N^+$ prouve enfin
+
 \ligneinter
 Conclusion : nous venons de construire deux trivialisations, $(U_S,\Psi_S^+)$ et $(U_N,\Psi_N^+)$, du fibr\'e $(\mathbb{S}^3,\mathbb{S}^2,\mathcal{P}^+,\mathbb{U})$ %
 qui est donc un fibr\'e principal de groupe de structure $\mathbb{U}$.
+
 \etoile
 Le cas de $\mathcal{P}^-$ se traite sym\'etriquement, on note en particulier :
 \[\left\{\begin{array}{rlcl}%
@@ -554,16 +575,21 @@ Dans le paragraphe suivant, on s'aide de ce th\'eor\g{e}me pour construire un $\
 On d\'efinit l'espace vectoriel r\'eel $\mathbb{H}$ des \textbf{quaternions} comme ensemble des solutions, %
 dans l'anneau matriciel $\mathcal{M}_2(\mathbb{C})$, de l'\'equation :
 \[\text{com }M=\overline{M}\]
+
 Autrement dit $\mathbb{H}$ est l'ensemble des matrices complexes carr\'ees d'ordre $2$ qui s'\'ecrivent :
 \[\left(\begin{array}{cc}a&-b\\ \overline{b}&\overline{a}\end{array}\right)\text{ o\g{u} $a$ et $b$ sont deux nombres complexes}\]
+
 On remarque ainsi que le $\mathbb{R}-$espace vectoriel $\mathbb{H}$ est engendr\'e par les quatre matrices :
 \[I_2\text{ ; }\mcd{\mathbf{i}}{0}{0}{-\mathbf{i}}\text{ ; }\mcd{0}{-1}{1}{0}\text{ et }\mcd{0}{\mathbf{i}}{\mathbf{i}}{0}\]
+
 Les trois derni\g{e}res matrices, que nous noterons respectivement $\mathbf{I}$, $\mathbf{J}$ et $\mathbf{K}$ v\'erifient de plus :
 \[\mathbf{I}^2=-I_2\text{ ; }\mathbf{J}^2=-I_2\text{ ; }\mathbf{K}^2=-I_2\text{ et }\mathbf{IJK}=-I_2\]
+
 Ces matrices sont antihermitiennes et engendrent un $\mathbb{R}-$espace vectoriel de dimension $3$, %
 que nous noterons $\mathcal{V}$, dont les \'el\'ements sont appel\'es \emph{quaternions purs} ou \emph{vecteurs}. %
 La somme directe : $\mathbb{R}I_2\oplus\mathcal{V}$ est la trace sur $\mathbb{H}$ de la d\'ecomposition de $\mathcal{M}_2(\mathbb{C})$ %
 en espace des matrices hermitiennes et antihermitiennes.
+
 \par
 L'\'equation matricielle qui d\'efinit ici $\mathbb{H}$ prouve que :
 \[
@@ -575,20 +601,25 @@ L'\'equation matricielle qui d\'efinit ici $\mathbb{H}$ prouve que :
 %\end{align*}
 \]
 o\g{u} pour tout $M$, $M^{\ast}$ d\'esigne la matrice adjointe, transconjongu\'ee, de $M$.
+
 \par
 On remarque par ailleurs que, quels que soient les complexes $a$ et $b$ :
 \[\det\mcd{a}{-b}{\overline{b}}{\overline{a}}=|a|^2+|b|^2\]
 autrement dit $\det$ induit, sur $\mathbb{H}$, la forme quadratique dont d\'erive le produit scalaire canonique $\langle | \rangle$ du $\mathbb{R}-$espace vectoriel $\mathbb{H}$, %
 muni de sa base $(I_2,\mathbf{I},\mathbf{J},\mathbf{K})$.
+
 \par
 Il s'ensuit notamment que les quaternions non nuls sont tous des matrices complexes inversibles.
+
 \par
 Puisque l'op\'erateur \og{}comatrice\fg{} est multiplicatif, $\mathbb{H}$ est, d'apr\g{e}s l'\'equation qui le d\'efinit, stable par multiplication matricielle.
+
 \par
 Enfin, comme l'op\'erateur \og{}comatrice\fg{} pr\'eserve la transposition et la conjugaison, %
 la transconjugu\'ee d'une patrice \'el\'ement de $\mathbb{H}$ est encore dans $\mathbb{H}$. %
 On en d\'eduit notamment, avec les deux \'egalit\'es ci-dessus qui relient une matrice de $\mathbb{H}$, son adjointe et l'identit\'e, %
 qu'une matrice de $\mathbb{H}$ de d\'eterminant non nul est unversible \emph{dans $\mathbb{H}$}.
+
 \par
 Voici un premier r\'esultat important :
 
@@ -600,14 +631,19 @@ En particulier, $\mathbb{S}^3$ est munie, par la multiplication matricielle, d'u
 
 \begin{proof}
 Soit $M$ une matrice de $\mathbb{H}$, de norme $1$ pour $\langle | \rangle$.
+
 \par
 Puisque : $\det M=\|M\|_2^2$, on en d\'eduit que $M$ est de d\'eterminant $1$.
+
 \par
 Il s'ensuit que $M$ et $M^{\ast}$ sont inverses, donc $M$ est une matrice unitaire, ce qui nous donne le r\'esultt esp\'er\'e.
+
 \par
 R\'eciproquement, soit : $U\in SU_2(\mathbb{C})$.
+
 \par
 On note que : $U^{\ast}U=\det U\cdot I_2$. Il s'ensuit que $^t\overline{U}=^t\text{com }U$ ce qui entra\^ine $\text{com }U=\overline{U}$ donc $U\in\mathbb{H}$.
+
 \par
 Puisque $U$ est de d\'eterminant $1$, il est de norme $1$ dans $\mathbb{H}$ donc : $U\in\mathbb{S}^3$.
 \end{proof}
@@ -615,6 +651,7 @@ Puisque $U$ est de d\'eterminant $1$, il est de norme $1$ dans $\mathbb{H}$ donc
 Comme $\mathbb{H}$ est stable par produit, on peut d\'efinir l'action $\chi$ de $\mathbb{H}^{\ast}$ sur $\mathbb{H}$ par conjugaison. %
 Comme le d\'eterminant fait office de norme, om montre simplement que $\mathbb{H}^{\ast}$ agit sur $\mathbb{H}$ par isom\'etries, %
 un calcul simple avec les premi\g{e}res formules \'etablies concernant $\mathbb{H}$ prouve aussi que $\chi$ pr\'eserve la d\'ecomposition $\mathbb{R}I_2\oplus\mathcal{V}$.
+
 \par
 On peut ainsi restreindre $\chi$ en une action, que nous noterons encore $\chi$, du groupe $\mathbb{S}^3$ sur la sph\g{e}re-unit\'e $\mathbb{S}^2$ de l'espace euclidien $\mathcal{V}$.
 
@@ -650,32 +687,39 @@ Soit $n$ un entier naturel non nul, et $M$ une matrice complexe $n\times n$, ant
 \item $M$ est diagonalisable, via une matrice complexe unitaire.
 \end{itemize}
 \end{prop}
+
 D'apr\g{e}s ce qui pr\'ec\g{e}de :
 \[\forall S\in\mathbb{S}^2,\exists U\in U_2(\mathbb{C})|S=U^{-1}\mathbf{I}U\]
+
 Soit $\lambda$ un nombre complexe tel que : $\lambda^2=\det U$. On peut encore \'ecrire :
 \[\left(\dfrac{U}{\lambda}\right)^{-1}\mathbf{I}\left(\dfrac{U}{\lambda}\right)=s\]
+
 Montrons que : $\dfrac{U}{\lambda}\in SU_2(\mathbb{C})$.
+
 \par
 Tout d'abord : $\left(\dfrac{U}{\lambda}\right)^{\ast}\cdot\dfrac{U}{\lambda}=\dfrac{I_2}{|\det U|}$. %
 Puisque le d\'eterminant d'une matrice unitaire est de module $1$, on en d\'eduit aue $\frac{U}{\lambda}$ est une matrice unitaire.
+
 \par
 De plus, par d\'efinition de $\lambda$ : $\det \frac{U}{\lambda}=1$, ce qui nous donne le r\'esultat esp\'er\'e. Ainsi :
 \[S=\chi\left(\frac{U}{\lambda},\mathbf{I}\right)\]
 ce qui nous donne la transitivit\'e de $\chi$.
+
 \par
 Soit maintenant : $G\in SU_2(\mathbb{C})_{\mathbf{I}}$. On remarque que $G$ commute avec la matrice $\mcd{\mathbf{i}}{0}{0}{-\mathbf{i}}$, %
 donc l'endomorphisme de $\mathbb{C}^2$ canoniquement associ\'e \g{a} $G$ stabilise les droites vectorielles $\mathbb{C}(1,0)$ et $\mathbb{C}(0,1)$, %
 on peut donc \'ecrire :
 \[G=\mcd{\lambda}{0}{0}{\lambda^{-1}}\text{ puisque $G$ est de d\'eterminant $1$.}\]
 Enfin, puisque $^t\overline{G}=G^{-1}$, $\lambda$ est de module $1$.
+
 \par
 R\'eciproquement, si $\omega\in\mathbb{U}$ : $\mcd{\omega}{0}{0}{\omega^{-1}}\in SU_2(\mathbb{C})_{\mathbf{I}}$.
+
 \par
 $\omega\mapsto\mcd{\omega}{0}{0}{\omega^{-1}}$ est donc un isomorphisme entre les groupes topologiques $\mathbb{U}$ et $SU_2(\mathbb{C})_{\mathbf{I}}$.
 \end{proof}
 
 \etoile
-
 \emph{Nous avons ainsi construit, d'apr\g{e}s le th\'eor\g{e}me\ref{esh}, un $\mathbb{U}-$ fibr\'e au-dessus de $\mathbb{S}^2$, %
 avec un espace de phases hom\'eomorphe \g{a} $\mathbb{S}^3$.}
 
@@ -685,15 +729,16 @@ $\chi$ induit une action par conjugaison matricielle de $SU_2(\mathbb{C})$ sur $
 Cette action n'est pas fid\g{e}le et son noyau est $\{-I_2,I_2\}$. %
 De plus $\dfrac{SU_2(\mathbb{C})}{\{-I_2,I_2\}}$ agit simplement, via le quotient de $\chi$ par son noyau, %
 par isom\'etries directes sur l'espace euclidien de dimension trois $\mathcal{V}$.
+
 \par
 Par ailleurs, le morphisme $u\mapsto \left(p\mapsto u^{-1}pu\right)$ de $SU_2(\mathbb{C})$ vers $SO(\mathcal{V})$ est \emph{surjectif}, %
 ceci entra\^ine notamment que les groupes $\dfrac{SU_2(\mathbb{C})}{\{-I_2,I_2\}}$ et $SO(3,\mathbb{R})$ sont isomorphes.
 \end{rema}
 
 \etoile
-
 D\'ecliner la d\'emonstration du th\'eor\g{e}me\ref{esh} au cas particulier de $\mathbb{S}^3\twoheadrightarrow\dfrac{\mathbb{S}^3}{\mathbb{S}^3_{\mathbf{I}}}$ %
 pour construire explicitement un syst\g{e}me de trivialisations.
+
 \par
 Formule explicite pour une section ? Interpr\'etation g\'eom\'etrique ?
 
@@ -752,6 +797,7 @@ Sym\'etriquement :
 
 \begin{prefi}
 Soient $(P_1,X_1,\mathcal{P}_1,G)$ et $(P_2,X_2,\mathcal{P}_2,G)$ deux fibrés principaux de même groupe de structure $G$.
+
 \par
 On considère une application $\tilde{f}$, continue et $G$-équivariante à droite, de $P_1$ dans $P_2$. Alors :
 \begin{itemize}
@@ -776,6 +822,7 @@ De plus, $\tilde{f}$ induit un hom\'eomorphisme, entre chaque $G$-orbite de $P_2
 \par
 Soit en effet $p_1$ un élément de $P_1$. Tout ouvert de $p_1G$ est de la forme : $p_1O$ o\g{u} $O$ est un ouvert de $G$. % d'après \dots%la la remarque\ref{gr1}.\\
 L'image d'un tel ouvert de $p_1G$ est $\tilde{f}(p_1)O$ puisque $\tilde{f}$ est $G-$\'equivariante \g{a} droite.
+
 %\par
 Soit $(V_2,(\mathcal{P}_2,\psi_2))$ une trivialisation au-dessus de $X_2$ telle que : $\mathcal{P}_2(\tilde{F}(p_1)) \in V_2$, %
 on note $\mathcal{V}_2$ l'ouvert correspondant dans $P_2$. %
@@ -793,20 +840,24 @@ on note $\mathcal{V}_2$ l'ouvert correspondant dans $P_2$. %
 Soit maintenant $S_2$ l'ouvert, satur\'e, de $P_2$ d\'efini par :
 \[S_2=\{p \in \mathcal{V}_2 | \psi_2(p) \in \psi_2(\tilde{f}(p_1))O\}\]
 On remarque que : $\tilde{f}(p_1) O = \tilde{f}(p_1) G \cap S_2$, on en d\'eduit que cet ensemble, \'egal \g{a} $\tilde{f}(p_1O)$, est ouvert dans la $G$-orbite de $\tilde{f}(p_1)$.
+
 \par
 Ainsi, $\tilde{f}$ induit une application ouverte, bijective par $G-$\'equivariance \g{a} droite, de $p_1G$ vers $\tilde{f}(p_1)G$. La continuit\'e de cette application est \'evidente.
 \end{rema}
 
 \begin{prop}[Vraie ? Importance en pratique ?]
 On reprend la notation de la d\'efinition pr\'ec\'edente.
+
 \par
 Si $f$ est un hom\'eomorphisme de $X_1$ sur $X_2$, alors son rel\g{e}vement $\tilde{f}$, est un hom\'eomorphisme de $P_1$ sur $P_2$.
 \end{prop}
 
 \begin{proof}
 Il suffit de montrer que si $f$ est ouverte et bijective, alors il en est de m\^eme pour $\tilde{f}$.
+
 \par
 Supposons tout d'abord que $f$ soit bijective \dots facile.
+
 \par
 Supposons de plus que $f$ soit ouverte. \tr%Soit $\mathcal{U}_1$ un ouvert, non n\'ecessairement satur\'e, de $P_1$. %
 %On note $U_1$ le projet\'e de cet ensemble sur $X_1$ de $\mathcal{U}_1$. On note que $U_1$ est ouvert, de m\^eme que son image $f(U_1)$ par $f$. %
@@ -817,10 +868,12 @@ Nous sommes maintenant arm\'es pour le d\'efinition \'eponyme :
 
 \begin{defi}[Equivalence de fibr\'es]
 Soient $(P_1,X,\mathcal{P}_1,G)$ et $(P_2,X,\mathcal{P}_2,G)$ deux fibr\'es principaux de groupe de structure commun $G$, sur une m\^eme base $X$.
+
 \par
 On suppose qu'il existe une application continue $\tilde{f}$, $G$-\'equivariante à droite, entre $P_1$ et $P_2$ qui induit, selon la construction de la d\'efinition pr\'ec\'edente, %
 l'application identit\'e sur $X$. %
 $\tilde{f}$ est appelée \emph{\'equivalence entre les fibr\'es} $G\hookrightarrow P_1 \xrightarrow{\mathcal{P}_1} X$ et $G\hookrightarrow P_2 \xrightarrow{\mathcal{P}_2} X$.
+
 \par
 La proposition pr\'ec\'edente entra\^ine que $\tilde{f}$ est alors un hom\'eomorphisme, sa réciproque $\tilde{f}^{-1}$ d\'efinit aussi une \'equivalence.
 \end{defi}
@@ -840,11 +893,13 @@ $\Phi$ est une \'equivalence de $(P,X,\mathcal{P},G)$ vers le $G$-fibr\'e trivia
 
 \subsection{Th\'eor\`emes sur la classification de fibr\'es principaux}
 
-\begin{theo}[Fibr\'es \'equivalents]%\label{fbl}
+\begin{theo}[Fibr\'es \'equivalents]\label{fbl}
 Soient $G \hookrightarrow P_1 \xrightarrow{\mathcal{P}_1} X$ et $G \hookrightarrow P_2 \xrightarrow{\mathcal{P}_2} X$ deux fibrés principaux.
+
 \par
 On peut d'après la remarque \dots consid\'erer une base de trivialisation commune $(V_i)_i$ commune aux deux fibr\'es, %
 on définit également les familles $(g^1_{ji})$ et $(g^2_{ji})$ de fonctions de transition pour ces deux fibrés munis de cette base de trivialisation.
+
 \par
 $G \hookrightarrow P_1 \xrightarrow{\mathcal{P}_1} X$ et $G \hookrightarrow P_2 \xrightarrow{\mathcal{P}_2} X$ sont alors \'equivalents si et seulement si %
 il existe une famille $(\lambda_i)_i$ de fonctions continues, d\'efinies sur les ouverts de la base $(V_i)_i$ et continues \g{a} valeurs dans $G$, v\'erifiant de plus :
@@ -853,20 +908,167 @@ lorsque $V_j$ et $V_i$ se recoupent.
 \end{theo}
 
 \begin{proof}
-Grande et belle.
+Supposons que ces deux fibrés soient équivalents, via un homéomorphisme $G$-équivariant $\tilde{f}$ entre les espaces totaux.
+
+\par
+Soient $(V_i,(\mathcal{P}_1,\psi_1^i))$ et $(V_i,(\mathcal{P}_2,\psi_2^i))$ des trivialisations respectives pour les deux fibrés, pour un même indice $i$. %
+On peut définir, au-dessus de chaque élément $x$ de $V_i$, le déphasage $\lambda_i(x)$ impliqué par l'action de $\tilde{f}$ avec la formule :
+
+\[\lambda_i(x) = \psi_2^i(\tilde{f}(s_{V_i}^1(x))\]
+
+que l'on peut étendre $G$-équivariance à droite :
+\[\forall p \in \mathcal{P}_1^{-1}(x) , \psi_2^i(\tilde{f}(p)) = \lambda_i(x) \psi_1^i(p)\]
+La fonction $\lambda_i$ est ainsi définie sans ambigüité sur $V_i$, à l'aide de la fonction continue $\psi_2^i (\psi_1^i)^{-1}$.
+
+\par
+Montrons maintenant la formule énoncée, sur les familles $(g_{ji})$ et $(\lambda_i)$.
+
+\par
+Soient $i$ et $j$ deux indices de la famille de trivialisations tels que :
+\[V_j \cap V_i \neq \varnothing\]
+
+On \'etudie la correspondance $\tilde{f}$ au-dessus de cette intersection adopte les notations %
+$s^1_{V_i}$, $s^2_{V_i}$, $s^1_{V_j}$, $s^2_{v_j}$, $\lambda_i$, $\lambda_j$, $g^1_{ji}$, $g^2_{ji}$ suggérées dans les paragraphes qui précèdent.
+
+\par
+Soit $x$ un élément de $V_j \cap V_i$. Par définition :
+\[s^2_{V_j}(x) g_{ji}^2(x) = s^2_{V_i}(x)\]
+
+Par ailleurs :
+\[s^2{V_j}(x) \lambda_j(x) = \tilde{f}(s^1_{V_j}(x))\text{ et }\tilde{f}(s^1_{V_j}(x)) g^1_{ji}(x) = \tilde{f} (s^1_{V_i}(x))\]
+
+comme $\tilde{f}$ est $G$-équivariante à droite, et encore par définition :
+\[\tilde{f}(s^1_{V_i}(x)) (\lambda_i(x))^{-1} = s^2_{V_i}(x)\]
+
+nous pouvons conclure : $g_{ji}^2(x) = \lambda_j(x) g^1_{ji}(x) (\lambda_i(x))^{-1}$.
+
+Supposons réciproquement pour deux fibrés $G \hookrightarrow P_1 \xrightarrow{\mathcal{P}_1} X$ %
+et $G \hookrightarrow P_2 \xrightarrow{\mathcal{P}_2} X$, qu'une famille $(\lambda_i)$ de fonctions de $X$ dans $G$ existe, %
+et relie les fonctions de transitions respectives des deux fibrés, selon la formule qui précède.
+
+\par
+On définit donc, au-dessus de tout ouvert $V_i$ de la trivialisation, $\tilde{f}$ de sorte que :
+\[\forall x \in V_i , \tilde{f}(s^1_{V_i}(x)) = s^2_{V_i}(x) \lambda_i(x)\]
+
+Cette formule équivaut, par $G$-équivariance à droite, à :
+\[\forall p \in \mathcal{P}_1^{-1}(V_i) , \psi_2^i(\tilde{f}(p)) = \lambda_i (x) \psi_1^i(p)\text{, où $p$ se projette en }x\]
+
+Montrons que cette définition est cohérente, %
+autrement dit que les formules établies pour tout indice $i$ sont compatibles, %
+pour toute intersection non vide d'ouverts de trivialisation sur $X$.
+
+\par
+Soient en effet deux indices $i$ et $j$ de la famille d'ouverts de trivialisation sur $X$, tels que : $V_j \cap V_i \neq \varnothing$. %
+On suppose $\tilde{f}$ définie, sur $V_i$ et en particulier l'intersection précédente, avec la formule :
+\[\forall p \in \mathcal{P}_1^{-1}(V_i) , \psi_2^i(\tilde{f}(p)) = \lambda_i (x) \psi_1^i(p)\]
+
+On rappelle la relation :
+\[g^2_{ji}(x) = \lambda_j(x) g^1_{ji}(x) (\lambda_i(x))^{-1}\]
+sur $V_j \cap V_i$.
+
+\par
+Si l'on multiplie terme à terme, la deuxième à gauche de la première, les formules qui précèdent on peut écrire %:
+$\forall p \in V_j \cap V_i , g^2_{ji}(x) \psi_2^i(p) = \lambda_j(x) g^1_{ji}(x) \psi_1^i(p)$, par télescopage avec $\lambda_i$; on en déduit :
+\[\forall p \in V_j \cap V_i , \psi_2^j(p) = \lambda_j(x) \psi_1^j(p)\]
+ce qui concide avec la d\'efinition de $\tilde{f}$ sur $V_j$.
 \end{proof}
 
-Les invariants complets $g_{ij}$ qui apparaissent dans la d\'emonstration pr\'ec\'edente d\'etiennent, de fait, toute l'information de la structure de fibré principal pour le groupe $G$ :
+%Les invariants complets $g_{ij}$ qui apparaissent dans la d\'emonstration pr\'ec\'edente d\'etiennent, de fait, toute l'information de la structure de fibré principal pour le groupe $G$ :
 
 \begin{theo}[Th\'eor\`eme de reconstruction]
 Soit $X$ un espace topologique, $G$ un groupe topologique et $(V_i)_{i \in I}$ un recouvrement ouvert de $X$.
+
 \par
 On d\'efinit, pour tout couple $(i,j)$ d'indices de cette famille d'ouverts, tel que $V_j$ et  $V_i$ ne soient pas disjoints, %
 une fonction continue $g_{ji}$ de $V_j \cap V_i$ dans $G$, qui satisfasse à la propri\'et\'e de cocycle énoncée dans la proposition-définition\ref{ftr}.
+
 \par
 Alors il existe un $G$-fibré principal au-dessus de $X$ pour lequel les ouverts de la famille $(V_i)_i$ sont les ouverts de trivialisation.
 \end{theo}
 
 \begin{proof}
-M\'ethode bourrine : on construit une somme amalgam\'ee de firbr\'es triviaux, reli\'es par les fonctions de transition.
+Méthode brutale : on recolle tous les produits $V_i \times G$ à l'aide des formules de transition, la condition de cocycle assure la cohérence de l'édifice. %
+Il s'agit de construire une somme amalgamée de fibrés triviaux, on considère l'espace topologique produit :
+\[X \times G \times I\]
+
+où $I$ est muni de sa topologie discrète.
+
+\par
+Nous allons travailler dans le sous-ensemble $\bigcup_{i \in I} V_i \times G \times \{i\}$, somme des trivialisations, que nous noterons encore $T$. %
+Définissons maintenant, sur $T$, la relation $\sim$ par :
+\[(x_j,g_j,j) \sim (x_i,g_i,i) \Leftrightarrow (x_j = x_i) \wedge (g_j = g_{ji}(x_j) g_i\]
+
+Les composantes dans $G$ des triplets de $T$, qui sont les phases pour les trivialisations que nous construisons, %
+vérifient ainsi les relations de transition par la famille $(g_{ji})$. %
+La condition de cocycle pour la famille $(g_{ji})$ entraîne que $\sim$ est une relation d'équivalence.
+
+\par
+On note $\mathcal{Q}$ la projection de $T$ sur son quotient, $P$, par cette relation d'équivalence.
+
+\par
+Soit maintenant $\mathcal{P}$ la projection de $P$ sur $X$ définie par :
+\[\forall (x,g,i) \in T , \mathcal{P}(\mathcal{Q}((x,g,i))) = x\]
+
+Cette définition est univoque d'après les axiomes que vérifie $\sim$. %
+De plus $\sim$ est compatible, dans $T$, avec la multiplication à droite de la deuxième coordonnée par un élément de $G$ : %
+$\mathcal{Q}$ permet de définir sur $P$, une action de $G$ à droite de façon cohérente.
+
+\par
+Montrons que la projection $\mathcal{Q}$ définit naturellement une trivialisation de $\mathcal{P}$ au-dessus de $X$.
+
+\par
+On remarque que, pour tout indice $i$, $\mathcal{Q}$ projette $V_i \times G \times \{i\}$ injectivement dans $P$, %
+autrement dit $V_i \times G \times \{i\}$ est un domaine fondamental pour le passage au quotient %
+$T \xrightarrow{\mathcal{Q}} P$, on note $\mathcal{V}_i$ son image dans $P$.
+
+\[V_i \times G \times \{i\} \hookrightarrow \mathcal{P}^{-1}(X)\]
+
+Soit de plus $x_i$ un élément de $V_i$, $\mathcal{Q}(x_i,g,k)$ un relevé de $x_i$ dans $P$; $k$ est un indice de $I$ tel que $V_k$ contient $x_i$.
+
+\par
+On peut écrire : $(x_i,g,k) \sim (x_i,g_{ik}g,i)$, %
+donc tout relevé dans $P$ d'un élément de $V_i$ est dans $\mathcal{V}_i$.
+
+\par
+Les deux diagrammes ci-dessous sont équivalents, d'après le raisonnement qui précède celui de gauche résume donc toute la correspondance via $\mathcal{P}$ entre $V_i$ et $P$ :
+
+\[\xymatrix{V_i \times G \times \{i\} \ar[r]^{\mathcal{Q}} & \mathcal{V}_i \ar[d]^{\mathcal{P}} \\%
+& V_i} \quad \xymatrix{V_i \times G \times \{i\} & \ar[l]^{\Phi_i} P \ar[d]^{\mathcal{P}} \\  & V_i}\]
+
+celui de droite met en jeu la bijection $\Phi_i$, réciproque de la flèche en haut du premier diagramme, $G$-équivariante à droite, %
+dont on montre qu'elle détermine une trivialisation de $P \xrightarrow{\mathcal{P}} X$ au-dessus de $V_i$.
+
+\par
+En effet $\Phi_i$ est ouverte car $\mathcal{V}_i$, relevé de $V_i$ par $\mathcal{P}$, est un ouvert de $P$, et car $\mathcal{Q}$ est continue.
+
+\par
+De plus, $V_i \times G \times \{i\}$ est un ouvert de $T$, c'est un domaine fondamental pour $\sim$ donc pour tout ouvert $O$ de ce sous-espace de $T$ :
+
+\[\mathcal{Q}(O) = \mathcal{Q}(\overline{O})\]
+
+où $\overline{O}$ est le saturé de $O$ dans $T$, pour la relation d'équivalence $\sim$.
+
+\par
+La projection $\mathcal{Q}$ envoie l'ouvert saturé $\overline{O}$ sur un ouvert $\mathcal{O}$ de $P$ inclus dans $\mathcal{V}_i$.
+
+\par
+Enfin, $\mathcal{O}$ est ouvert dans $\mathcal{V}_i$ et s'écrit : $\Phi_i^{-1}(O)$. Cette formule en $O$ établit la continuité de $\Phi_i$.
+
+\par
+Conclusion : $\Phi_i$ est un homéomorphisme $G$-équivariant à droite, qui réalise une trivialisation de $P \xrightarrow{\mathcal{P}} X$ au-dessus de $V_i$.
+
+\par
+Montrons enfin que la famille de trivialisations $(V_i,\Phi_i)_i$ est reliée par les termes de la famille $(g_{ji})$ de fonctions de transition.
+
+\par
+Soient $i$ et $j$ deux indices de trivialisation, tels que $V_j$ et $V_i$ soient d'intersection non vide.
+
+\[\xymatrix{(x,\psi_j(p),j) & \ar[l]^{\Phi_j} p \ar[r]^{\Phi_i} & (x,\psi_i(p),i) \\%
+T \ar[r]_{\mathcal{Q}} & T/\sim \ar[d]^{\mathcal{P}} & \ar[l]_{\mathcal{Q}} T \\ & V_j \cap V_i & }\]
+
+Selon ce shéma, l'équivalence entre les relevés de $p$ pour la projection $\mathcal{Q}$, via $\Phi_j$ et $\Phi_i$ respectivement, équivaut à :
+\[\psi_j(p) = g_{ji}(x) \psi_i(p)\text{, où $x$ est le projeté de $p$ sur $X$ via $\mathcal{P}$}\]
+
+Cette relation établit précisément que $g_{ji}$ est la fonction de transition pour $G \hookrightarrow P \xrightarrow{\mathcal{P}} X$, %
+de sa trivialisation $(V_i,\Phi_i)$, vers $(V_j,\Phi_i)$.
 \end{proof}
