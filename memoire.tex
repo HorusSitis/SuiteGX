@@ -1,8 +1,8 @@
-\documentclass[a4paper,10pt]{article}
+\documentclass[a4paper,10pt]{report}
 %\usepackage[utf8]{inputenc}
 
 \input{preambule/preambule.tex}
-%\includeonly{}
+%\includeonly{ytopo/ytopo}
 
 %opening
 \title{M\'emoire sur les fibr\'es principaux}
@@ -16,13 +16,15 @@
 
 \end{abstract}
 
-%\section{Fibrés topologiques}
-%\setcounter{section}{-1}
-\include{ytopo/ytopo}
-%\section{Introduction aux fibr\'es principaux}
+%\chapter{Introduction aux fibr\'es principaux}
 \include{gfibres_deb/gfibres_deb}
-%\section{Fibr\'es et sphères euclidiennes}
+%\chapter{Fibr\'es et sphères euclidiennes}
 \include{spheres_eu/spheres_eu}
+%\chapter{Connexions}
+
+\appendix
+\include{ytopo/ytopo}
+%\input{ytopo/ytopo.tex}
 
 \bibliography{fibib}
 \bibliographystyle{alpha}
