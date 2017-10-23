@@ -1,4 +1,4 @@
-\chapter{Fibr\'es localement triviaux}
+\chapter{Fibr\'es localement triviaux}\label{an}
 
 \begin{defi}
 Soient $X$ et $Y$ deux espaces topologiques s\'epar\'es.\\
@@ -59,8 +59,12 @@ Si \Fiy est un rev\^etement, on d\'emontre que ce rel\`evement est unique. On pe
 
 \begin{prop}\label{urc}
 Soient $\tilde{X} \overset{\mathcal{P}}{\longrightarrow} X$ un rev\^etement, $Z$ un espace topologique connexe, %
-$z_0$, $x_0$ et $\tilde{x_0}$ des \'el\'ements de $Z$, $X$ et $\tilde{X}$ respectivement. On suppose de plus que : $\tilde{x_0}\in\mathcal{P}^{-1}(\{x_0\})$.
+$z_0$, $x_0$ et $\tilde{x_0}$ des \'el\'ements de $Z$, $X$ et $\tilde{X}$ respectivement.
 
+\par
+On suppose de plus que : $\tilde{x_0}\in\mathcal{P}^{-1}(\{x_0\})$.
+
+\par
 Si $f$ est une application continue de $Z$ dans $X$, qui envoie $z_0$ sur $x_0$, et si $f$ admet un rel\`evement vers $P$ qui vaut $\tilde{x_0}$ en $z_0$, %
 alors ce rel\`evement est unique.
 \end{prop}
@@ -69,9 +73,14 @@ alors ce rel\`evement est unique.
 Une application continue $f$ entre deux espaces topologiques $X$ et $Y$, telle que $f(x_0)=y_0$ %
 pour deux \'el\'ements de $X$ et $Y$ respectivement, est appel\'ee application continue entre les espaces point\'es $(X,x_0)$ et $(Y,y_0)$.
 
+\par
 On peut reformuler la proposition ci-dessus : %
-soient $\tilde{X}\overset{\mathcal{P}}{\longrightarrow} X$ un rev\^etement, $Z$ un espace topologique connexe, $z_0$, $x_0$ et $\tilde{x_0}$ des \'el\'ements de $Z$, $X$ et $\tilde{X}$ respectivement. %
-Si $f$ est une application continue entre les espaces point\'es $(Z,z_0)$ et $(X,x_0)$ qui admet un rel\`evement $\tilde{f}$, d\'efini entre les espaces point\'es $(\tilde{X},\tilde{x_0})$, alors ce rel\`evement est unique.
+soient $\tilde{X}\overset{\mathcal{P}}{\longrightarrow} X$ un rev\^etement, $Z$ un espace topologique connexe, %
+$z_0$, $x_0$ et $\tilde{x_0}$ des \'el\'ements de $Z$, $X$ et $\tilde{X}$ respectivement.
+
+\par
+Si $f$ est une application continue entre les espaces point\'es $(Z,z_0)$ et $(X,x_0)$ qui admet un rel\`evement $\tilde{f}$, %
+d\'efini entre les espaces point\'es $(\tilde{X},\tilde{x_0})$, alors ce rel\`evement est unique.
 \end{rema}
 
 L'existence s'\'etablit avec le lemme de Zorn :
@@ -98,6 +107,7 @@ La proposition suivante sera utile pour la sous-sous section \ref{gs1}.% Un argu
 Soient $\tilde{X}\overset{\mathcal{P}}{\longrightarrow} X$ un rev\^etement, tel que $\mathcal{P}(\tilde{x_0})=x_0$ por deux \'el\'ements de $\tilde{X}$ et $X$. %
 Soit de plus $F$ une application continue entre les espaces point\'es $([0,1]^2,(0,0))$ et $(X,x_0)$.
 
+\par
 Alors il existe un rel\g{e}vement $\tilde{F}$ de $F$ \g{a} valeurs dans $\tilde{X}$, tel que : $\tilde{F}((0,0))=\tilde{x_0}$.
 \end{prop}
 
@@ -116,8 +126,10 @@ est en fait valable si l'on prend n'importe quel espace topologique connexe et c
 Mentionnons mainenant une cons\'equence connue de la proposition \ref{rchefiy} :
 
 \begin{prop}[Th\'eor\`eme de rel\`evement, exponentielle complexe]
-Soit $f$ une application continue, d\'efinie sur un un intervalle r\'eel $I$, qui prend ses valeurs dans $\mathbb{U}$. Soient \'egalement $t_0$ un \'el\'ement de $I$, et $\theta_{t_0}$ un argument de $f(t_0)$.
+Soit $f$ une application continue, d\'efinie sur un un intervalle r\'eel $I$, qui prend ses valeurs dans $\mathbb{U}$. %
+Soient \'egalement $t_0$ un \'el\'ement de $I$, et $\theta_{t_0}$ un argument de $f(t_0)$.
 
+\par
 Il existe au moins une application continue $\theta$ de $I$ dans $\mathbb{R}$, telle que :
 \[\forall t \in I, f(t)=\exp (i\theta (t))\]
 \end{prop}
@@ -128,29 +140,39 @@ la fibre est ici hom'eoorphe \`a $\mathbb{Z}$. C'est m\^eme un fibr\'e principal
 \begin{proof}
 Nous connaissons d\'ej\`a le cas o\`u $I$ est un segment.
 
-Supposons : $I=[a,b[$, o\`u $a$ est un nombre r\'eel, $b$ un nombre sup\'erieur \`a $a$, ou $+\infty$. Soit $\theta_a$ un argument de $f(a)$\\
-Soit $(b_n)_{n\in\mathbb{N}^{\ast}}$ la suite r\'eelle, strictement croissante, d\'efinie pour tout $n$ strictement positif par :
+\par
+Supposons : $I=[a,b[$, o\`u $a$ est un nombre r\'eel, $b$ un nombre sup\'erieur \`a $a$, ou $+\infty$. Soit $\theta_a$ un argument de $f(a)$
+
+\par
+Soit de plus $(b_n)_{n\in\mathbb{N}^{\ast}}$ la suite r\'eelle, strictement croissante, d\'efinie pour tout $n$ strictement positif par :
 \begin{itemize}
 \item $b_n=b-\frac{b-a}{n+1}$ si $b$ est fini,
 \item $b_n=a+n$ si $b$ est infini.
 \end{itemize}
 Dans les deux cas : $[a,b[=\underset{n\in\mathbb{N}^{\ast}}{\bigcup}[a,b_n[$.
 
-Il existe un rel\`evement $\tilde{f}_1$ de $f$ sur $[a,b_1]$,  tel que : $\tilde{f}_1(a)=\theta_a$.\\
-Supposons construit, pour un entier naturel $n$ non nul, un rel\`evement $\tilde{f}_n$ de $f$, d\'efini sur $[a,b_n]$, tel que : $\tilde{f}_n(a)=\theta_a$.\\
+\par
+Il existe un rel\`evement $\tilde{f}_1$ de $f$ sur $[a,b_1]$,  tel que : $\tilde{f}_1(a)=\theta_a$.
+
+\par
+Supposons construit, pour un entier naturel $n$ non nul, un rel\`evement $\tilde{f}_n$ de $f$, d\'efini sur $[a,b_n]$, tel que : $\tilde{f}_n(a)=\theta_a$. %
 Toujours d'apr\`es la proposition \ref{rchefiy}, %
 il existe une application $\tilde{f}_{b{n+1}}$ de $[b_n,b_{n+1}]$ dans $\mathbb{R}$, continue, telle que :
 \[\forall t \in [b_n,b_{n+1}], \exp (i\tilde{f}_{b_{n+1}}(t))=f(t) \text{ et }\tilde{f}_{b_{n+1}}(b_n)=\tilde{f}_n(b_n)\]
 On peut ainsi d\'efinir, par recollement sur $[a,b_{n+1}]$, un rel\`evement continu $\tilde{f}_{n+1}$ de $f$, qui vaut $\theta_a$ en $a$.
 
+\par
 Nous avons ainsi construit, par r\'ecurrence, une suite $(\tilde{f}_n)$ de rel\`evements de $f$ qui valent $\theta_a$ en $a$, et qui v\'erifie de plus :
 \[\forall n \in\mathbb{N}^{\ast}, \forall t \in [a,b-n], \tilde{f}_n(t)=\tilde{f}_{n+1}(t)\]
+
 Cette propri\'et\'e de coh\'erence se g\'en\'eralise ais\'ement entre deux fonctions $\tilde{f}_m$ et $\tilde{f}_n$, %
 d\`es que $m$ est inf\'erieur \`a $n$, sur le domaine de d\'efinition de $\tilde{f}_m$.
 
+\par
 On peut donc d\'efinir, sur l'intervalle $[a,b[$, le prolongement commun $\tilde{f}$ de tous les termes de $(\tilde{f}_n)_n$, %
 ce qui nous donne le rel\`evement souhait\'e pour $f$.
 
+\par
 Un raisonnement similaire permet de r\'esoudre le cas d'un intervale ferm\'e \`a gauche, et ouvert \`a droite; %
 ceci permet enfin de r\'egler le cas d'un intervalle ouvert de $\mathbb{R}$.
 \end{proof}
@@ -212,6 +234,7 @@ Un espace topologique $Y$ est dit contractile lorqu'il v\'erifie l'une des deux 
 
 La deuxi\`eme caract\'erisation entra\^ine notamment qu'un espace contractile est connexe par arcs.
 
+\par
 L'homotopie est \'egalement une relation entre les espaces topologiques :
 
 \begin{defi}
@@ -246,6 +269,7 @@ Soit $\alpha$ un chemin qui prend ses valeurs dans un espace topologique $X$. $\
 \begin{exem}
 Soient $\alpha$ et $\beta$ deux chemins homotopes relativement \g{a} $\{0,1\}$, via une homotopie de chemins $H$ \g{a} valeurs dans un espace topologique $X$.
 
+\par
 Alors les chemins interm\'ediaires $(s\mapsto H(s,t)_t$ ont tous les m\^emes origines et extr\'emit\'es.
 \end{exem}
 
@@ -269,15 +293,19 @@ respectivement homotopes $\alpha$ et $\beta$, alors $\alpha \beta$ est homotope 
 \end{prop}
 
 Pour tout chemin $\alpha$ d'un espace topologique $X$, %
-on note $[\alpha ]$ sa classe d'homotopie relativement \g{a} $\{0,1\}$. %
+on note $[\alpha ]$ sa classe d'homotopie relativement \g{a} $\{0,1\}$.
+
+\par
 La proposition qui pr\'ec\g{e}de permet de d\'efinir une loi de composition entre les classes d'homotpie de chemins. %
 Le produit $[\alpha ][\alpha^{\leftarrow}]$ est ainsi la classe d'homotopie du chemin constant $\tilde{\alpha (0)}$.
 
+\par
 Les lacets sont des chemins qui b\'en\'eficient de propri\'et\'es alg\'ebriques encore plus riches.
 
 \begin{defi}[Lacets]
 Soit $(X,x_0)$ un espace topologique point\'e.
 
+\par
 Un chemin de $X$, dont l'origine et l'extr\'emit\'e se situent en $x_0$ est appel\'e lacet, ou boucle, en $x_0$.
 \end{defi}
 
@@ -287,11 +315,14 @@ sont encore des lacets en $x_0$. C'est en particulier le cas de $\alpha '$.
 \end{rema}
 
 \begin{prefi}[Groupe fondamental]
-Soit $(X,x_0)$ un espace topologique point\'e. %
+Soit $(X,x_0)$ un espace topologique point\'e.
+
+\par
 Alors l'ensemble $[([0,1],\{0,1\});(X,x_0)]$ des classes d'homotopie de lacets de $X$ en $x_0$, %
 muni de la loi de composition des lacets -concat\'enation-, est un groupe, appel\'e %
 \textbf{groupe fondamental de l'espace $X$ en $x_0$.} Son \'el\'ement neutre est le lacet constant dont la valeur est $x_0$.
 
+\par
 On le note $\pi_1(X,x_0)$
 \end{prefi}
 
@@ -302,42 +333,53 @@ La classe $[s\mapsto x_0]$ est l'ensemble des lacets de $X$ en $x_0$, homotopes 
 \end{rema}
 
 \begin{exem}
-Soit un espace topologique contenant un seul point $x_0$. Alors le groupe fondamental $\pi_1(\{x_0\},x_0)$ est trivial, %
+Soit un espace topologique contenant un seul point $x_0$.
+
+\par
+Alors le groupe fondamental $\pi_1(\{x_0\},x_0)$ est trivial, %
 il admet comme seul \'el\'ement la classe d'hmotopie $[s\mapsto x_0]$, elle-m\^eme constitu\'ee du seul lacet constant de $\{x_0\}$.
 \end{exem}
 
-Nous allons voir d'autres exemples de groupes fondamentaux; d'une facon g\'en\'erale, un groupe fondamental est difficle \g{a} calculer, surtout si ce groupe est non trivial.
-%cédille ?
+Nous allons voir d'autres exemples de groupes fondamentaux; d'une fa\c con g\'en\'erale, un groupe fondamental est difficle \g{a} calculer, surtout si ce groupe est non trivial.
 
 Avec la notation qui pr\'ec\g{e}de, si $x_0$ est un autre \'el\'ement de $X$ reli\'e, dans $X$, \g{a} $x_0$ par un chemin $\sigma$, %
-alors l'application $[\alpha]\mapsto [\sigma^{-1}][\alpha][\sigma]$ r\'ealise un isomorphisme entre les groupes $\pi_1(X,x_0)$ et $\pi_1(X,x_1)$. %
+alors l'application $[\alpha]\mapsto [\sigma^{-1}][\alpha][\sigma]$ r\'ealise un isomorphisme entre les groupes $\pi_1(X,x_0)$ et $\pi_1(X,x_1)$.
+
+\par
 Ainsi, lorsque $X$ est connexe par arcs, tous les groupes fondamentaux d\'efinis sur $X$ sont isomorphes entre eux. %
-On parle alors du groupe fondamental de $X$, d\'efini \g{a} isomorphisme pr\g{e}s, ce groupe se note $\pi_1(X)$. %
+On parle alors du groupe fondamental de $X$, d\'efini \g{a} isomorphisme pr\g{e}s, ce groupe se note $\pi_1(X)$.
+
+\par
 Toutefois, l'isomorphisme qui pr\'ec\g{e}de n'est pas canonique : il d\'epend de la classe d'homotopie de $\sigma$.
 
 \etoile
-
 On peut montrer que toute application continue $f$ entre deux espaces point\'es $(X,x_0)$ et $(Y,y_0)$ d\'efinit, %
-avec la formule $[\alpha]\mapsto [f\circ\alpha]$, un morphisme $f_{\sharp}$ entre les groupes $\pi_1 (X,x_0)$ et $\pi_1 (Y,y_0)$. %
+avec la formule $[\alpha]\mapsto [f\circ\alpha]$, un morphisme $f_{\sharp}$ entre les groupes $\pi_1 (X,x_0)$ et $\pi_1 (Y,y_0)$.
+
+\par
 La correspondance entre $f$ et $f_{\sharp}$ respecte la composition des applications et envoie l'application identit\'e d'un espace $(X,x_0)$ sur l'identit\'e de son groupe fondamental. %
 On \'etablit notamment la proposition suivante :
 
 \begin{prop}
-Soient $(X,x_0)$ et $(Y,y_0)$ deux espaces point\'es tel qu'il existe un hom\'eomorphisme $h$ entre $X$ et $Y$ qui pr\'eserve les points de base. %
+Soient $(X,x_0)$ et $(Y,y_0)$ deux espaces point\'es tel qu'il existe un hom\'eomorphisme $h$ entre $X$ et $Y$ qui pr\'eserve les points de base.
+
+\par
 Alors : $\pi_1(X,x_0)$ et $\pi_1(Y,y_0)$ sont isomorphes.
 
+\par
 Si de plus $X$ et $Y$ sont connexes par arcs, alors les groupes $\pi_1 (X)$ et $\pi_1 (Y)$, d\'efinis \g{a} isomorphisme pr\`es, sont isomorphes.
 \end{prop}
 
 \etoile
-
 Voici maintenant un premier exemple g\'en\'eral pour le calcul du groupe fondamental.
 
 \begin{theo}
 Soit $(X,x_0)$ un espace topologique point\'e. On suppose que $X$ est contractile : cet espace est donc, en particulier, connexe ar arcs.
 
+\par
 Alors : $\pi_1(X,x_0)$ est trivial. De plus, si $x_1$ est un autre \'el\'ement de $X$, alors $\pi_1(X,x_0)$ et $\pi_1(X,x_1)$ sont \textit{canoniquement} isomorphes.
 
+\par
 Le groupe $\pi_1(X)$, d\'efini \g{a} isomorphisme pr\g{e}s, est trivial.
 \end{theo}
 
@@ -369,11 +411,12 @@ m\^eme si elle oublie la structure alg\'ebrique qui \'emane de la concat\'enatio
 Soit $\mathcal{Q}^{[0,1]}$ l'application : $t\mapsto \exp (2i\pi t)$. %
 $\mathcal{P}^{[0,1]}$ est une surjection continue de $[0,1]$ vers $\mathbb{U}$, ferm\'ee car $[0,1]$ est compact. %
 Il s'ensuit notamment que $\mathcal{Q}^{[0,1]}$ encoie un ouvert satur\'e de $[0,1]$ sur un ouvert de $\mathbb{U}$.
-De plus, cette application identifie $0$ et $1$, et seulement ces deux points. %
+De plus, cette application identifie $0$ et $1$, et seulement ces deux points.
 
 \begin{prop}
 Soit $(X,x_0)$ un espace topologique point\'e, et $p_0$ un point de la sph\g{e}re $\mathbb{S}^1$ de l'espace euclidien $\mathbb{R}^2$.
 
+\par
 Il existe une bijection entre $\pi_1(X,x_0)$ et $[(\mathbb{S}^1,p_0);(X,x_0)]$.
 \end{prop}
 
@@ -381,6 +424,7 @@ Il existe une bijection entre $\pi_1(X,x_0)$ et $[(\mathbb{S}^1,p_0);(X,x_0)]$.
 Prenons ici pour $(\mathbb{S}^1,p_0)$ l'espace point\'e $(\mathbb{U},1)$ afin de simplifier les formules de cette d\'emonstration, %
 la preuve est exactement la m\^eme pour la sph\g{e}re de $\mathbb{R}^2$ point\'ee en un $p_0$ quelconque.
 
+\par
 Soit maintenant $\alpha$ une boucle de $(X,x_0)$. %
 Puisque $0$ et $1$ sont envoy\'es en $1$ par l'application $\mathcal{Q}^{[0,1]}$, %
 et puisque cette application envoie injectivement $]0,1[$ sur $\mathbb{U}\setminus\{1\}$, %
@@ -388,29 +432,44 @@ on peut d\'efinir de mani\g{e}re unique l'application $\tilde{\alpha}$ de $(\mat
 \[\forall s \in [0,1],\tilde{\alpha}\left(\mathcal{Q}^{[0,1]}(s)\right)=\alpha (s)\]
 De plus, cette application est continue car $\mathcal{Q}^{[0,1]}$ envoie un ouvert satur\'e de $[0,1]$ sur un ouvert de $\mathbb{U}$.
 
+\par
 R\'eciproquement, on associe, pour toute application continue $\tilde{\alpha}$ entre les espaces point\'es $(\mathbb{U},1)$ et $(X,x_0)$ %
 une boucle $\alpha$ d\'efinie par :
 \[\forall s\in [0,1],\alpha(s)=\tilde{\alpha}\left(\mathcal{Q}^{[0,1]}(s)\right)\]
 
 Ces deux applications, $\alpha\mapsto\tilde{\alpha}$ et $\tilde{\alpha}\mapsto\alpha$ sont inverses l'une de l'autre, elles sont donc bijectives.
 
+\par
 Montrons que, si $\alpha$ et $\alpha '$ sont deux lacets homotopes de $(X,x_0)$,%
-alors $\tilde{\alpha}$ et $\tilde{\alpha '}$ sont \'egalement homotopiquements \'equivalemntes du point de vue des applications continues de $(\mathbb{U},1)$ vers $(X,x_0)$. %
-Soit en effet $H$ une homotopie entre deux boucles $\alpha$ et $\alpha '$ de $(X,x_0)$. De m\^eme que dans le cas des lacets, les propri\'etes ensemblistes de $\mathcal{Q}^{[0,1]}$ permettent de d\'efinir, sur $\mathbb{U}\times [0,1]$, une application $\tilde{H}$ par :
+alors $\tilde{\alpha}$ et $\tilde{\alpha '}$ sont \'egalement homotopiquements \'equivalentes du point de vue des applications continues de $(\mathbb{U},1)$ vers $(X,x_0)$.
+
+\par
+Soit en effet $H$ une homotopie entre deux boucles $\alpha$ et $\alpha '$ de $(X,x_0)$. %
+De m\^eme que dans le cas des lacets, les propri\'etes ensemblistes de $\mathcal{Q}^{[0,1]}$ %
+permettent de d\'efinir, sur $\mathbb{U}\times [0,1]$, une application $\tilde{H}$ par :
 \[\forall (s,t)\in[0,1]\times [0,1],\tilde{H}\left(\mathcal{Q}^{[0,1]}(s),t\right)=H(s,t)\]
+
 La satur\'ee-ouvertitude de $\mathcal{Q}^{[0,1]}$ entra\^ine celle de $\left(\mathcal{Q}^{[0,1]},Id_{[0,1]}\right)$ -on identifie les $(0,t)$ et de $(1,t)$-, %
-il s'ensuit, comme en  ce qui concernait la d\'efinition de $\tilde{\alpha}$, que l'application $\tilde{H}$ est continue sur $\mathbb{U}\times[0,1]$. %
+il s'ensuit, comme en  ce qui concernait la d\'efinition de $\tilde{\alpha}$, que l'application $\tilde{H}$ est continue sur $\mathbb{U}\times[0,1]$.
+
+\par
 V\'erifions que $\tilde{H}$ est une homotopie, relativement \g{a} $1$, entre les applications $\tilde{\alpha}$ et $\tilde{\alpha '}$.
+
+\par
 Remarquons d'abord que, pout tout $t$ r\'eel compris entre $0$ et $1$ :
 \[\tilde{H}(1,t)=H(0,t)\text{ et de m\^eme }\tilde{H}(1,t)=H(1,t)\]
+
 Puisque $H$ est une homotopie de lacets, on en d\'eduit que la fonction de $t$ ci-dessus prend une valeur unique, %
-autrement dit $\tilde{H}$ est une homotopie relativement \g{a} $\{1\}$.\\
+autrement dit $\tilde{H}$ est une homotopie relativement \g{a} $\{1\}$.
+
+\par
 Soit par ailleurs : $z\in\mathbb{U}$. Il existe au moins un \'el\'ement $s$ de $[0,1]$ tel que $\mathcal{Q}^{[0,1]}(s)$ vaut $z$. %
 Ainsi : $\tilde{H}(z,1)=H(s,0)$ donc $\tilde{H}(z,0)=\alpha (s)$ par d\'efinition de l'homotopie $H$; %
 $\alpha (s)=\tilde{\alpha}\left(\mathcal{Q}^{[0,1]}\right)$ autrement dit $\alpha (s)=\tilde{\alpha}(z)$, on en conclut :
 \[\tilde{H}(z,0)=\tilde{\alpha}(z)\]
 On d\'emontre de la m\^eme mani\g{e}re que : $\forall z \in\mathbb{U},\tilde{H}(z,1)=\tilde{\alpha '}(z)$.
 
+\par
 Enfin, si $\tilde{\alpha}$ et $\tilde{\alpha '}$ sont deux applications continues entre les espaces point\'es $(\mathbb{U},1)$ et $(X,x_0)$, %
 alors les lacets $\alpha$ et $\alpha '$, d\'efinis avec la convention de langage qui pr\'ec\g{e}de, sont homotopes. %
 Pour s'en convaincre, il suffit de construire une homotopie entre ces deux lacets en composant des applications continues.
@@ -426,11 +485,11 @@ ou plut\^ot la bijection qui lui est canoniquement associ\'ee.
 
 \subsubsection{Un exemple important : $\pi_1(\mathbb{S}^1)$}\label{gs1}
 
-Puisque deux espaces topologiques connexes par arcs, hom\'eomorphes entre eux, ont m\^eme groupe fondamental, d\'efini \g{a} isomorphisme pr\`es, on peut \'enoncer le th\'eor\g{e}me suivant :
+Puisque deux espaces topologiques connexes par arcs, hom\'eomorphes entre eux, ont m\^eme groupe fondamental, %
+d\'efini \g{a} isomorphisme pr\`es, on peut \'enoncer le th\'eor\g{e}me suivant :
 
 \begin{theo}
 Le groupe $\pi_1(\mathbb{S}^1)$, d\'efini \g{a} hom\'eomorphisme pr\`es, v\'erifie :
-
 \[\pi_1(\mathbb{S}^1)\cong\mathbb{Z}\]
 \end{theo}
 
@@ -440,41 +499,62 @@ Voici un r\'esultat interm\'ediaire pour l'\'etude de $[([0,1],\{0,1\}),(\mathbb
 \begin{lemm}[Rel\g{e}vement pour une homotopie de chemins]
 Soient $\alpha$ et $\beta$ deux lacets de $\mathbb{U}$ bas\'es en $1$. On suppose qu'il existe une homotopie $F$ entre ces deux chemins.
 
+\par
 Alors : il existe une application continue $\tilde{F}$ de $[0,1]^2$ dans $\mathbb{R}$ telle que :
 \[\forall (s,t)\in[0,1]^2 , \exp(2i\pi \tilde{F}(s,t))=F(s,t)\]
+
 Si l'on demande aussi : $\tilde{F}(0,0)=0$, alors $\tilde{F}$ existe et est unique, %
-c'est une homotopie entre les chemins $\tilde{\alpha}$ et $\tilde{\beta}$, respectivement uniques rel\g{e}vements de $\alpha$ et $\beta$ qui valent $0$ en $0$.
+c'est une homotopie entre les chemins $\tilde{\alpha}$ et $\tilde{\beta}$, %
+respectivement uniques rel\g{e}vements de $\alpha$ et $\beta$ qui valent $0$ en $0$.
 \end{lemm}
 
 \begin{proof}
 L'existence de l'application $\tilde{F}$ v\'erifiant la formule ci-dessus nous est donn\'ee par la proposition \ref{red2}, l'unicit\'e vient de \ref{urc}.
 
+\par
 On remarque que $s\mapsto \tilde{F}(s,0)$ est un rel\`evement de $\alpha$ qui vaut $0$ en $0$ : par unicit\'e dans la d\'efinition de $\tilde{\alpha}$, on en d\'eduit que
 \[\forall s\in [0,1],\tilde{F}(s,0)=\tilde{\alpha}(s)\]
 
 Par ailleurs :
 \[\forall t\in [0,1],\mathcal{P}(\tilde{F}(0,t))=F(0,t)\]
 o\g{u} $\mathcal{P}=a\mapsto\exp (2i\pi a)$.
+
+\par
 Puisque $F$ est une homotopie de chemins : $\forall t\in[0,1], F(0,1)=F(0,0)$, %
-donc $[0,1]\rightarrow\mathbb{R}:t\mapsto\tilde{F}(0,t)$ parcourt la fibre de $F(0,0)$ pour la projection $\mathcal{P}$. %
+donc $[0,1]\rightarrow\mathbb{R}:t\mapsto\tilde{F}(0,t)$ parcourt la fibre de $F(0,0)$ pour la projection $\mathcal{P}$.
+
+\par
 On cette fibre est discr\g{e}te : la continuit\'e de $t\mapsto \tilde{F}(0,t)$ nous donne :
 \[\forall t\in[0,1],\tilde{F}(0,t)=\tilde{F}(0,0)\text{ soit }\forall t\in[0,1],\tilde{F}(0,t)=0\]
+
 Puisque $\tilde{\beta}(0)=0$, il s'ensuit que : $\tilde{F}(0,1)=\tilde{\beta}(0)$.
 
-Par ailleurs, l'\'egalit\'e : $\forall s\in[0,1],F(s,1)=\beta (s)$ entra\^ine $\forall s\in[0,1], \mathcal{P}(\tilde{F}(s,1))=\beta (s)$ donc d'apr\g{e}s \ref{urc} et l'\'egalit\'e d\'emontr\'ee ci-dessus :
+\par
+Par ailleurs, l'\'egalit\'e : $\forall s\in[0,1],F(s,1)=\beta (s)$ entra\^ine %
+$\forall s\in[0,1], \mathcal{P}(\tilde{F}(s,1))=\beta (s)$ donc d'apr\g{e}s \ref{urc} et l'\'egalit\'e d\'emontr\'ee ci-dessus :
 \[\forall s\in[0,1], \tilde{F}(s,1)=\tilde{\beta}(s)\]
+
 Enfin : $t\mapsto\tilde{F}(1,t)$ est une application continue sur $[0,1]$ qui parcourt $\mathcal{P}^{-1}(\alpha (1))$ puisque $F(t,1)$ vaut $\alpha (1)$ pour tout $t$ de $[0,1]$. %
+
+\par
 Il s'ensuit que : $\forall t\in[0,1] , \tilde{F}(1,t)=\tilde{F}(1,0)$ puisque cette fibre est discr\`ete, donc :
 \[\forall t\in[0,1],\tilde{F}(1,t)=\tilde{\alpha}(1)\]
-En particulier : $\tilde{\alpha}(1)=\tilde{\beta}(1)$, ce qui nous permet de conclure : $\tilde{F}$ est une homotopie entre les chemins $\tilde{\alpha}$ et $\tilde{\beta}$, qui prennent leurs valeurs dans $\mathbb{R}$.
+
+En particulier : $\tilde{\alpha}(1)=\tilde{\beta}(1)$, ce qui nous permet de conclure : %
+$\tilde{F}$ est une homotopie entre les chemins $\tilde{\alpha}$ et $\tilde{\beta}$, qui prennent leurs valeurs dans $\mathbb{R}$.
 \end{proof}
 
 On peut donc associer sans ambig\"uit\'e, \g{a} toute classe d'homotopie $[\alpha]$ des lacets de $\mathbb{U}$ bas\'es en $1$, %
-la classe d'homotopie de chemins $[\tilde{\alpha}]$, o\`u $\tilde{\alpha}$ est l'unique rel\`evement de $\alpha$ qui vaut $0$ en $0$. %
-Toujours avec le lemme pr\'ec\'edent, on d\'efinit, de mani\g{e}re unique, pour toute classe $[\tilde{\alpha}]$ de chemins homotopes de $\mathbb{R}$, le r\'eel : $\tilde{\alpha}(1)$. %
+la classe d'homotopie de chemins $[\tilde{\alpha}]$, o\`u $\tilde{\alpha}$ est l'unique rel\`evement de $\alpha$ qui vaut $0$ en $0$.
+
+\par
+Toujours avec le lemme pr\'ec\'edent, on d\'efinit, de mani\g{e}re unique, pour toute classe $[\tilde{\alpha}]$ de chemins homotopes de $\mathbb{R}$, le r\'eel : $\tilde{\alpha}(1)$.
+
+\par
 Enfin, pour tout lacet $\alpha$ de $(\mathbb{U},1)$ : %
 $\mathcal{P}^{-1}(\alpha (1))=\mathbb{Z}$ o\g{u} $\mathcal{P}$ d\'esigne toujours l'exponentielle complexe $a\mapsto\exp (2i\pi a)$.
 
+\par
 Il existe donc une unique application
 \[\deg :\pi_1(\mathbb{U},1)\rightarrow \mathbb{Z}:[\alpha]\mapsto \tilde{\alpha}(1)\]
 $\deg ([\alpha]$ sera appel\'e le degr\'e de la classe d'homotpie $[\alpha]$, pour tout lacet $\alpha$ de $(\mathbb{U},1)$.
@@ -509,45 +589,58 @@ Soient respectivement, $\tilde{alpha}$ et $\tilde{\beta}$ les rel\g{e}vements de
 \]
 Pa recollement, $\tilde{\gamma}$ est continu. On remarque de plus que : $\tilde{\gamma}(1)=\tilde{\alpha}(1)+\tilde{\beta}(1)$.
 
+\par
 Montrons maintenant que $\tilde{\gamma}$ est un rel\`evement dans $\mathbb{R}$ de $\alpha\cdot\beta$, qui prend la valeur $0$ en $0$.
 
+\par
 La deuxi\g{e}me proposition est \'evidente.
 
+\par
 Par d\'efinition de $\tilde{\gamma}$ et $\tilde{\alpha}$ : $\forall t\in\left[0,\frac{1}{2}\right],\exp (2i\pi\tilde{\gamma}(t))=\alpha (2t)$ donc %
 \fbox{$\forall t\in\left[0,\frac{1}{2}\right],\exp (2i\pi \tilde{\gamma}(t))=\alpha\cdot\beta (t)$}.
 
-Par ailleurs, puisque $\exp (2i\pi\tilde{\alpha}(1))=1$,
+\par
+Par ailleurs, puisque $\exp (2i\pi\tilde{\alpha}(1))=1$, $\tilde{\alpha}(1)\in\mathbb{Z}$ donc :
 
-$\tilde{\alpha}(1)\in\mathbb{Z}$ donc : %
 \[\forall t\in\left[\frac{1}{2},1\right]\exp (2i\pi(\tilde{\beta}(2t-1)+\tilde{\alpha}(1)))=\exp(2i\pi\tilde{\beta}(2t-1))\]
-donc : $\forall t\in\left[\frac{1}{2},1\right],\exp (2i\pi \tilde{\gamma}(t))=\beta (2t-1)$
+donc : $\forall t\in\left[\frac{1}{2},1\right],\exp (2i\pi \tilde{\gamma}(t))=\beta (2t-1)$ %
 autrement dit : \fbox{$\forall t\in\left[\frac{1}{2},1\right],\exp (2i\pi\tilde{\gamma}(t))=\alpha\cdot\beta (t)$}
 
+\par
 Nous avons montr\'e la propri\'et\'e de rel\`evement pour $\tilde{\gamma}$.
 
+\par
 Ainsi : $\tilde{\gamma}=\tilde{\alpha\cdot\beta}$, ce qui entra\^ine : $\tilde{\alpha\cdot\beta} (1)=\tilde{\alpha}(1)+\tilde{\beta}(1)$. Il s'ensuit que :
 \[\deg [\alpha\cdot\beta ]=\deg [\alpha ]+\deg [\beta ]\]
+%
 \item[\textit{Surjectitiv\'e :}]
 Pour tout entier relatif $n$ : $\alpha :[0,1]\rightarrow \mathbb{U}:s\mapsto \exp{2in\pi s}$ admet comme rel\g{e}vement, nul en $0$, $s\mapsto ns$. %
 $[\alpha]$ est donc de degr\'e $n$.
+%
 \item[\textit{Injectivit\'e :}]
 Soit : $[\alpha]\in\ker\deg$.
 
+\par
 On peut \'ecrire $\tilde{\alpha}(1)=0$. Ainsi, $\tilde{\alpha}$ est un lacet de $\mathbb{R}$ bas\'e en $0$. Soit $\tilde{H}$ l'homotopie de chemins dans $\mathbb{R}$, d\'efinie par :
 \[\forall (s,t)\in [0,1]^2,\tilde{H}(s,t)=(1-t)\tilde{\alpha (s)}+t\cdot 0\]
 On note : $\forall (s,t)\in[0,1]^2,H(s,t)=\exp(2i\pi \tilde{H}(s,t))$
 
+\par
 Comme $\tilde{\alpha}$ est un rel\g{e}vement de $\alpha$ : $\forall s\in[0,1],H(s,0)=\alpha (s)$. 
 
+\par
 De plus :
 \[\forall t\in[0,1],\left(\tilde{H}(0,t)=0\right)\wedge\left(\tilde{H}(1,t)=0\right)\]
 donc
 \[\forall t\in[0,1],\left(H(0,t)=1\right)\wedge\left(H(1,t)=1\right)\]
 car $H$ est continue et car car la fibre de l'exponentielle complexe au-dessus de $1$ est discr\`ete.
 
+\par
 Enfin : $\forall s\in[0,1],\tilde{H}(s,1)=0$ donc $\forall s\in[0,1],H(s,1)=1$.
 
-Conclusion : $H$ est une homotopie entre $\alpha$ et le chemin constant, de valeur $1$. Il s'ensuit que : $[\alpha]$ est l'\'el\'ement neutre de $\pi_1(\mathbb{U},1)$, ce qui ach\g{e}ve la prueve pour l'innjectivit\'e.
+\par
+Conclusion : $H$ est une homotopie entre $\alpha$ et le chemin constant, de valeur $1$. %
+Il s'ensuit que : $[\alpha]$ est l'\'el\'ement neutre de $\pi_1(\mathbb{U},1)$, ce qui ach\g{e}ve la prueve pour l'injectivit\'e.
 \end{itemize}
 \end{proof}
 
@@ -569,22 +662,30 @@ Alors : $\pi_1(X,x_0)$ est isomorphe \g{a} $\pi_1(Y,h(x_0))$.
 Ici encore, une d\'emonstration est possible avec les connaissances qui pr\'ec\g{e}dent, %elle requiert un peu de virtuosit\'e en mati\g{e}re de construction d'homotopie.
 on peut utiliser le lemme \ref{abcd}
 
+\par
 A l'aide de ce r\'esultat, on retrouve facilement la simple connexit\'e des espaces contractiles, %
-et on montre, par exemple, que l'espace $\mathbb{R}^2\setminus\{(0,0)\}$ admet comme groupe fondamental, d\'efini \g{a} isomorphisme pr\g{e}s, $\mathbb{Z}$. %
+et on montre, par exemple, que l'espace $\mathbb{R}^2\setminus\{(0,0)\}$ admet comme groupe fondamental, d\'efini \g{a} isomorphisme pr\g{e}s, $\mathbb{Z}$.
+
+\par
 C'est aussi le cas de n'importe quelle couronne de $\mathbb{R}^2$.
 
 \subsection{Un th\'eor\`eme de rel\`evement homotopique}
 
 \begin{theo}[Th\'eor\`eme de rel\`evement homotopique]
-Soit \Fiy un fibr\'e localement trivial.%, oÃ¹ $Y$ n'est pas nÃ©cessairement un groupe de structure.\\
-On fixe un entier naturel non nul $n$.\\
+Soit \Fiy un fibr\'e localement trivial.
+On fixe un entier naturel non nul $n$.
+
+\par
 On suppose qu'il existe une application continue $f$ de $[0,1]^n$ dans $X$ qui se rel\`eve sur $P$ en une application $\tilde{f}$ de $[0,1]^n$ dans $P$, %
 de sorte que le diagrame ci-dessous soit commutatif :
 \[\xymatrix{ &P \ar[d]^{\mathcal{P}} \\ [0,1]^n \ar[r]^{f} \ar[ru]^{\tilde{f}} & X}\]
+
 On suppose de plus l'existence d'une homotopie $F$ dans $[0,1]^n$ \`a valeurs dans $X$, telle que :
 \[\forall y \in [0,1]^n , F(y,0) = f(y)\]
+
 Alors $F$ admet un rel\`evement $\tilde{F}$ sur $P$, autrement dit une homotopie $\tilde{F}$ d\'efinie sur $[0,1]^n \times [0,1]$ et \`a valeurs dans $P$, telle que $F = \mathcal{P} \circ \tilde{F}$, qui v\'erifie encore :
 \[\forall y \in [0,1]^n , \tilde{F}(y,0) = \tilde{f}(y)\]
+
 En particulier le diagrammme suivant est commutatif :
 \[\xymatrix{ &P \ar[d]^{\mathcal{P}} \\ [0,1]^n \times [0,1] \ar[r]^{F} \ar[ru]^{\tilde{F}} & X}\]
 \end{theo}
