@@ -1,6 +1,7 @@
-\chapter{Fibr\'es localement triviaux, fibr\'es principaux}
+\section{Fibr\'es localement triviaux, fibr\'es principaux}
+%\chapter{Fibr\'es localement triviaux, fibr\'es principaux}
 
-\section{D\'efinitions, premiers exemples}
+\subsection{D\'efinitions, premiers exemples}
 
 \begin{defi}
 Soient $X$ un espace topologique et $G$ un groupe topologique, éventuellement discret. On suppose que ces deux espaces sont séparés.\\
@@ -86,7 +87,7 @@ Les propri\'et\'es toplogiques des fibr\'es localement triviaux diff\g{e}rent, n
 
 %Exemples pour des fibr\'es principaux : $z\mapsto z^2$ etc ? On \'evoque une g\'en\'eralisation avec le projectif r\'eel.
 
-\subsection{Sections locales de fibr\'es}
+\subsubsection{Sections locales de fibr\'es}
 
 \begin{prop}\label{stV1}
 Soit \Fig un fibr\'e principal. Soit de plus $U$ un ouvert de $X$ et soit $s_U$ une section continue de $\mathcal{P}$ d\'efinie sur $U$.
@@ -152,9 +153,9 @@ plus riches que celles de $G-$espace ou de groupe topologique.
 
 %Exemple avec $\{-1,1\}$, constructions alg\'ebriques : papier Actions de groupes.
 
-\section{Exemples importants}
+\subsection{Exemples importants}
 
-\subsection{Espaces projectifs}
+\subsubsection{Espaces projectifs}
 
 Ici, $\mathbb{K}$ d\'esigne l'un des trois corps r\'eels $\mathbb{R}$, $\mathbb{C}$ et $\mathbb{H}$.
 
@@ -275,6 +276,7 @@ on considère la famille $(V_i)_{i \in [\![[1,n]\!]}$ de parties de l'espace pro
 On remarque que les termes de $(U_i)$ sont des ouverts satur\'es de $\mathbb{S}^n$. %
 On en d\'eduit que ces ouverts sont exactement les images r\'eciproques par $[\quad]$ des termes de $(V_i)$, %
 puis que $(V_i)$ est une famille d'ouverts de $\mathbb{P}^n(\mathbb{R})$.
+
 \par
 Par ailleurs, tout \'el\'ement de la sph\`ere $\mathbb{S}^n$ admet au moins une coordonn\'ee non nulle : %
 il s'ensuit que $(V_i)$ est un recouvrement ouvert de $\mathbb{P}^n(\mathbb{R})$.
@@ -283,35 +285,46 @@ il s'ensuit que $(V_i)$ est un recouvrement ouvert de $\mathbb{P}^n(\mathbb{R})$
 Soit maintenant : $i \in [\![1,n]\!]$. On peut \'ecrire l'union disjointe :
 \[U_i = U_i^+ \cup U_i^-\]
 o\g{u} l'on note $U_i^+ = \{ (x_j)_j \in \mathbb{S}^n | x_i > 0 \}$ et sym\'etriquement : $U_i^- = \{ (x_j)_j \in \mathbb{S}^n | x_i < 0 \}$.
+
 \par
 Ainsi : $U_i^+(-1) = U_i^-$, et vice-versa, autrement dit : $\forall u^+ \in U_i^+ , -u^+ \in U_i^-$ et sym\'etriquement $\forall u_- \in U_i^- , -u^- \in U_i^+$.
+
 \par
 L'antipodie est une action libre donc les orbites de $\mathbb{S}^n$ sous cette action admettent toutes exactement deux \'el\'ements. %
 On peut donc écrire : $\forall v \in V_i , \exists ! s_i^+(v) \in U_i^+ | [s_i^+(v)] = v$; $s_i^+$ est une section de la projection $[\quad]$. %
 On remarque que $[\quad]$ induit une surjection continue de $U_i^+$ vers $V_i$, injective d'après les deux formules en $u_+$ , $u_-$ qui pr\'ec\g{e}dent.
+
 \par
 Par ailleurs, l'action d'antipodie est continue, donc la projection correspondante, $[\quad]$, est ouverte. %
 Il s'ensuit que l'application induite par $[\quad]$ de $U_i$ vers $V_i$ est un homéomorphisme, sa réciproque est $s_i^+$.
+
 \par
 On construit maintenant la fonction de phase $\psi_i$ pour notre trivialisation locale, avec les formules :
 \[\psi_i(U_i^+) = \{1\}\text{ qui donne la construction de $s_i^+$, et }\psi_i(U_i^-) = \{ -1 \}\]
 \[\text{On note alors : }\Psi_i = U_i \rightarrow V_i \times \{ -1 , 1 \} : u \mapsto ([u],\psi_i(u))\]
+
 Montrons la propriété d'équivariance pour $\psi_i$ :
 \[\forall u^+ \in U_i^+ , u^+ (-1) \in U_i^-\text{ donc }\forall u^+ \in U_i^+ , \psi_i (u^+ (-1)) = \psi(u^+)(-1)\]
 et symétriquement que cette formule est vraie sur $U_i^-$.
+
 \par
 On pourra en d\'eduire que $\Psi_i$ est surjectif, de plus la simplicité de l'action $\mathcal{A}$ nous donne l'injectivité pour ce morphisme.
+
 \par
 Ecrivons maintenant une formule explicite pour $\psi_i$  : soit $(x_j)_j$ un \'el\'ement de $U_i$. $(x_j)_j$ est élément de $U_i^+$ si et seulement si $x_i$ est strictement positif, %
 autrement dit lorsque : $\mathbf{\frac{x_i}{\abs{x_i}} = 1}$
+
 \par
 De m\^eme : $(x_j)_j \in U_i^- \Leftrightarrow \frac{x_i}{\abs{x_i}} = -1$. %
 On écrit alors : $\psi_i = (x_j)_j \mapsto \frac{x_i}{\abs{x_i}}$.
+
 \par
 Cette formule nous donne la continuit\'e pour $\psi_i$, le morphisme $\Psi_i$, dont les deux fonctions composantes sont continues, est donc continu.
+
 \par
 Enfin, l'application à variables s\'epar\'ees $V_i \times \{-1 , 1\} \rightarrow U_i : (v,\varepsilon) \mapsto s_i^+(v).\varepsilon$, %
 bijection réciproque de $\Psi_i$, est continue.
+
 \par
 %\medskip
 $\Psi_i$ est donc un hom\'eomorphisme, $(V_i,\Psi_i)$ est une trivialisation locale pour
@@ -324,6 +337,7 @@ $\Psi_i$ est donc un hom\'eomorphisme, $(V_i,\Psi_i)$ est une trivialisation loc
 Un cas remarquable de fibr\'e d\'efini ci-dessus est celui de la dimension $1$, \'evoqu\'e dans le tableau pr\'ec\'edent. %
 Ce fibr\'e $\{-1,1\} \overset{\mathcal{A}}{\hookrightarrow} \mathbb{S}^1 \overset{[\quad]}{\twoheadrightarrow} \mathbb{P}^1(\mathbb{R})$ %
 se construit alg\'ebriquement via la projection $z\mapsto z^2$ de $\mathbb{U}$ sur lui-m\^eme :
+
 \[\xymatrix{%
 \mathbb{U} \ar[r]^{z\mapsto z^2} \ar[d]_{:\mathbb{U}_2}&\mathbb{U}\\%
 \dfrac{\mathbb{U}}{\mathbb{U}_2} \ar[ru]_{h_2}&%
@@ -331,57 +345,75 @@ se construit alg\'ebriquement via la projection $z\mapsto z^2$ de $\mathbb{U}$ s
 La projection \g{a} gauche du diagramme, symbolis\'ee par une fl\g{e}che dirig\'ee vers le bas, revient \g{a} quotienter $\mathbb{U}$ par \emph{antipodie}. %
 L'isomorphisme $h_2$ de groupes topologiques, que nous recontrerons au moment de construire de nouveaux fibr\'es principaux de base $\mathbb{S}^2$ \g{a} la sous-section\ref{lt1}, %
 permet d'identifier la projection $z\mapsto z^2$ de $\mathbb{U}$ sur lui-m\^eme \g{a} l projection $[\quad ]$ construite ci-dessus dans le cas de la dimension $1$.
+
 \par
 $\{-1,1\} \overset{\mathcal{A}}{\hookrightarrow} \mathbb{S}^1 \overset{[\quad]}{\twoheadrightarrow} \mathbb{P}^1(\mathbb{R})$ est donc isomorphe, %
 en un sens que nous verrons plus tard, \g{a} $\{-1,1\}\hookrightarrow\mathbb{U}\xrightarrow{z\mapsto z^2}~\mathbb{U}$ que nos avons \'evoqu\'e au d\'ebut de ce m\'emoire.
+
 \par
 \emph{En particulier, $\mathbb{P}^1(\mathbb{R})$ est hom\'eomorphe \g{a} $\mathbb{S}^1$.}
 
-\subsection{Au-dessus de la sph\g{e}re $\mathbb{S}^2$ : fibrations de Hopf}
+\subsubsection{Au-dessus de la sph\g{e}re $\mathbb{S}^2$ : fibrations de Hopf}
 
 La projection canonique $[\;]$ de $\mathbb{C}^2\setminus\{(0,0)\}$ sur $\mathbb{P}^1(\mathbb{C})$ va nous permettre de construire %$\mathbb{C}^2\setminus\{(0,0)\}\overset{[ \; ]}{\longrightarrow}\mathbb{P}^1(\mathbb{C})$
 \textbf{deux} fibr\'es principaux, de groupe de structure $\mathbb{U}$, au-dessus de $\mathbb{S}^2$ ; elles sont souvent appel\'ees \emph{fibrations de Hopf}.
+
 \par
 La premi\`ere partie, facile, du travail consiste \g{a} restreindre la projection $[\; ]$ \`a la sph\`ere de l'espace euclidien $\mathbb{C}^2$ : $\mathbb{S}^3$. %
 On notera encore $[\; ]$ cette nouvelle projection ; par ailleurs la multiplication scalaire de $\mathbb{C}^2$ induit une action, simple, de $\mathbb{U}$ sur $\mathbb{S}^3$ : %
 ainsi, $[\;]$ r\'ealise une projection de $\mathbb{S}^3$ sur $\mathbb{P}^1(\mathbb{C})$, %
 dont les fibres sont exactement les orbites de $\mathbb{S}^3$ sous cette action de $\mathbb{U}$.
+
 \par
 Il nous reste \g{a} composer \g{a} gauche cette projection par des bijections bien choisies de $\mathbb{P}^1(\mathbb{C})$ sur $\mathbb{S}^2$.
+
 \par
 Remarquons tout d'abord que tout \'el\'ement de la sph\g{e}re-unit\'e de $\mathbb{C}^2$, muni simultan\'ement des structures d'espace hermitien de dimension $2$ et d'espace euclidien de dimension $4$, %
 s'\'ecrit : $\left(r_1\ec{\xi_1},r_2\ec{\xi_2}\right)$, %
 o\`u $r_1$ et $r_2$ sont des r\'eels positifs d\'efinis de mani\`ere unique et $\xi_1$ et $\xi_2$ deux r\'eels d\'efinis \`a un multiple de $2\pi$, v\'erifiant encore :
 \[r_1^2+r_2^2=1\]
 Avec cette notation, il existe un unique r\'eel $\phi$ compris entre $0$ et $\frac{\pi}{2}$ tel que : $(r_1,r_2)=(\cos\phi , \sin\phi)$. %
-Afin de faciliter les calculs qui vont suivre, on \'ecrit plut\^ot : %
+Afin de faciliter les calculs qui vont suivre, on \'ecrit plut\^ot :
+
 \par
 \emph{Tout \'el\'ement de la sph\g{e}re-unit\'e $\mathbb{S}^3$ de $\mathbb{C}^2$ s'\'ecrit de mani\g{e}re unique $\left(\cos\dfrac{\phi}{2}\ec{\xi_1},\sin\dfrac{\phi}{2}\ec{\xi_2}\right)$ ;} %
 o\`u $\phi$ est un nombre r\'eel compris entre $0$ et $\pi$, $\xi_1$ et $\xi_2$ deux r\'eels d\'efinis \g{a} un multiple de $2\pi$ pr\g{e}s.
+
 \par
 Bien s\^ur, chaque triplet $(\phi,\xi_1,\xi_2)$ d\'efinit, de mani\`ere unique, un \'el\'ement de $\mathbb{S}^3$.
+
 \ligneinter
-Soit, en premier lieu, $\mathcal{U}_S$ l'ensemble des \'el\'ements de $\mathbb{S}^3$ dont la deuxi\g{e}me coordonn\'ee est non nulle, autrement dit $\mathbb{S}^3\setminus\mathbb{U}\times\{0\}$. %
-Chaque \'el\'ement $\st{\phi}{\xi_1}{\xi_2}$ de $\mathcal{U}_S$, qui v\'erifie au passage : \boldmath$\phi\neq 0$\unboldmath, est envoy\'e sur $\cot\dfrac{\phi}{2}\ec{\xi_1-\xi_2}$ via la projection $[\;]$ %
+Soit, en premier lieu, $\mathcal{U}_S$ l'ensemble des \'el\'ements de $\mathbb{S}^3$ dont la deuxi\g{e}me coordonn\'ee est non nulle, %
+autrement dit $\mathbb{S}^3\setminus\mathbb{U}\times\{0\}$.
+
+\par
+Chaque \'el\'ement $\st{\phi}{\xi_1}{\xi_2}$ de $\mathcal{U}_S$, qui v\'erifie au passage : %
+\boldmath$\phi\neq 0$\unboldmath, est envoy\'e sur $\cot\dfrac{\phi}{2}\ec{\xi_1-\xi_2}$ via la projection $[\;]$ %
 et carte $\mathbb{P}^1(\mathbb{C})\setminus\{[1,0]\}\xrightarrow{[z_1,z_2] \mapsto \frac{z_1}{z_2}}\mathbb{C}\times\{1\}$ de la droite projective $\mathbb{P}^1(\mathbb{C})$.
 %\overset{[z_1,z_2]\mapsto \left(\frac{z_1}{z_2},1\right)}{\longrightarrow}
+
 \par
 Nous pouvons maintenant r\'ealiser une projection $\mathcal{P}_S$ de l'espace $\mathcal{U}_S$ sur la sph\`ere-unit\'e $\mathbb{S}^2$ de l'espace euclidien $\mathbb{R}^3$, priv\'ee de son p\^ole nord $(0,0,1)$. %
-On utilise pour cela l'inverse de la projection st\'er\'eographique $\varphi_S$, qui envoie $\mathbb{S}^2\setminus\{(0,0,1)\}$ sur le plan vectoriel $\mathbb{R}^2\times\{0\}$ -la calotte sur laquelle cette projection est d\'efinie sera not\'ee $U_S$.
+On utilise pour cela l'inverse de la projection st\'er\'eographique $\varphi_S$, qui envoie $\mathbb{S}^2\setminus\{(0,0,1)\}$ sur le plan vectoriel $\mathbb{R}^2\times\{0\}$ %
+-la calotte sur laquelle cette projection est d\'efinie sera not\'ee $U_S$.
 %
 %%%% --------------------- Attention : les %% sont inopérants dans un code asymptote --------------------- %%%%
 %
 %draw(Q--R);
 %\ligneinter
+
 \etoile
 %$\st{\lambda^c}{\theta +\xi}{\xi}$
 $\varphi_S^{-1}$ envoie le point $\left(\cot\dfrac{\phi}{2} \cos \left(\xi_1-\xi_2\right) , \cot\dfrac{\phi}{2} \sin\left(\xi_1-\xi_2\right) , 0\right)$ %
-du plan $\mathbb{R}^2\times\{0\}$ auquel est identifi\'e $\mathbb{C}$ sur le point $(p_1^S,p_2^S,p_3^S)$ sch\'ematis\'e ci-dessus de la sph\`ere $\mathbb{S}^2$ priv\'ee de son p\^ole Nord.
+du plan $\mathbb{R}^2\times\{0\}$ auquel est identifi\'e $\mathbb{C}$ sur le point $(p_1^S,p_2^S,p_3^S)$ sch\'ematis\'e ci-dessus %
+de la sph\`ere $\mathbb{S}^2$ priv\'ee de son p\^ole Nord.
+
 \par
 Si l'on rep\`ere les points de $\mathbb{S}^2$ par un couple de r\'eels : \og{}colatitude ; longitude\fg{} , on constate que la longitude de $P$ est $\xi_1-\xi_2$.%, nous la noterons $\theta$.
 %
 %Figure avec la section de $\mathbb{S}^2$ par le demi-plan rep\'er\'e par la coordonn\'ee cylindrique $\theta$, pour appliquer le th\'eor\`eme de Thal\`es.
 %
+
 \ligneinter
 \begin{multicols}{2}
 \psset{xunit=1cm , yunit=1cm}
@@ -417,8 +449,10 @@ Si l'on rep\`ere les points de $\mathbb{S}^2$ par un couple de r\'eels : \og{}co
 \vspace{2cm}
 
 Voici $\mathbb{R}^3$ en coupe par le demi-plan rep\'er\'e par la coordonn\'ee cylindrique $\xi_1-\xi_2$.
+
 \par
 $\lambda^c$ est la colatitude du point $P$, obtenu par projection stéréographique inverse du point ambiant $C$ de $\mathbb{R}^2$.
+
 \par
 On note que : $p_3^S=\cos \lambda^c$ soit $\lambda^c=\arccos p_3^S$.
 \end{multicols}
@@ -475,7 +509,8 @@ Dans toute la suite du texte, on notera indiff\'eremment un point de $\mathbb{S}
 on notera par ailleurs $\phi$ la colatitude qui correspond invariablement au param\`etre du m\^eme nom pour les \'el\'ements de $\mathbb{S}^3$.
 
 \par
-\subsubsection{Structures de fibr\'es principaux}\label{fis}
+\paragraph{Structures de fibr\'es principaux}\label{fis}~\\
+%\subsubsection{Structures de fibr\'es principaux}
 %\emph{\textbf{Structures de fibr\'es principaux :}}
 
 \par
@@ -533,16 +568,30 @@ Le cas de $\mathcal{P}^-$ se traite sym\'etriquement, on note en particulier :
 %\etoile
 \dots isomorphie du point de vue des fibr\'es localement triviaux ?
 
-\subsubsection{Groupes de Lie, une nouvelle construction pour $\mathbb{S}^2$}
+\subsubsection{Une autre construction de $\mathbb{U}\hookrightarrow\mathbb{S}^2\twoheadrightarrow\mathbb{S}^2$}
 
-\begin{theo}[suggestion de Serge Parmentier]\label{esh}
+\paragraph{Fibr\'es et espaces homog\g{e}nes, d'apr\g{e}s \cite{ex_par}}~\\
+%\subsubsection{Fibr\'es et espaces homog\g{e}nes}
+
+
+Le th\'eor\g{e}me suivant donne une m\'ethode g\'en\'erale, \'etant donn\'e un groupe de Lie qui agit contin\^ument sur un espace topologique, %
+pour construire un fibr\'e principal.
+
+\begin{theo}%[suggestion de Serge Parmentier]
+\label{esh}
 Soient $G$ un groupe de Lie et $H$ un sous-groupe ferm\'e de $G$.
+
 \par
 Alors le fibr\'e $H\hookrightarrow G\xrightarrow{\mathcal{P}}G/H$ est principal.
 \end{theo}
 
+Nous n'utiliserons pas ce r\'esultat dans la construction du fibr\'e, %
+mais sa d\'emonstration est \'eclairante pour la suite. %
+Elle est inspir\'ee des notes \cite{ex_par}.
+
 \begin{lemm}[Section locale et trivialisation]
 Soit $U$ un ouvert de $G/H$ et une section $s_U$ du fibr\'e $\mathcal{P}:G\rightarrow G/H$.
+
 \par
 Alors $\Phi_U:U\times H\mapsto G:(u,h)\mapsto s_U(u)\cdot h$ est un hom\'eomorphisme.
 \end{lemm}
@@ -554,24 +603,106 @@ Il suffit de remarquer que $\Phi_U$ admet comme r\'eciproque, continue car $G$ e
 
 \begin{lemm}\label{sfl}
 Soient $G$ un groupe de Lie et $H$ un sous-groupe ferm\'e de $G$.
+
 \par
 Alors le fibr\'e $\mathcal{P}:G\rightarrow G/H$ admet en tout point une section locale.
 \end{lemm}
 
+\begin{rema}
+Dans la pratique, $G$ est un sous-groupe ferm\'e d'un groupe de matrices \g{a} coefficients dans $\mathbb{R}$ ou $\mathbb{C}$, %
+son alg\g{e}bre de Lie est par d\'efinition l'espace tangent en l'identit\'e $e_G$ de cette sous-vari\'et\'e diff\'erentielle d'espace de matrices.
+
+\par
+L'exponentielle est d\'efinie naturellement.
+\end{rema}
+
 \begin{proof}
-Exponentielle \dots
+On proc\g{e}de en deux temps, le premier fait intervenir l'exponentielle et le th\'eor\g{e}me d'inversion locle :
+
+\par
+\begin{description}
+\item[Section locale en $e_G$ :] Soient $\mathfrak{g}$ et $\mathfrak{h}$ les alg\g{e}bres de Lie respectives de $G$ et $H$.
+
+\par
+Soit $\mathfrak{m}$ un suppl\'ementaire de $\mathfrak{h}$ dans $\mathfrak{g}$. %
+Nous allons construire un ouvert $U$ de $\mathfrak{m}$ tel que $\mathcal{P}_{|\exp(U)}$ est injective, continue et ouverte.
+
+\ligneinter
+Soit $f:\mathfrak{m}\times\mathfrak{h}\rightarrow G:(m,h)\exp(m)\exp(h)$. Cette fonction est analytique en $(0,0)$ et :
+\[df_{(0,0)}=(m,h)\mapsto m+h\]
+
+Cette application lin\'eaire est un isomorphisme : d'apr\g{e}s le th\'eor\g{e}me d'inversion locale, %
+il existe un voisinage $V$ de $(0,0)$ dans $\mathfrak{m}\times\mathfrak{h}$ tel que $f$ induit un $C^{\infty}-$ difff\'eomorphisme de $V$ sur $f(V)$.
+
+\par
+Quitte \g{a} restreindre, on peut supposer que $V$ est un rectangle ouvert $U_n\times U_h$, $f$ est ainsi un diff\'eomorphisme de $U_m\times U_h$ sur $\exp(U_m)\times\exp(U_h)$.
+
+\par
+Par ailleurs le th\'eor\g{e}me d'inversion locale s'applique aussi \g{a} $\exp :\mathfrak{h}\rightarrow H$ au voisinage de $0_{\mathfrak{h}}$, %
+on suppose maintenant que $\exp :U_h\rightarrow \exp(U_h)$ est un diff\'eomorphisme.
+
+\par
+Puisque $\exp(U_h)$ est un voisinage de l'unit\'e dans $H$, on peut l'\'ecrire : $W\cap H$, o\g{u} $W$ est un voisinage ouvert de l'unit\'e dans $G$.
+
+\par
+La continuit\'e de l'exponentielle sur $U_m$ et celle de la loi inverse de $G$ prouvent qu'il existe un ouvert $U$ de $U_m$ tel que :
+
+\[\exp(-U)\exp(U)\subset W\]
+\begin{itemize}
+\item Montrons que $\mathcal{P}$ est injective sur $\exp(U)$.
+
+\par
+Soient $m_1$ et $m_2$ deux \'el\'ements de $U$ tels que $\mathcal{P}(\exp(m_1))=\mathcal{P}(\exp(m_2))$. %
+Montrons que \[\exp m_1=\exp m_2\]
+
+\par
+On peut \'ecrire : $\exists h\in H | \exp m_1=\exp m_2 \cdot h$, ce qui entra\^ine $\exp(-m_2)\exp(m_1)\in H$. %
+Par d\'efinition de $U$, il s'ensuit que $\exp(-m_2)\exp(m_1)\in W\cap H$, autrement dit $\exp(-m_2)\exp(m_1)\in \exp(U_h)$.
+
+\par
+L'injectivit\'e de $f$ sur $U_m\times U_h$ permet d'en d\'eduire : $m_1=m_2$, donc $\exp m_1=\exp m_2$.
+\item $\mathcal{P}$ est continue sur $\exp (U)$ par d\'efinition ;
+\item ouvertitude \dots
+\end{itemize}
+
+\par
+Il reste \g{a} montrer que $\mathcal{P}_{|\exp(U)}^{-1}$ est une section locale de $\mathcal{P}$, c'est-\g{a}-dire que $\mathcal{P}(U)$ est un voisinage de l'unit\'e dans $G/H$.
+
+\par
+Pour cela, on note que puisque $f$ induit un diff\'eomorphisme de $U\times U_h$ sur $\exp (U)\exp(U_h)$, ce dernier ensemble est un ouvert de $G$, %
+de plus $\mathcal{P}$ est ouverte donc le projet\'e $\mathcal{P}(\exp(U))$ de $\exp (U)\exp(U_h)$ sur $G/H$ est aussi ouvert.
+
+\item[Section locale en un \'el\'ement $g$ quelconque de $G$ :] Soit $g\in G$.
+%
+%\par
+%On note respectivement $l_g$ de $\tau_g}$ les translations \g{a} gauche, dans $G$ et $G/H$, par $g$ et $gH$.
+
+\par
+Alors $\mathcal{P}(\exp(U))\rightarrow G:\bar{x}\mapsto g\mathcal{P}_{|\exp(U)}^{-1}(\overline{g^{-1}x})$ est une section de $\mathcal{P}$ au voisinage de $g$.
+\end{description}
 \end{proof}
 
 \begin{proof}[D\'emonstration du th\'eor\g{e}me]
-C'est une cons\'equence imm\'ediate des deux r\'esultats qui pr\'ec\g{e}dent !
+C'est une cons\'equence imm\'ediate des deux r\'esultats qui pr\'ec\g{e}dent.
 \end{proof}
 
-\etoile
+%\etoile
 
-Dans le paragraphe suivant, on s'aide de ce th\'eor\g{e}me pour construire un $\mathbb{U}-$fibr\'e au-dessus de $\mathbb{S}^2$, ici vue comme un espace homog\g{e}ne.
+Dans le paragraphe suivant, on utilise la m\'ethode pr\'ec\'edente pour construire un $\mathbb{U}-$fibr\'e au-dessus de $\mathbb{S}^2$, ici vue comme un espace homog\g{e}ne.
 
-\subsubsection{Quaternions}
+\paragraph{Quaternions et groupes lin\'eaires}~\\
+%\subsubsection{Quaternions}
 
+\par
+La construction -classique- des quaternions qui va suivre, propos\'ee dans \cite{dev_par}, %
+permet de d\'efinir une action du groupe $SU(2)$ sur la sph\g{e}re unit\'e $\mathbb{S}^2$ d'un espace euclidien isomorphe \g{a} $\mathbb{R}^3$, %
+et dont les stabilisateurs sont isomorphes \g{a} $\mathbb{U}$.
+
+\par
+On peut ensuite utiliser directement le th\'eor\g{e}me \ref{esh} pour d\'efinir un fibr\'e principal : $\mathbb{U}\hookrightarrow\mathbb{S}^3\twoheadrightarrow\mathbb{S}^2$, %
+isomorphe \g{a} une fibration de Hopf.
+
+\ligneinter
 On d\'efinit l'espace vectoriel r\'eel $\mathbb{H}$ des \textbf{quaternions} comme ensemble des solutions, %
 dans l'anneau matriciel $\mathcal{M}_2(\mathbb{C})$, de l'\'equation :
 \[\text{com }M=\overline{M}\]
@@ -735,16 +866,24 @@ Par ailleurs, le morphisme $u\mapsto \left(p\mapsto u^{-1}pu\right)$ de $SU_2(\m
 ceci entra\^ine notamment que les groupes $\dfrac{SU_2(\mathbb{C})}{\{-I_2,I_2\}}$ et $SO(3,\mathbb{R})$ sont isomorphes.
 \end{rema}
 
+\begin{comment}
 \etoile
 D\'ecliner la d\'emonstration du th\'eor\g{e}me\ref{esh} au cas particulier de $\mathbb{S}^3\twoheadrightarrow\dfrac{\mathbb{S}^3}{\mathbb{S}^3_{\mathbf{I}}}$ %
 pour construire explicitement un syst\g{e}me de trivialisations.
 
 \par
 Formule explicite pour une section ? Interpr\'etation g\'eom\'etrique ?
+\end{comment}
 
-\subsection{Fonctions de transition}
+\paragraph{Structure de fibr\'e principal}
 
-Les fibrés principaux sont munis de fonctions de transition, analogues aux changements de carte pour les variétés. La proposition suivante, évidente, permet de définir ces objets.
+\par
+Afin d'expliciter cette structure construite \g{a} partir de l'action $\chi$, %
+on suit la d\'emonstration du th\'eor\g{e}me \ref{esh} vue pr\'ec\'edemment, sans utiliser ce dernier r\'esultat.
+
+\subsubsection{Fonctions de transition}
+
+Les fibr\'es principaux sont munis de fonctions de transition, analogues aux changements de carte pour les variétés. La proposition suivante, évidente, permet de définir ces objets.
 
 \begin{prefi}\label{ftr}
 Soit $G \overset{\ast}{\hookrightarrow} P \overset{\mathcal{P}}{\twoheadrightarrow} X$ un fibr\'e principal, %
@@ -791,9 +930,9 @@ Sym\'etriquement :
 
 %\newpage
 
-\section{Equivalences de fibr\'es}
+\subsection{Equivalences de fibr\'es}
 
-\subsection{D\'efinition : fibr\'es \'equivalents}
+\subsubsection{D\'efinition : fibr\'es \'equivalents}
 
 \begin{prefi}
 Soient $(P_1,X_1,\mathcal{P}_1,G)$ et $(P_2,X_2,\mathcal{P}_2,G)$ deux fibrés principaux de même groupe de structure $G$.
@@ -819,23 +958,29 @@ Facile.
 \begin{rema}%[Importance ?]
 Les $G$-orbites de $P_1$ et $P_2$, simples, sont bien sûr toutes hom\'eomorphes entre elles. %
 De plus, $\tilde{f}$ induit un hom\'eomorphisme, entre chaque $G$-orbite de $P_2$ à l'arrivée et son image réciproque.
+
 \par
 Soit en effet $p_1$ un élément de $P_1$. Tout ouvert de $p_1G$ est de la forme : $p_1O$ o\g{u} $O$ est un ouvert de $G$. % d'après \dots%la la remarque\ref{gr1}.\\
 L'image d'un tel ouvert de $p_1G$ est $\tilde{f}(p_1)O$ puisque $\tilde{f}$ est $G-$\'equivariante \g{a} droite.
 
-%\par
+\par
 Soit $(V_2,(\mathcal{P}_2,\psi_2))$ une trivialisation au-dessus de $X_2$ telle que : $\mathcal{P}_2(\tilde{F}(p_1)) \in V_2$, %
-on note $\mathcal{V}_2$ l'ouvert correspondant dans $P_2$. %
-%Comme $\tilde{f}$ est continue l'image réciproque de $\mathcal{V}_2$ par cette application est un ouvert de $P_1$, satur\'e comme $\tilde{f}$ est $G$-équivariante. %
-%Comme l'ensemble des ouverts de trivialisation au-dessus de $X_1$ est une base il existe une trivialisation $(V_1,(\mathcal{P}_1,\psi_1))$ au-dessus de $X_1$, %
-%telle que $p_1$ soit contenu dans l'image réciproque $\mathcal{V}_1$, de $V_1$ par $\mathcal{P}$.
-%\par
-%On remarque que $\mathcal{V}_1$ est envoyé de manière $G$-\'equivariante à droite, non nécessairement ouverte, dans $\mathcal{V}_2$. %
-%Comme $\tilde{f}$ est $G$-équivariante à droite, la section :
-%\[\{p \in \mathcal{V}_1 | \psi_1(p) \in \psi_1(p_1)O\}\]
-%de l'ouvert de trivialisation $\mathcal{V}_1$ est envoyée, de manière non nécessairement ouverte ni surjective, vers :
-%\[\{p \in \mathcal{V}_2 | \psi_2(p) \in \psi_2(\tilde{f}(p_1))O\}\]
-%dans $\mathcal{V}_2$, nous notons $S_2$ ce dernier ensemble, ouvert dans $P_2$.
+on note $\mathcal{V}_2$ l'ouvert correspondant dans $P_2$.
+
+\begin{comment}
+Comme $\tilde{f}$ est continue l'image réciproque de $\mathcal{V}_2$ par cette application est un ouvert de $P_1$, satur\'e comme $\tilde{f}$ est $G$-équivariante. %
+Comme l'ensemble des ouverts de trivialisation au-dessus de $X_1$ est une base il existe une trivialisation $(V_1,(\mathcal{P}_1,\psi_1))$ au-dessus de $X_1$, %
+telle que $p_1$ soit contenu dans l'image réciproque $\mathcal{V}_1$, de $V_1$ par $\mathcal{P}$.
+
+\par
+On remarque que $\mathcal{V}_1$ est envoyé de manière $G$-\'equivariante à droite, non nécessairement ouverte, dans $\mathcal{V}_2$. %
+Comme $\tilde{f}$ est $G$-équivariante à droite, la section :
+\[\{p \in \mathcal{V}_1 | \psi_1(p) \in \psi_1(p_1)O\}\]
+de l'ouvert de trivialisation $\mathcal{V}_1$ est envoyée, de manière non nécessairement ouverte ni surjective, vers :
+\[\{p \in \mathcal{V}_2 | \psi_2(p) \in \psi_2(\tilde{f}(p_1))O\}\]
+dans $\mathcal{V}_2$, nous notons $S_2$ ce dernier ensemble, ouvert dans $P_2$.
+\end{comment}
+
 \par
 Soit maintenant $S_2$ l'ouvert, satur\'e, de $P_2$ d\'efini par :
 \[S_2=\{p \in \mathcal{V}_2 | \psi_2(p) \in \psi_2(\tilde{f}(p_1))O\}\]
@@ -891,7 +1036,7 @@ Soit \Fig un fibr\'e muni d'une trivialisation globale $(X,\Phi)$ :
 $\Phi$ est une \'equivalence de $(P,X,\mathcal{P},G)$ vers le $G$-fibr\'e trivial au-dessus de $X$.
 \end{exem}
 
-\subsection{Th\'eor\`emes sur la classification de fibr\'es principaux}
+\subsubsection{Th\'eor\`emes sur la classification de fibr\'es principaux}
 
 \begin{theo}[Fibr\'es \'equivalents]\label{fbl}
 Soient $G \hookrightarrow P_1 \xrightarrow{\mathcal{P}_1} X$ et $G \hookrightarrow P_2 \xrightarrow{\mathcal{P}_2} X$ deux fibrés principaux.
