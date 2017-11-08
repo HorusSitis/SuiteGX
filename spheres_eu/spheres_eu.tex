@@ -104,11 +104,11 @@ Cette construction, non univoque a priori, va nous permettre de définir un inva
 \subsection{Un invariant complet pour la classification}
 
 \begin{theo}\label{tinv}
-Soient $G \hookrightarrow P_\tc{I} \xrightarrow{\mathcal{P}_\tc{I}} \mathbb{S}^n$ et $G \hookrightarrow P_\tc{II} \xrightarrow{\mathcal{P}_\tc{II}} \mathbb{S}^n$ %
+Soient $G \hookrightarrow P_\tc{\Rom{1}} \xrightarrow{\mathcal{P}_{\Rom{1}}} \mathbb{S}^n$ et $G \hookrightarrow P_{\Rom{2}} \xrightarrow{\mathcal{P}_{\Rom{2}}} \mathbb{S}^n$ %
 deux fibrés principaux sur un groupe $G$ connexe par arcs. %
-On construit comme précédemment deux fonctions caractéristiques $T_\text{I}$ et $T_\tc{II}$.
+On construit comme précédemment deux fonctions caractéristiques $T_{\Rom{1}}$ et $T_{\Rom{2}}$.
 \par
-Si les deux fibrés sont équivalents alors $T_\text{I}$ et $T_{\text{II}}$ sont homotopes relativement à $\{x_0\}$.
+Si les deux fibrés sont équivalents alors $T_{\Rom{1}}$ et $T_{\Rom{2}}$ sont homotopes relativement à $\{x_0\}$.
 \end{theo}
 
 %\begin{center}
@@ -121,9 +121,9 @@ on définit $\lambda_1$, $\lambda_2$ à la manière du paragraphe sur l'équival
 
 \par
 Par définition :
-\[\forall x \in \mathcal{B} , g_{21}^{II}(x) = (\lambda_2(x))^{-1} g_{21}^I(x) \lambda_1(x)\]
+\[\forall x \in \mathcal{B} , g_{21}^{\Rom{2}}(x) = (\lambda_2(x))^{-1} g_{21}^{\Rom{1}}(x) \lambda_1(x)\]
 ce qui entraîne :
-\[\forall x \in \mathbb{S}^{n-1} , T_{II}(x) = (\lambda_2(x))^{-1} T_I(x) \lambda_1(x)\]
+\[\forall x \in \mathbb{S}^{n-1} , T_{\Rom{2}}(x) = (\lambda_2(x))^{-1} T_{\Rom{1}}(x) \lambda_1(x)\]
 
 \etoile
 On veut maintenant se débarasser des facteurs en $\lambda_i$, nous allons pour cela utiliser des homotopies sur $\mathbb{S}^{n-1}$ relativement à $x_0$.
@@ -132,7 +132,7 @@ On veut maintenant se débarasser des facteurs en $\lambda_i$, nous allons pour 
 On remarque que $\lambda_1$ et $\lambda_2$ coïncident en $x_0$, nous noterons $a_0$ la valeur commune de ces applications en ce point.
 
 \par
-Afin de réaliser une homotopie de $T_{II}$ vers $T_I$ relativement à $x_0$ on plonge l'espace d'arrivée $\mathbb{S}^{n-1}$, %
+Afin de réaliser une homotopie de $T_{\Rom{2}}$ vers $T_{\Rom{1}}$ relativement à $x_0$ on plonge l'espace d'arrivée $\mathbb{S}^{n-1}$, %
 respectivement dans les demi-sphères fermées, supérieure $D_1$ et inférieure $D_2$, de $\mathbb{S}^n$, %
 dans lesquelles vivent resectivement $\lambda_1$ et $\lambda_2$.
 
@@ -149,13 +149,13 @@ pointée en $a_0$ dans $G$. Nous notons $K_1$ cette homotopie.
 \par
 On définit, de même, une homotopie $K_2$ entre $\lambda_2$ et $\tilde{a_0}$ relativement à $x_0$.
 
-\[\mathbb{S}^{n-1} \times [0,1] : (x,t) \mapsto (K_2(x,t))^{-1} T_I(x) K_1(x,t)\]
-réalise une homotopie de $T_{II}$ vers $a_0^{-1} T_I a_0$, relativement à $x_0$.
+\[\mathbb{S}^{n-1} \times [0,1] : (x,t) \mapsto (K_2(x,t))^{-1} T_{\Rom{1}}(x) K_1(x,t)\]
+réalise une homotopie de $T_{\Rom{2}}$ vers $a_0^{-1} T_{\Rom{1}} a_0$, relativement à $x_0$.
 
 \par
 Enfin par hypothèse, il existe un chemin $\alpha$ de $a_0$ vers $e_G$,
-\[(x,t) \mapsto \alpha(t)^{-1} T_I(x) \alpha(t)\]
-réalise une homotopie de $a_0^{-1} T_I a_0$ vers $T_I$, relativement à $x_0$.
+\[(x,t) \mapsto \alpha(t)^{-1} T_{\Rom{1}}(x) \alpha(t)\]
+réalise une homotopie de $a_0^{-1} T_{\Rom{1}} a_0$ vers $T_{\Rom{1}}$, relativement à $x_0$.
 \end{proof}
 
 \begin{theo}\label{tinvc}
@@ -163,16 +163,16 @@ L'invariant d\'efini au th\'eor\g{e}me \ref{tinv} est complet.
 \end{theo}
 
 \begin{proof}
-On suppose construites, pour deux fibrés $G \hookrightarrow P_I \xrightarrow{\mathcal{P}_I} \mathbb{S}^n$ %
-et $G \hookrightarrow P_{II} \xrightarrow{\mathcal{P}_{II}} \mathbb{S}^n$, %
-les deux fonctions caractéristiques $T_I$ et $T_{II}$ selon la notation précédente, %
+On suppose construites, pour deux fibrés $G \hookrightarrow P_{\Rom{1}} \xrightarrow{\mathcal{P}_{\Rom{1}}} \mathbb{S}^n$ %
+et $G \hookrightarrow P_{\Rom{2}} \xrightarrow{\mathcal{P}_{\Rom{2}}} \mathbb{S}^n$, %
+les deux fonctions caractéristiques $T_{\Rom{1}}$ et $T_{\Rom{2}}$ selon la notation précédente, %
 et on émet l'hypothèse que ces deux fonctions sont homotopes, sur $\mathbb{S}^{n-1}$, relativement à $x_0$.
 
 \par
 Montrons que nos deux fibrés sont équivalents, en utilisant le critère du théorème \ref{fbl}.
 
 \par
-On remarque que l'application $T_I T_{II}^{-1}$ de l'équateur $\mathbb{S}^{n-1}$ dans $G$ est homotope à l'application constante sur $\mathbb{S}^{n-1}$, %
+On remarque que l'application $T_{\Rom{1}} T_{\Rom{2}}^{-1}$ de l'équateur $\mathbb{S}^{n-1}$ dans $G$ est homotope à l'application constante sur $\mathbb{S}^{n-1}$, %
 de valeur le neutre $e_G$ de $G$ -on ne s'intéresse pas aux points-base $x_0$ et $e_G$.
 
 \par
@@ -181,42 +181,42 @@ que cette application se prolonge sur $D_1$ en une fonction $\nu$ continue, à v
 
 \par
 On construit par recollement, sur $V_1^{\varepsilon}$, une application continue $\lambda_1$ et à valeurs dans $G$, telle que :
-\[\forall x \in D_i , \lambda_1(x) = \nu(x)\text{ et }\forall x \in V_1^{\varepsilon} \cap U_2 , \lambda_1 (x) = g^{I}_{21}(x) (g^{II}_{21}(x))^{-1}\]
+\[\forall x \in D_i , \lambda_1(x) = \nu(x)\text{ et }\forall x \in V_1^{\varepsilon} \cap U_2 , \lambda_1 (x) = g^{\Rom{1}}_{21}(x) (g^{\Rom{2}}_{21}(x))^{-1}\]
 où $U_2$ est la demi-sphère ouverte sud de $\mathbb{S}^n$.
 
 On munit alors les fibrés des trivialisations :
 
-\[(V_1^{\varepsilon},(\mathcal{P}_I,\psi_1^{\varepsilon , I}))\text{ et }(U_2,(\mathcal{P}_1,\psi_2^I))\]
+\[(V_1^{\varepsilon},(\mathcal{P}_{\Rom{1}},\psi_1^{\varepsilon ,\Rom{1}}))\text{ et }(U_2,(\mathcal{P}_1,\psi_2^{\Rom{1}}))\]
 pour le premier,
 
-\[(V_1^{\varepsilon},(\mathcal{P}_{II},\psi_1^{\varepsilon , II}))\text{ et }(V_1^{\varepsilon},(\mathcal{P}_2,\psi_2^{II}))\]
-pour le deuxième, où $\psi_2^I$ et $\psi_2^{II}$ sont les phases induites sur $U_2$, %
+\[(V_1^{\varepsilon},(\mathcal{P}_{\Rom{2}},\psi_1^{\varepsilon ,\Rom{2}}))\text{ et }(V_1^{\varepsilon},(\mathcal{P}_2,\psi_2^{\Rom{2}}))\]
+pour le deuxième, où $\psi_2^{\Rom{1}}$ et $\psi_2^{\Rom{2}}$ sont les phases induites sur $U_2$, %
 par les trivialisations des deux fibrés au-dessus de $V_2^{\varepsilon}$ que nous supposons construites préalablement à cette démonstration.
 
 \par
 On définit, de manière équivalente à ces familles de trivialisations, %
-les deux fonctions de transition $g_{21}^I$ et $g_{21}^{II}$, sur l'intersection $V_1^{\varepsilon} \cap U_2$, par :
+les deux fonctions de transition $g_{21}^{\Rom{1}}$ et $g_{21}^{\Rom{2}}$, sur l'intersection $V_1^{\varepsilon} \cap U_2$, par :
 
-\[\forall p \in \mathcal{P}_I^{-1}(V_1^{\varepsilon}) , \psi_2^I(p) (\psi_1^{\varepsilon , I}(p))^{-1} = g_{21}^I(\mathcal{P}_I(p))\]
-et la formule symétrique pour le fibré $II$.
+\[\forall p \in \mathcal{P}_{\Rom{1}}^{-1}(V_1^{\varepsilon}) , \psi_2^{\Rom{1}}(p) (\psi_1^{\varepsilon ,\Rom{1}}(p))^{-1} = g_{21}^{\Rom{1}}(\mathcal{P}_{\Rom{1}}(p))\]
+et la formule symétrique pour le fibré $\Rom{2}$.
 
 \par
-Construisons enfin une équivalence $\tilde{f}$ du fibré $I$ vers le fibré $II$, à l'aide des deux couples de trivialisations locales qui précèdent :
-\[\forall p \in \mathcal{P}_I^{-1}(V_1^{\varepsilon}) , \psi_1^{\varepsilon , II}(\tilde{f}(p) = \lambda_1(\mathcal{P}_I(p)) \psi_1^{\varepsilon , I}(p)%
+Construisons enfin une équivalence $\tilde{f}$ du fibré $\Rom{1}$ vers le fibré $\Rom{2}$, à l'aide des deux couples de trivialisations locales qui précèdent :
+\[\forall p \in \mathcal{P}_{\Rom{1}}^{-1}(V_1^{\varepsilon}) , \psi_1^{\varepsilon ,\Rom{2}}(\tilde{f}(p) = \lambda_1(\mathcal{P}_{\Rom{1}}(p)) \psi_1^{\varepsilon , \Rom{1}}(p)%
 \text{ et }%
-\forall p \in \mathcal{P}_I^{-1}(U_2) , \psi_2^{II}(\tilde{f}(p) = \lambda_1(\mathcal{P}_I(p)) \psi_2^I(p)\]
+\forall p \in \mathcal{P}_{\Rom{1}}^{-1}(U_2) , \psi_2^{\Rom{2}}(\tilde{f}(p) = \lambda_1(\mathcal{P}_I(p)) \psi_2^{\Rom{1}}(p)\]
 
 Montrons que cette définition est cohérente : il s'agit de vérifier que les deux formules qui précèdent sont équivalentes, au-dessus de $V_1^{\varepsilon} \cap U_2$.
 
 \par
 Par définition de $\tilde{f}$:
-\[\forall p \in V_1^{\varepsilon} , \psi_2^{II}(\tilde{f}(p))(\psi_1^{\varepsilon , II}(\tilde{f}(p)))^{-1} = \psi_2^I(p) (\psi_1^{\varepsilon , I}(p))^{-1} (\lambda_1(x))^{-1}\]
+\[\forall p \in V_1^{\varepsilon} , \psi_2^{\Rom{2}}(\tilde{f}(p))(\psi_1^{\varepsilon , \Rom{2}}(\tilde{f}(p)))^{-1} = \psi_2^{\Rom{1}}(p) (\psi_1^{\varepsilon ,\Rom{1}}(p))^{-1} (\lambda_1(x))^{-1}\]
 
-On en déduit : $\forall p \in V_1^{\varepsilon} , \psi_2^{II}(\tilde{f}(p))(\psi_1^{\varepsilon , II}(\tilde{f}(p)))^{-1} = g_{21}^I(\mathcal{P}_I(p))(\lambda_1(x))^{-1}$, puis :
+On en d\'eduit : $\forall p \in V_1^{\varepsilon} , \psi_2^{\Rom{2}}(\tilde{f}(p))(\psi_1^{\varepsilon ,\Rom{2}}(\tilde{f}(p)))^{-1} = g_{21}^{\Rom{1}}(\mathcal{P}_{\Rom{1}}(p))(\lambda_1(x))^{-1}$, puis :
 
-\[\forall p \in V_1^{\varepsilon} , \psi_2^{II}(\tilde{f}(p))(\psi_1^{\varepsilon , II}(\tilde{f}(p)))^{-1} = g_{21}^{II}(\mathcal{P}_{II}(\tilde{f}(p)))\]
+\[\forall p \in V_1^{\varepsilon} , \psi_2^{\Rom{2}}(\tilde{f}(p))(\psi_1^{\varepsilon ,\Rom{2}}(\tilde{f}(p)))^{-1} = g_{21}^{\Rom{2}}(\mathcal{P}_{\Rom{2}}(\tilde{f}(p)))\]
 
-comme les fibres au-dessus de $\mathcal{P_I}$ et $\mathcal{P}_{II}$ se confondent.
+comme les fibres au-dessus de $\mathcal{P_{\Rom{1}}}$ et $\mathcal{P}_{\Rom{2}}$ se confondent.
 \end{proof}
 
 \section{$U(1)\hookrightarrow\mathbb{S}^3\twoheadrightarrow\mathbb{S}^2$ et $SU(2)\hookrightarrow\mathbb{S}^7\twoheadrightarrow\mathbb{S}^4$}
@@ -234,6 +234,7 @@ Ici encore, nous nous cantonnerons \`a la projection $\mathcal{P}^+$ comme point
 \emph{Dans cette section et la suivante, $k$ d\'esigne un entier naturel non nul et $\mathbb{U}_k$ le groupe des racines $k-$i\`emes de l'unit\'e dans $\mathbb{C}$.}
 
 \paragraph{Des endomorphismes du groupe topologique $\mathbb{U}$ :}~\\
+
 \par
 Voici un petit r\'esultat facile, mais int\'eressant pour la suite.
 \par
@@ -260,6 +261,7 @@ endomorphismes non triviaux de $\mathbb{U}$ sont de la forme $\omega\mapsto\omeg
 \end{rema}
 
 \paragraph{Cas de la sph\`ere $\mathbb{S}^3$}~\\
+
 \par
 L'action, par multiplication scalaire, de $\mathbb{U}$ sur $\mathbb{S}^3$ induit \'evidemment une action du groupe discret $\mathbb{U}_k$ sur cette sph\`ere. %
 On peut donc quotienter $\mathbb{S}^3$ par $\mathbb{U}_k$, on note $[\; ]_k$ la projection canonique de la shp\`ere de dimension $3$ sur l'espace $\lt$ ainsi d\'efini, %
