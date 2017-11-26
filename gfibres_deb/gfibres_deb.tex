@@ -568,7 +568,7 @@ Le cas de $\mathcal{P}^-$ se traite sym\'etriquement, on note en particulier :
 %\etoile
 \dots isomorphie du point de vue des fibr\'es localement triviaux ?
 
-\subsubsection{Une autre construction de $\mathbb{U}\hookrightarrow\mathbb{S}^2\twoheadrightarrow\mathbb{S}^2$}
+\subsubsection{Une construction de $\mathbb{U}\hookrightarrow\mathbb{S}^2\twoheadrightarrow\mathbb{S}^2$ \g{a} l'aide des quaternions}
 
 \paragraph{Fibr\'es et espaces homog\g{e}nes, d'apr\g{e}s \cite{ex_par}}~\\
 %\subsubsection{Fibr\'es et espaces homog\g{e}nes}
@@ -625,7 +625,14 @@ On proc\g{e}de en deux temps, le premier fait intervenir l'exponentielle et le t
 
 \par
 Soit $\mathfrak{m}$ un suppl\'ementaire de $\mathfrak{h}$ dans $\mathfrak{g}$. %
-Nous allons construire un ouvert $U$ de $\mathfrak{m}$ tel que $\mathcal{P}_{|\exp(U)}$ est injective, continue et ouverte.
+Nous allons construire un ouvert $U$ de $\mathfrak{m}$ tel que :
+
+\begin{itemize}
+\item $\mathcal{P}_{|\exp(U)}$ est injective, continue et ouverte.
+\item $\mathcal{P}(\exp(U)$ est un voisinage ouvert de $\bar{1}$ dans $G/H$.
+\end{itemize}
+de qui nous donnera la section voulue au voisinage de l'unit\'e dans $G/H$.
+$\mathcal{P}_{|\exp(U)}$ est injective, continue et ouverte.
 
 \ligneinter
 Soit $f:\mathfrak{m}\times\mathfrak{h}\rightarrow G:(m,h)\exp(m)\exp(h)$. Cette fonction est analytique en $(0,0)$ et :
@@ -648,10 +655,10 @@ Puisque $\exp(U_h)$ est un voisinage de l'unit\'e dans $H$, on peut l'\'ecrire :
 La continuit\'e de l'exponentielle sur $U_m$ et celle de la loi inverse de $G$ prouvent qu'il existe un ouvert $U$ de $U_m$ tel que :
 
 \[\exp(-U)\exp(U)\subset W\]
-\begin{itemize}
-\item Montrons que $\mathcal{P}$ est injective sur $\exp(U)$.
-
-\par
+\begin{description}
+\item[Injectivit\'e de $\mathcal{P}_{|\exp(U)}$ :] % Montrons que $\mathcal{P}$ est injective sur $\exp(U)$.
+%
+%\par
 Soient $m_1$ et $m_2$ deux \'el\'ements de $U$ tels que $\mathcal{P}(\exp(m_1))=\mathcal{P}(\exp(m_2))$. %
 Montrons que \[\exp m_1=\exp m_2\]
 
@@ -661,16 +668,16 @@ Par d\'efinition de $U$, il s'ensuit que $\exp(-m_2)\exp(m_1)\in W\cap H$, autre
 
 \par
 L'injectivit\'e de $f$ sur $U_m\times U_h$ permet d'en d\'eduire : $m_1=m_2$, donc $\exp m_1=\exp m_2$.
-\item $\mathcal{P}$ est continue sur $\exp (U)$ par d\'efinition ;
-\item ouvertitude \dots
-\end{itemize}
+\item[Continuit\'e :] $\mathcal{P}$ est continue sur $\exp (U)$ donc il en est de m\^eme pour sa restriction ;
+\item[Ouvertitude :] \dots
+\end{description}
 
 \par
-Il reste \g{a} montrer que $\mathcal{P}_{|\exp(U)}^{-1}$ est une section locale de $\mathcal{P}$, c'est-\g{a}-dire que $\mathcal{P}(U)$ est un voisinage de l'unit\'e dans $G/H$.
+Il reste \g{a} montrer que que $\mathcal{P}(U)$ est un voisinage de l'unit\'e dans $G/H$.
 
 \par
-Pour cela, on note que puisque $f$ induit un diff\'eomorphisme de $U\times U_h$ sur $\exp (U)\exp(U_h)$, ce dernier ensemble est un ouvert de $G$, %
-de plus $\mathcal{P}$ est ouverte donc le projet\'e $\mathcal{P}(\exp(U))$ de $\exp (U)\exp(U_h)$ sur $G/H$ est aussi ouvert.
+Pour cela, on note que puisque $f$ induit un diff\'eomorphisme de $U\times U_h$ sur $\exp (U)\exp(U_h)$, ce dernier ensemble est donc un ouvert de $G$. %
+De plus $\mathcal{P}$ est ouverte donc le projet\'e $\mathcal{P}(\exp(U))$ de $\exp (U)\exp(U_h)$ sur $G/H$ est aussi ouvert.
 
 \item[Section locale en un \'el\'ement $g$ quelconque de $G$ :] Soit $g\in G$.
 %
@@ -678,7 +685,7 @@ de plus $\mathcal{P}$ est ouverte donc le projet\'e $\mathcal{P}(\exp(U))$ de $\
 %On note respectivement $l_g$ de $\tau_g}$ les translations \g{a} gauche, dans $G$ et $G/H$, par $g$ et $gH$.
 
 \par
-Alors $\mathcal{P}(\exp(U))\rightarrow G:\bar{x}\mapsto g\mathcal{P}_{|\exp(U)}^{-1}(\overline{g^{-1}x})$ est une section de $\mathcal{P}$ au voisinage de $g$.
+Alors $\mathcal{P}(\exp(U))\rightarrow G:\bar{x}\mapsto g\mathcal{P}_{|\exp(U)}^{-1}\left(\overline{g^{-1}x}\right)$ est une section de $\mathcal{P}$ au voisinage de $g$.
 \end{description}
 \end{proof}
 
@@ -690,7 +697,7 @@ C'est une cons\'equence imm\'ediate des deux r\'esultats qui pr\'ec\g{e}dent.
 
 Dans le paragraphe suivant, on utilise la m\'ethode pr\'ec\'edente pour construire un $\mathbb{U}-$fibr\'e au-dessus de $\mathbb{S}^2$, ici vue comme un espace homog\g{e}ne.
 
-\paragraph{Quaternions et groupes lin\'eaires}~\\
+\paragraph{Quaternions et groupes matrices}~\\
 %\subsubsection{Quaternions}
 
 \par
@@ -749,7 +756,7 @@ Puisque l'op\'erateur \og{}comatrice\fg{} est multiplicatif, $\mathbb{H}$ est, d
 Enfin, comme l'op\'erateur \og{}comatrice\fg{} pr\'eserve la transposition et la conjugaison, %
 la transconjugu\'ee d'une patrice \'el\'ement de $\mathbb{H}$ est encore dans $\mathbb{H}$. %
 On en d\'eduit notamment, avec les deux \'egalit\'es ci-dessus qui relient une matrice de $\mathbb{H}$, son adjointe et l'identit\'e, %
-qu'une matrice de $\mathbb{H}$ de d\'eterminant non nul est unversible \emph{dans $\mathbb{H}$}.
+qu'une matrice de $\mathbb{H}$ de d\'eterminant non nul est inversible \emph{dans $\mathbb{H}$}.
 
 \par
 Voici un premier r\'esultat important :
@@ -794,20 +801,24 @@ On peut ainsi restreindre $\chi$ en une action, que nous noterons encore $\chi$,
 \end{prop}
 
 \begin{rema}
-On peut aussi \'ecrire : $\forall (U,S)\in\mathbb{S}^2\times\mathbb{S}^2 , \chi(U,S)=U^{\ast}SU$.
+On peut aussi \'ecrire : $\forall (U,S)\in\mathbb{S}^3\times\mathbb{S}^2 , \chi(U,S)=U^{\ast}SU$.
 \end{rema}
 %Remarquons que cette proposition, coupl\'ee avec le th\'eor\g{e}me\ref{esh}, nous donne une construction de $\mathbb{U}-$ fibr\'e principal au-dessus de $\mathbb{S}^2$ ; %
 %son espace de phases est $\mathbb{S}^3$, muni d'une structure de groupe de Lie.
 
 \begin{proof}
-Montrons que : $\mathbb{S}^2=\{S\in\mathbb{H}|s^2=-I_2\}$.
+Montrons que : $\mathbb{S}^2=\{S\in\mathbb{H}|S^2=-I_2\}$.
+
 \par
-Supposons en effet : $s\in\mathbb{S}^2$. On note que $S$ est de d\'eterminant $1$, donc que : $SS^{\ast}=I_2$. Or $S$ est antihermitienne donc $S^2=-I_2$.
+Supposons en effet : $S\in\mathbb{S}^2$. On note que $S$ est de d\'eterminant $1$, donc que : $SS^{\ast}=I_2$. Or $S$ est antihermitienne donc $S^2=-I_2$.
+
 \par
-R\'eciproquement, soit $S$ un quaternion de carr\'e \'egal \g{a} $-1$. On peut \'ecrire : $S^{-1}=-S$, donc $\dfrac{S^{\ast}}{\|c\|^2}=-S$. %
-Cette \'egalit\'e prouve du m\^eme coup : $s\in\mathcal{V}$ et $\det s=1$, donc $s\in\mathbb{S}^2$.
+R\'eciproquement, soit $S$ un quaternion de carr\'e \'egal \g{a} $-1$. On peut \'ecrire : $S^{-1}=-S$, donc $\dfrac{S^{\ast}}{\|S\|^2}=-S$. %
+Cette \'egalit\'e prouve du m\^eme coup : $S\in\mathcal{V}$ et $\det S=1$, donc $S\in\mathbb{S}^2$.
+
 \par
 Ainsi, les \'el\'ements de $\mathbb{S}^2$ sont tous diagonalisables, de m\^eme spectre $\{-\mathbf{I},\mathbf{I}\}$.
+
 \par
 On utilise maintenant, sans d\'emonstration, le r\'esultat suivant :
 
@@ -823,13 +834,13 @@ D'apr\g{e}s ce qui pr\'ec\g{e}de :
 \[\forall S\in\mathbb{S}^2,\exists U\in U_2(\mathbb{C})|S=U^{-1}\mathbf{I}U\]
 
 Soit $\lambda$ un nombre complexe tel que : $\lambda^2=\det U$. On peut encore \'ecrire :
-\[\left(\dfrac{U}{\lambda}\right)^{-1}\mathbf{I}\left(\dfrac{U}{\lambda}\right)=s\]
+\[\left(\dfrac{U}{\lambda}\right)^{-1}\mathbf{I}\left(\dfrac{U}{\lambda}\right)=S\]
 
 Montrons que : $\dfrac{U}{\lambda}\in SU_2(\mathbb{C})$.
 
 \par
 Tout d'abord : $\left(\dfrac{U}{\lambda}\right)^{\ast}\cdot\dfrac{U}{\lambda}=\dfrac{I_2}{|\det U|}$. %
-Puisque le d\'eterminant d'une matrice unitaire est de module $1$, on en d\'eduit aue $\frac{U}{\lambda}$ est une matrice unitaire.
+Puisque le d\'eterminant d'une matrice unitaire est de module $1$, on en d\'eduit que $\frac{U}{\lambda}$ est une matrice unitaire.
 
 \par
 De plus, par d\'efinition de $\lambda$ : $\det \frac{U}{\lambda}=1$, ce qui nous donne le r\'esultat esp\'er\'e. Ainsi :
@@ -837,7 +848,8 @@ De plus, par d\'efinition de $\lambda$ : $\det \frac{U}{\lambda}=1$, ce qui nous
 ce qui nous donne la transitivit\'e de $\chi$.
 
 \par
-Soit maintenant : $G\in SU_2(\mathbb{C})_{\mathbf{I}}$. On remarque que $G$ commute avec la matrice $\mcd{\mathbf{i}}{0}{0}{-\mathbf{i}}$, %
+Soit maintenant : $G\in SU_2(\mathbb{C})_{\mathbf{I}}$. %
+On remarque que $G$ commute avec la matrice $\mcd{\mathbf{i}}{0}{0}{-\mathbf{i}}$, %
 donc l'endomorphisme de $\mathbb{C}^2$ canoniquement associ\'e \g{a} $G$ stabilise les droites vectorielles $\mathbb{C}(1,0)$ et $\mathbb{C}(0,1)$, %
 on peut donc \'ecrire :
 \[G=\mcd{\lambda}{0}{0}{\lambda^{-1}}\text{ puisque $G$ est de d\'eterminant $1$.}\]
@@ -875,13 +887,15 @@ pour construire explicitement un syst\g{e}me de trivialisations.
 Formule explicite pour une section ? Interpr\'etation g\'eom\'etrique ?
 \end{comment}
 
-\paragraph{Structure de fibr\'e principal}
+\paragraph{Structure de fibr\'e principal}~\\
 
 \par
 Afin d'expliciter cette structure construite \g{a} partir de l'action $\chi$, %
 on suit la d\'emonstration du th\'eor\g{e}me \ref{esh} vue pr\'ec\'edemment, sans utiliser ce dernier r\'esultat.
 
-\subsubsection{Fonctions de transition}
+
+
+\subsection{Fonctions de transition}
 
 Les fibr\'es principaux sont munis de fonctions de transition, analogues aux changements de carte pour les variétés. La proposition suivante, évidente, permet de définir ces objets.
 
@@ -912,17 +926,21 @@ Reprise de tous les exemples qui pr\'ec\g{e}dent.
 \begin{exem}[Fibrations de Hopf]
 Nous pouvons maintenant calculer les deux fonctions de transitions -mises \`a part les fonctions \'evidentes pour la transition d'un ouvert de $\mathbb{S}^2$ sur lui-m\^eme- %
 $g_{SN}^+$ et $g_{NS}^+$, du fibr\'e principal ainsi d\'efini, selon la notation du paragraphe \dots .
+
 \par
 Rappelons que : \[\se{S}{+}(\phi ,\theta )=\left(\cos\frac{\phi}{2}\ec{\theta},\sin\frac{\phi}{2}\right)\text{ et }%
 \se{N}{+}(\phi ,\theta )=\left(\cos\frac{\phi}{2},\sin\frac{\phi}{2}\ec{(-\theta)}\right)\]
 quels que soient $\phi$ et $\theta$ tels que $\phi$ soit diff\'erent de $0$ ou $\pi$.
+
 \par
 Ainsi, avec la m\^eme notation : $\psi_S^+\left(\cos\frac{\phi}{2}\ec{\theta},\sin\frac{\phi}{2}\right)=1$ et $\psi_N^+\left(\cos\frac{\phi}{2}\ec{\theta},\sin\frac{\phi}{2}\right)=\ec{\theta}$. %
 La formule : $\psi_N^+=g_{NS}^+\psi_S^+$, qui ne d\'epend que de $\phi$ et $\theta$ par $\mathbb{U}$-\'equivariance des fonctions de phase $\psi_S^+$ et $\psi_N^+$, %
 permet de conclure :\[\mathbf{g_{SN}^+(\phi ,\theta )=\ec{\theta}}\]
+
 \par
 On en d\'eduit naturellement la seule autre fonction de transition non triviale du fibr\'e $(\mathbb{S}^3,\mathbb{S}^2,\mathcal{P}^+,\mathbb{U})$ que nous venons de d\'efinir : %
 $g_{SN}^+(\phi ,\theta )=\ec{(-\theta )}$.
+
 \etoile
 Sym\'etriquement :
 \[\forall (\phi,\theta)\in ]0,\pi [\times\mathbb{R}g_{SN}^-(\phi,\theta)=\ec{(-\theta)}\]
