@@ -887,12 +887,72 @@ pour construire explicitement un syst\g{e}me de trivialisations.
 Formule explicite pour une section ? Interpr\'etation g\'eom\'etrique ?
 \end{comment}
 
+\etoile
 \paragraph{Structure de fibr\'e principal}~\\
 
 \par
 Afin d'expliciter cette structure construite \g{a} partir de l'action $\chi$, %
 on suit la d\'emonstration du th\'eor\g{e}me \ref{esh} vue pr\'ec\'edemment, sans utiliser ce dernier r\'esultat.
 
+\par
+Remarquons que :
+\begin{itemize}
+\item $\mathbb{R}\mathbf{I}$ est l'espace tangent \g{a} $SU_2(\mathbb{C})_{\mathbf{I}}$ en $I_2$ ;
+\item $\mathfrak{su}_2(\mathbb{C})=\mathcal{V}$.
+\end{itemize}
+
+\par
+Consid\'erons la d\'ecomposition en somme directe :
+\[\mathfrak{su}_2(\mathbb{C})=\mathbb{R}\mathbf{I}\oplus Vect_{\mathbb{R}}(\mathbf{J},\mathbf{K})\]
+
+\par
+De m\^eme que dans la d\'emonstration g\'en\'erale, on utilise la restriction de l'exponentielle \g{a} l'espace $\mathbb{R}\mathbf{J}\oplus\mathbb{R}\mathbf{K}$.
+
+\par
+Ce dernier espace, inclus dans $\mathcal{V}$ d'apr\g{e}s la remarque pr\'ec\'edente, est constitu\'e des matrices de la forme :
+\[\mcd{0}{\overline{b}}{-b}{0}\]
+
+Soit : $(\beta,\gamma)\in\mathbb{R}^2$. On \'ecrit aussi : $b=\beta+\mathbf{i}\gamma$.
+
+\par
+L'\'egalit\'e : $\mcd{0}{\overline{b}}{-b}{0}^2=-|b|^2I_2$ permet d'\'etablir :
+
+\[\exp\left(\beta\mathbf{J}+\gamma\mathbf{K}\right)=\cos |b|I_2+\sinc |b|(\beta\mathbf{J}+\gamma\mathbf{K})\]
+
+ce qui peut encore s'\'ecrire, si $b$ est non nul :
+\[\exp\left(\beta\mathbf{J}+\gamma\mathbf{K}\right)=\cos |b|I_2+\sin|b|\left(\frac{\beta}{\sqrt{\beta^2+\gamma^2}}\mathbf{J}+\frac{\gamma}{\sqrt{\beta^2+\gamma^2}}\mathbf{K}\right)\]
+soit :
+\[\exp\left(\beta\mathbf{J}+\gamma\mathbf{K}\right)=\cos |b|I_2+\sin|b|\left(\cos\left(\arg b\right)\mathbf{J}+\sin\left(\arg b\right)\mathbf{K}\right)\]
+
+Cette derni\g{e}re matrice, qui est un quaternion, est le p\^ole Nord ou le point de coordonn\'ees sph\'eriques
+\[(1,|b|,\arg b)\]
+dans l'espace r\'eel tridimensionnel $\mathbb{R}I_2\oplus\mathbb{R}\mathbf{J}\oplus\mathbb{R}\mathbf{K}$ muni de sa base naturelle, %
+vue comme une base orthonor\'ee directe.
+
+\par
+$\exp$ induit donc un diff\'eomorphisme du disque ouvert $\mathcal{D_{\pi}}$:
+\[\mathcal{D_{\pi}}:=\left\{\mcd{0}{\overline{b}}{-b}{0}\in Vect_{\mathbb{R}}(\mathbf{J},\mathbf{K})| |b|<\pi\right\}\]
+
+sur la sph\g{e}re-unit\'e, incluse dans $SU_2(\mathbb{C})$, de l'espace r\'eel $Vect_{\mathbb{R}}(I_2,\mathbf{J},\mathbf{K})$ inclus dans $\mathbb{H}$ mais pas dans $\mathcal{V}$, %
+que l'on prive de son p\^ole Sud.
+
+%\par
+%On prend ce disque $\mathcal{D_{\pi}}$ pour l'ouvert $U$ de la d\'emonstration du th\'eor\g{e}me \ref{esh}.
+
+\par
+On recherche paintenant une section de la projection $SU_2(\mathbb{C})\rightarrow \mathbb{S}^2 : U\mapsto \chi (U,\mathbf{I})$ %
+o\g{u} $\mathbb{S}^2$ est entendue comme \'etant la sph\g{e}re-unit\'e de l'espace des quaternions purs.
+
+\par
+Soit $\mcd{0}{\overline{b}}{-b}{0}$ une matrice de $\mathcal{D_{\pi}}$. Un calcul assez laborieux perment d'\'etablir :
+
+\[%
+\begin{array}{c}
+\chi\left(\exp\mcd{0}{\overline{b}}{-b}{0},\mathbf{I}\right)=\mcd{\mathbf{i}\cos 2|b|}{-\mathbf{i}\frac{b}{|b|}\sin 2|b|}{-\mathbf{i}\frac{\overline{b}}{|b|}\sin 2|b|}{\mathbf{i}\cos 2|b|}%
+\\%
+\chi (\exp 0_2,\mathbf{I})=
+\end{array}%
+\]
 
 
 \subsection{Fonctions de transition}
