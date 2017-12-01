@@ -718,7 +718,7 @@ Autrement dit $\mathbb{H}$ est l'ensemble des matrices complexes carr\'ees d'ord
 \[\left(\begin{array}{cc}a&-b\\ \overline{b}&\overline{a}\end{array}\right)\text{ o\g{u} $a$ et $b$ sont deux nombres complexes}\]
 
 On remarque ainsi que le $\mathbb{R}-$espace vectoriel $\mathbb{H}$ est engendr\'e par les quatre matrices :
-\[I_2\text{ ; }\mcd{\mathbf{i}}{0}{0}{-\mathbf{i}}\text{ ; }\mcd{0}{-1}{1}{0}\text{ et }\mcd{0}{\mathbf{i}}{\mathbf{i}}{0}\]
+\[I_2\text{ ; }\mcd{\mathbf{i}}{0}{0}{-\mathbf{i}}\text{ ; }\mcd{0}{-1}{1}{0}\text{ et }\mcd{0}{-\mathbf{i}}{-\mathbf{i}}{0}\]
 
 Les trois derni\g{e}res matrices, que nous noterons respectivement $\mathbf{I}$, $\mathbf{J}$ et $\mathbf{K}$ v\'erifient de plus :
 \[\mathbf{I}^2=-I_2\text{ ; }\mathbf{J}^2=-I_2\text{ ; }\mathbf{K}^2=-I_2\text{ et }\mathbf{IJK}=-I_2\]
@@ -910,14 +910,20 @@ De m\^eme que dans la d\'emonstration g\'en\'erale, on utilise la restriction de
 
 \par
 Ce dernier espace, inclus dans $\mathcal{V}$ d'apr\g{e}s la remarque pr\'ec\'edente, est constitu\'e des matrices de la forme :
-\[\mcd{0}{\overline{b}}{-b}{0}\]
+\[\mcd{0}{-b}{\overline{b}}{0}\]
 
 Soit : $(\beta,\gamma)\in\mathbb{R}^2$. On \'ecrit aussi : $b=\beta+\mathbf{i}\gamma$.
 
 \par
-L'\'egalit\'e : $\mcd{0}{\overline{b}}{-b}{0}^2=-|b|^2I_2$ permet d'\'etablir :
+L'\'egalit\'e : $\mcd{0}{-b}{\overline{b}}{0}^2=-|b|^2I_2$ permet d'\'etablir :
 
-\[\exp\left(\beta\mathbf{J}+\gamma\mathbf{K}\right)=\cos |b|I_2+\sinc |b|(\beta\mathbf{J}+\gamma\mathbf{K})\]
+\begin{equation}
+\exp\left(\beta\mathbf{J}+\gamma\mathbf{K}\right)=\mcd{\cos |b|}{\overline{b}\sinc |b|}{-b\sinc |b|}{\cos|b|}
+\end{equation}
+soit :
+\begin{equation}
+\exp\left(\beta\mathbf{J}+\gamma\mathbf{K}\right)=\cos |b|I_2+\sinc |b|(\beta\mathbf{J}+\gamma\mathbf{K})
+\end{equation}
 
 ce qui peut encore s'\'ecrire, si $b$ est non nul :
 \[\exp\left(\beta\mathbf{J}+\gamma\mathbf{K}\right)=\cos |b|I_2+\sin|b|\left(\frac{\beta}{\sqrt{\beta^2+\gamma^2}}\mathbf{J}+\frac{\gamma}{\sqrt{\beta^2+\gamma^2}}\mathbf{K}\right)\]
@@ -926,12 +932,12 @@ soit :
 
 Cette derni\g{e}re matrice, qui est un quaternion, est le p\^ole Nord ou le point de coordonn\'ees sph\'eriques
 \[(1,|b|,\arg b)\]
-dans l'espace r\'eel tridimensionnel $\mathbb{R}I_2\oplus\mathbb{R}\mathbf{J}\oplus\mathbb{R}\mathbf{K}$ muni de sa base naturelle, %
+dans l'espace r\'eel tridimensionnel $\mathbb{R}\mathbf{K}\oplus\mathbb{R}\mathbf{J}\oplus\mathbb{R}I_2$ muni de sa base naturelle, %
 vue comme une base orthonor\'ee directe.
 
 \par
-$\exp$ induit donc un diff\'eomorphisme du disque ouvert $\mathcal{D_{\pi}}$:
-\[\mathcal{D_{\pi}}:=\left\{\mcd{0}{\overline{b}}{-b}{0}\in Vect_{\mathbb{R}}(\mathbf{J},\mathbf{K})| |b|<\pi\right\}\]
+$\exp$, de diff\'erentielle en $0_2$ inversible, induit donc un diff\'eomorphisme du disque ouvert $\mathcal{D_{\pi}}$:
+\[\mathcal{D_{\pi}}:=\left\{\mcd{0}{-b}{\overline{b}}{0}\in Vect_{\mathbb{R}}(\mathbf{J},\mathbf{K})\mid |b|<\pi\right\}\]
 
 sur la sph\g{e}re-unit\'e, incluse dans $SU_2(\mathbb{C})$, de l'espace r\'eel $Vect_{\mathbb{R}}(I_2,\mathbf{J},\mathbf{K})$ inclus dans $\mathbb{H}$ mais pas dans $\mathcal{V}$, %
 que l'on prive de son p\^ole Sud.
@@ -944,16 +950,87 @@ On recherche paintenant une section de la projection $SU_2(\mathbb{C})\rightarro
 o\g{u} $\mathbb{S}^2$ est entendue comme \'etant la sph\g{e}re-unit\'e de l'espace des quaternions purs.
 
 \par
-Soit $\mcd{0}{\overline{b}}{-b}{0}$ une matrice de $\mathcal{D_{\pi}}$. Un calcul assez laborieux perment d'\'etablir :
+Soit $\mcd{0}{-b}{\overline{b}}{0}$ une matrice %\emph{non nulle} %
+de $\mathcal{D_{\pi}}$. Par d\'efinition de $\chi$ :
 
+\begin{equation}
+\chi\left(\exp\mcd{0}{-b}{\overline{b}}{0},\mathbf{I}\right)=\mcd{\cos |b|}{-b\sinc |b|}{\overline{b}\sinc |b|}{\cos|b|}^{\ast}%
+\mcd{\mathbf{i}}{0}{0}{-\mathbf{i}}\mcd{\cos |b|}{-b\sinc |b|}{\overline{b}\sinc |b|}{\cos|b|}
+\end{equation}
+
+donc :
+
+\begin{equation}
+\chi\left(\exp\mcd{0}{-b}{\overline{b}}{0},\mathbf{I}\right)=%
+\mcd{\cos |b|}{b\sinc |b|}{-\overline{b}\sinc |b|}{\cos|b|}%
+\mcd{\mathbf{i}\cos |b|}{-\mathbf{i}b\sinc |b|}{-\mathbf{i}\overline{b}\sinc |b|}{-\mathbf{i}\cos|b|}
+\end{equation}
+
+On distingue maintenant le cas o\g{u} $b=0$ : \[\chi \left(\exp\mcd{0}{-0}{\overline{0}}{0},\mathbf{I}\right)=\mathbf{I}\]
+de celui o\g{u} $b$ est non nul ; on peut alors \'ecrire :
+
+\begin{equation}
+\chi\left(\exp\mcd{0}{-b}{\overline{b}}{0},\mathbf{I}\right)=%
+\mcd%
+{\mathbf{i}\cos^2 |b|-\mathbf{i}\sin^2|b|}%
+{-2\mathbf{i}\frac{b}{|b|}\cos |b|\sin |b|}%
+{-2\mathbf{i}\frac{\overline{b}}{|b|}\cos |b|\sin |b|}%
+{-\mathbf{i}\cos^2 |b|+\mathbf{i}\sin^2 |b|}
+\end{equation}
+
+donc, d'apr\g{e}s les formules de trigonom\'etrie :
+
+\begin{equation}
+\forall b\in\mathbb{C}\setminus\{0\},%
+\chi\left(\exp\mcd{0}{-b}{\overline{b}}{0},\mathbf{I}\right)=%
+\cos 2|b|\mathbf{I}+\sin2|b|\frac{\Re b}{|b|}\mathbf{K}+\sin2|b|\frac{\Im b}{|b|}\mathbf{J}
+\end{equation}
+
+soit :
+
+\begin{equation}\label{dbcl}
+\forall b\in\mathbb{C}\setminus\{0\},%
+\chi\left(\exp\mcd{0}{-b}{\overline{b}}{0},\mathbf{I}\right)=%
+\cos 2|b|\mathbf{I}+\sin2|b|\cos\arg b\mathbf{K}+\sin2|b|\sin\arg|b|\mathbf{J}
+\end{equation}
+
+Ainsi, si l'on note comme p\'ec\'edemment $\mathcal{D}_{\frac{\pi}{2}}$ le disque ouvert centr\'e en $0$ dans l'espace euclidien $Vect_{\mathbb{R}}(\mathbf{J},\mathbf{K})$, %
+l'application :
+\[%
+\sigma_+ :\exp(\mathcal{D}_{\frac{\pi}{2}})\underset{B\mapsto\chi(B,\mathbf{I})}{\longrightarrow}\mathbb{S}_{\mathcal{V}}^2\setminus\{-\mathbf{I}\}%
+\]
+
+est un diff\'eomorphisme.
+
+\par
+Celui-ci peut s'\'ecrire de deux mani\g{e}res, en choisissant les bases $(I_2,\mathbf{J},\mathbf{K}) $ et $(\mathbf{I},\mathbf{J},\mathbf{K}$ %
+pour \'ecrire les coordonn\'ees cart\'esiennes des points de $\exp(\mathcal{D}_{\frac{\pi}{2}})$ et $\mathbb{S}^2_{\mathcal{V}}$ :
+
+\begin{description}
+\item[Avec des coordonn\'ees sph\'eriques :] \[\left\{\begin{array}{rcl}\sigma_+(I_2)&=&\mathbf{I}\\%
+\sigma_+(B(\Phi,\theta))&=&S\left(2\Phi,\dfrac{\pi}{2}-\theta\right)\end{array}\right.\]
+o\g{u} $B(\cdot,\cdot)$ et $S(\cdot,\cdot)$ sont les points de $\exp(\mathcal{D}_{\frac{\pi}{2}})$ et $\mathbb{S}_{\mathcal{V}}^2$ rep\'er\'es par leurs coordonn\'ees sph\'eriques.
+%
+\item[Restriction \g{a} $\exp(\mathcal{D}_{\frac{\pi}{2}}$ d'une fonction polyn\^omiale :] D'apr\g{e}s l'\'equation \ref{dbcl} %
+et en r\'eutilisant les formules d'addition des fonctions trigonom\'etriques :
+\[\sigma_+\left(\left(\begin{array}{c}x\\y\\z\end{array}\right)\right)=\left(\begin{array}{c}2x^2-1\\2zx\\2yx\end{array}\right)\]
+\end{description}
+
+L'inverse $s_{\mathbb{S}_{\mathcal{V}}^2\setminus\{-\mathbf{I}\}}$ de $\sigma_+$ est %
+une section de la projection $B\mapsto\chi(B,\mathbf{I})$ de $SU_2(\mathbb{C})$ sur son espace homog\g{e}ne $\mathbb{S}^2$, %
+d\'efinie sur cette sph\g{e}re priv\'ee de son p\^ole Sud.
+
+
+\begin{comment}
 \[%
 \begin{array}{c}
-\chi\left(\exp\mcd{0}{\overline{b}}{-b}{0},\mathbf{I}\right)=\mcd{\mathbf{i}\cos 2|b|}{-\mathbf{i}\frac{b}{|b|}\sin 2|b|}{-\mathbf{i}\frac{\overline{b}}{|b|}\sin 2|b|}{\mathbf{i}\cos 2|b|}%
+\chi\left(\exp\mcd{0}{\overline{b}}{-b}{0},\mathbf{I}\right)=%
+\mcd{\mathbf{i}\cos 2|b|}{-\mathbf{i}\frac{\overline{b}}{|b|}\sin 2|b|}{-\mathbf{i}\frac{b}{|b|}\sin 2|b|}{\mathbf{i}\cos 2|b|}%
 \\%
 \chi (\exp 0_2,\mathbf{I})=
 \end{array}%
 \]
-
+\end{comment}
 
 \subsection{Fonctions de transition}
 
