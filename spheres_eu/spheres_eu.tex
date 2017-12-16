@@ -1,4 +1,5 @@
-\chapter{Cas des sph\`eres euclidiennes $\mathbb{S}^n$}
+\chapter{Cas des sph\`eres %euclidiennes 
+$\mathbb{S}^n$}
 
 \emph{%
 Dans ce paragraphe, on classifie compl\g{e}tement, pour tout entier positif $n$, les $G-$fibr\'es au-dessus de $\mathbb{S}^n$ %
@@ -8,14 +9,86 @@ Le cas o\g{u} $G=\mathbb{U}$ et $n=3$, particuli\g{e}rement \'eclairant, sera en
 
 %\setcounter{subsection}{-1}
 
-\section{Pr\'eliminaires topologiques : rel\g{e}vements homotopiques}
+\section{Pr\'eliminaires topologiques : homotopie}
 
+\subsection{Rel\`evement homotopiques}
+
+La d\'efinition suivante est issue de \cite{NaberF}.
+
+\begin{defi}[Rel\g{e}vement homotopique sur un fibr\'e localement trivial]
+Soit \Fiy un fibr\'e localement trivial. Soit de plus $Z$ un espace topologique.
+
+\par
+On dit que \Fiy poss\g{e}de la propri\'et\'e de rel\g{e}vement homotopique relativement \g{a} $Z$ si et seulement si, %
+quelles que soient les application continues $f$ et $F$, de $Z$ dans $X$ et de $Z\times [0,1]$ dans $X$ respectivement, v\'erifiant : 
+
+{\em%
+\begin{description}
+\item[Homotopie :] il existe une homotopie $F$ dans $Z$ \`a valeurs dans $X$, telle que :
+\[\forall y \in Z , F(y,0) = f(y)\]
+%
+\item[Rel\g{e}vement :] il existe une application $\tilde{f}$ de $Z$ dans $P$ telle que le diagramme suivant soit commutatif
+\[\xymatrix{ &P \ar[d]^{\mathcal{P}} \\ Z \ar[r]^{f} \ar[ru]^{\tilde{f}} & X}\]
+\end{description}
+}
+
+$F$ admet un rel\`evement $\tilde{F}$ sur $P$, autrement dit une homotopie $\tilde{F}$ d\'efinie sur $[0,1]^n \times [0,1]$ et \`a valeurs dans $P$, %
+telle que $F = \mathcal{P} \circ \tilde{F}$, qui rend commutatif le diagramme :
+\[\xymatrix{ &P \ar[d]^{\mathcal{P}} \\ Z \times [0,1] \ar[r]^{F} \ar[ru]^{\tilde{F}} & X}\]
+\end{defi}
+
+\begin{exem}
+\begin{enumerate}
+\item Dans l'annexe \ref{an_y}, on montre -th\'eor\g{e}me \ref{rchefiy}- qu'un fibr\'e \Fiy %
+poss\g{e}de la propri\'et\'e de rel\g{e}vement homotopique relativement \g{a} un singleton.
+%
+\item Plus g\'en\'eralement, on montre \cite{NaberF} qu'un fibr\'e localement trivial \Fiy %
+poss\g{e}de la propri\'et\'e de rel\g{e}vement homotopique relativement \g{a} tout cube $[0,1]^n$.
+\end{enumerate}
+\end{exem}
+
+La d\'emonstration de la deuxi\g{e}me propri\'et\'e, valable pour tout fibr\'e localement trivial \Fiy , %
+utilise les deux propri\'et\'es de l'espace $[0,1]^n$ muni de sa topologie usuelle :
+
+\begin{enumerate}[label=(A\arabic *)]
+\item $[0,1]^n$ est compact ;
+\item Quel que soit l'ensemble ferm\'e $A$ de $[0,1]^n$, et quelque soit le voisinage ouvert $V$ de $A$, %
+il existe un voisinage $W$ et $A$ tel que $\overline{W}\subseteq V$ ;
+\item Deux ferm\'es $F_1$ et $F_2$ de $[0,1]^n$ peuvent \^etre s\'epar\'es par une fonction num\'erique autremant dit il existe, %
+quels que soient les ferm\'es $F_1$ et $F_2$ une application continue $\mu$ de $[0,1]^n$ dans $[0,1]$, %
+\'egale \g{a} $0$ en tout point de $F_1$ et \g{a} $1$ en tout point de $F_2$.
+\end{enumerate}
+
+D'apr\g{e}s \cite{BouTG}, chapitre IX, les deux derniers axiomes sont \'equivalents \g{a} : \og{} $[0,1]^n$ est un espace normal \fg{}. %
+D'apr\g{e}s la m\^eme r\'ef\'erence, tout espace topologique compact ou m\'etrisable est normal.
+
+\par
+On prouve donc, dans \cite{NaberF} :
+
+\begin{theo}
+Soit \Fiy un fibr\'e localement trivial.
+
+\par
+Alors, quel que soit l'espace topologique compact $Z$, \Fiy poss\g{e}de la propri\'et\'e de rel\g{e}vement topologique relativement \g{a} $Z$.
+\end{theo}
+
+%\subsubsection{Construction de sections globales}
+
+\subsection{Sph\g{e}res et boules}
+
+\begin{prop}\label{hsd}
+Soient $n$ un entier naturel non nul, $Y$ un espace topologique, et $f$ une application continue de $\mathbb{S}^{n-1}$ dans $Y$.
+
+\par
+Alors $f$ est homotope à une application constante de $\mathbb{S}^{n-1}$ dans $Y$ si et seulement si %
+elle se prolonge continûment en une application continue $\tilde{F}$ du disque unité $D^n$ de l'espace euclidien de dimension $n$, vers $Y$.
+\end{prop}
 
 \section{Classification des $G-$fibr\'es au-dessus de $\mathbb{S}^n$}
 
 Dans la sous-section qui suit, $n$ est un entier positif et $G$ un groupe topologique connexe par arcs.
 
-\subsection{Une construction utile : fonction caract\'eristique}
+\subsection{Fonction caract\'eristique}
 %Soit $n$ un entier naturel non nul.
 %
 %Venons-en maintenant à la classification des fibrés principaux au-dessus des sphères euclidiennes.\\
@@ -43,7 +116,8 @@ dont les points sont repérés dans $\mathbb{R}^{n+1}$ avec une dernière coordo
 \par
 On remarque que la projection stéréographique $\varphi_S$ de $\mathbb{S}^n$, depuis son pôle nord, envoie $\mathcal{B}$ dans la couronne :
 \[
-\left\{ X \in \mathbb{R}^n | \|X\| \in \left] \frac{1-\varepsilon}{1+\varepsilon}^{\frac{1}{2}} , \frac{1+\varepsilon}{1-\varepsilon}^{\frac{1}{2}} \right[ \right\}
+\left\{ X \in \mathbb{R}^n | \|X\| \in \left] \left(\frac{1-\varepsilon}{1+\varepsilon}\right)^{\frac{1}{2}} , %
+\left(\frac{1+\varepsilon}{1-\varepsilon}\right)^{\frac{1}{2}} \right[ \right\}
 \]
 
 Par convexité cette couronne se rétracte, de manière homotopique, sur la sphère-unité de $\mathbb{R}^n$, %
@@ -138,7 +212,7 @@ dans lesquelles vivent resectivement $\lambda_1$ et $\lambda_2$.
 
 \par
 Chacune de ces demi-sphères fermées, que l'on peut envover sur une partie étoilée de $\mathbb{R}^n$ par projection stéréographique, %
-est contractile donc d'après l'annexe \ref{an} : l'inclusion de $\mathbb{S}^{n-1}$ dans $D_1$, %
+est contractile donc d'après l'annexe \ref{an_y} : l'inclusion de $\mathbb{S}^{n-1}$ dans $D_1$, %
 et l'application qui envoie chaque point de l'équateur sur $x_0$, toujours dans cet hémisphère, %
 sont homotopes relativement à $x_0$, via une homotopie que nous noterons $H_1$.
 
@@ -176,7 +250,7 @@ On remarque que l'application $T_{\Rom{1}} T_{\Rom{2}}^{-1}$ de l'équateur $\ma
 de valeur le neutre $e_G$ de $G$ -on ne s'intéresse pas aux points-base $x_0$ et $e_G$.
 
 \par
-On montre avec le lemme\ref{hsd} et en composant par la projection stéréographique $\varphi_N$ %
+On montre avec la proposition \ref{hsd} et en composant par la projection stéréographique $\varphi_N$ %
 que cette application se prolonge sur $D_1$ en une fonction $\nu$ continue, à valeurs dans $G$.
 
 \par
@@ -273,14 +347,18 @@ Par exemple, $SO(3)$ ou $\lt[2]$, est hom\'eomorphe \`a $\mathcal{L}(2,1)$. Sch\
 \subsubsection{Construction d'une famille de $\mathbb{U}-$ fibr\'es au-dessus de $\mathbb{S}^2$}\label{lt1}
 
 \paragraph{Actions de groupes sur le quotient $\lt$ :}~\\
+
 \par
 Nous allons construire une \emph{action-quotient}, simple, de $\dfrac{\mathbb{U}}{\mathbb{U}_k}$ sur $\lt$. Soit tout d'abord $\gamma$ l'action de $\mathbb{U}$, %
-que nous noterons \`a droite par coh\'erence avec \dots , image de la multiplication scalaire par la projection $[\; ]_k$. Cette action poss\`ede un noyau non trivial : $\mathbb{U}_k$.
+que nous noterons \`a droite par coh\'erence avec \dots , image de la multiplication scalaire par la projection $[\; ]_k$. %
+Cette action poss\`ede un noyau non trivial : $\mathbb{U}_k$.
+
 \par
 En effet, soit : $\alpha\in\mathbb{U}_k$. Soit de plus $(z_1,z_2)$ un \'el\'ement de $\mathbb{S}^3$, qui d\'efinit un \'el\'ement $[z_1,z_2]_k$ de $\lt$. %
 On note que $[z_1,z_2]_k=\text{Im}((z_1\cdot\omega ,z_2\cdot\omega ))_{\omega\in\mathbb{U}_k}$. %
 De m\^eme, $\gamma ([z_1,z_2]_k,\alpha)=\text{Im}((z_1\alpha\cdot\omega ,z_2\alpha\cdot\omega ))_{\omega\in\mathbb{U}_k}$. %
 Puisque $\mathbb{U}_k$ est globalement invariant par la translation \`a droite par son \'el\'ement $\alpha$, les deux images \'ecrites pr\'ec\'edemment sont identiques.
+
 \par
 R\'eciproquement, soit $\alpha$ un \'el\'ement de $\ker\gamma$. On remarque que : $\gamma([1,1]_k,\alpha)=[1,1]_k$ soit
 \[\pl{\alpha}{\alpha}=\pl{1}{1}\]
@@ -322,23 +400,28 @@ cet ouvert de $\mathbb{U}\times\mathbb{S}^3$ sera not\'e $O'$ .%
 La surjectivit\'e de $\left(\cdot\mathbb{U}_k,\cdot\mathbb{U}_k\right)$ permet d'en d\'eduire que
 \[\left(\cdot\mathbb{U}_k,\cdot\mathbb{U}_k\right)(O')=\gk^{-1}(O)\]
 il s'ensuit que $\gk^{-1}(O)$ est un ouvert de $\dfrac{\mathbb{U}}{\mathbb{U}_k}\times\lt$ car $\left(\cdot\mathbb{U}_k,\cdot\mathbb{U}_k\right)$ est une application ouverte.
+
 \par
 Conclusion : $\gk$ est une action simple, \textbf{continue} de $\dfrac{\mathbb{U}}{\mathbb{U}_k}$ sur $\lt$.
+
 \par
 On peut enfin construire, \`a l'aide de $\gk$ et du paragraphe pr\'ec\'edent, une action simple $\delta_k$ de $\mathbb{U}$ sur $\lt$ en posant :
 \[\forall ([z_1,z_2]_k,\omega)\in\lt\times\mathbb{U},\delta_k([z_1,z_2]_k,\omega)=\gk([z_1,z_2]_k,h_k^{-1}(\omega))\]
 On remarque que :
 \[\delta_k\left([z_1,z_2]_k,\omega^k\right)=\gamma([z_1,z_2]_k,\omega)\text{ soit }\delta_k\left([z_1,z_2]_k,\omega^k\right)=[z_1\cdot\omega,z_2\cdot\omega]_k\]
 quels que soient $(z_1,z_2)$, $\omega$, dans $\mathbb{S}^3$ ou $\mathbb{U}$.
+
 \par
 \emph{Nous avons ainsi construit \textbf{deux} actions continues $\gk$ et $\delta_k$, \textbf{simples}, respectivement de $\dfrac{\mathbb{U}}{\mathbb{U}_k}$ et $\mathbb{U}$, %
 \textbf{sur} $\mathbf{\lt}$.}
+
 \par
 \emph{L'action $\mathbf{\gk}$ agit \`a droite par \textbf{classes \`a gauche} modulo $\mathbb{U}_k$. %
 Cela est possible car $\mathbb{U}_k$ est un sous-groupe \textbf{distingu\'e} de $\mathbb{U}$.}
 
 \paragraph{D\'efinition, \`a l'aide de $\mathcal{P}^+$, d'une projection de $\lt$ sur $\mathbb{S}^2$ :}~\\
-\par
+
+%\par
 On remarque que $\mathbb{U}_k$ est un sous-groupe de $\mathbb{U}$ : les projections $\mathcal{P}^+$ et $\mathcal{P}^-$ se factorisent \`a droite par $[\; ]$ selon les diagrammes suivants :
 \[%
 \xymatrix{%
@@ -352,27 +435,37 @@ On remarque que $\mathbb{U}_k$ est un sous-groupe de $\mathbb{U}$ : les projecti
 }%
 \]
 Nous venons de d\'efinir deux projections, $\mathcal{P}^+$ et $\mathcal{P}^-$, de $\lt$ sur $\mathbb{S}^2$.
+
 \par
 Par ailleurs, la d\'efinition de $\gk$ d'une part, et la relation :
 \[[z_1,z_2]_k\in\left(\mathcal{P}^{+k}\right)^{-1}(p)\Rightarrow (z_1,z_2)\in\left(\mathcal{P}^+\right)^{-1}(p)\]\label{inc}
-valable pour tout point $p$ de $\mathbb{S}^2$ d'autre part, entra\^inent que les fibres de la projection $\mathcal{P}^{+k}$ sont exactement les orbites, dans $\lt$, de l'action $\gk$.
+valable pour tout point $p$ de $\mathbb{S}^2$ d'autre part, entra\^inent que les fibres de la projection $\mathcal{P}^{+k}$ %
+sont exactement les orbites, dans $\lt$, de l'action $\gk$.
+
 \par
 La m\^eme chose est vraie, bien s\^ur, pour la projection $\mathcal{P}^{-k}$ ; d'ailleurs les fibres de deux projections sont aussi les orbites de $\lt$ sous l'action $\delta$.
 
 \paragraph{Structures de fibr\'es principaux :}~\\
-\par
+
+%\par
 Nous allons encore construire une structure de fibr\'e principal, de groupe de structure isomorphe \`a $\mathbb{U}$, au-dessus de $\mathbb{S}^2$. %
-On utilise pour cela la construction pr\'ec\'edente, d\'etaill\'ee ici seulement avec $\mathcal{P}^{+k}$ ; le cas de $\mathcal{P}^{-k}$ se traite de la m\^eme man\`ere et donne un autre fibr\'e de m\^eme espace de phases et m\^eme groupe de structure.
+On utilise pour cela la construction pr\'ec\'edente, d\'etaill\'ee ici seulement avec $\mathcal{P}^{+k}$ ; %
+le cas de $\mathcal{P}^{-k}$ se traite de la m\^eme man\`ere et donne un autre fibr\'e de m\^eme espace de phases et m\^eme groupe de structure.
+
 \par
-Il suffit, pour notre construction, d'exhiber deux sections $\se{S}{+k}$ et $\se{N}{+k}$, les ouverts de trivialisation $U_S$ et $U_N$ que pour la structude de $\mathbb{U}-$fibr\'e d\'efinie \`a partir de $\mathcal{P}^+$.
+Il suffit, pour notre construction, d'exhiber deux sections $\se{S}{+k}$ et $\se{N}{+k}$, %
+les ouverts de trivialisation $U_S$ et $U_N$ que pour la structude de $\mathbb{U}-$fibr\'e d\'efinie \`a partir de $\mathcal{P}^+$.
+
 \par
 On note, tout d'abord, $\mathcal{U}_S^k$ et $\mathcal{U}_N^k$ les images r\'eciproques respectives, par $\mathcal{P}^{+k}$, des ouverts $U_S$ et $U_N$ de $\mathbb {S}^2$. %
 %D'apr\`es la remarque pr\'ec\'edente concernant les fibres de $\mathcal{P}^{+k}$ et celles de $\mathcal{P}^+$, on note que $\mathcal{U}_s^k=[\mathcal{U}_S]_k$ et $\mathcal{U}_n^k=[\mathcal{U}_N^k]_k$.
 Soit maintenant $\underline{q}\in\mathcal{U}_S$. On note d'apr\`es \ref{inc} que pour tout ant\'ec\'edent $q$ de $\underline{q}$ par la projection $[\; ]_k$, %
 $q\in\mathcal{U}_S$. Nous venons de montrer que $\mathcal{U}_S^k\subseteq [\mathcal{U}_S]_k$. R\'eciproquement, soit $q\in\mathcal{U}_S$. %
 Par d\'efinition de $\mathcal{P}^{+k}$, $\mathcal{P}^{+k}([q]_k)=\mathcal{P}^+(q)$ donc $\mathcal{P}^{+k}([q]_k)\in U_S$. Ainsi $[\mathcal{U}_S]_k\subseteq\mathcal{U}_S^k$.
+
 \par
 On \'etablit de la m\^eme mani\`ere que $\mathcal{U}_N^k=[\mathcal{U}_N]_k$.
+
 \par
 On pose maintenant, pour tout poit $p$ de $U_S$ : 
 \[%
@@ -395,6 +488,7 @@ Ainsi, les sections $\se{S}{+k}$ et $\se{N}{+k}$ sont d\'efinies de sorte que le
 }%
 \]
 sont commutatifs.
+
 \par
 On d\'efinit alors naturellement les fonctions r\'eciproques de trivialisation $\Phi_S^{+k}$ et $\Phi_N^{+k}$. %
 Tout d'abord, d'apr\`es l'observation qui pr\'ec\`ede concernant les fibres de $\mathcal{P}^{+k}$, on munit $\lt$ de l'action $\gk$. %
@@ -406,9 +500,11 @@ soit :
 \[\Phi_S^{+k}\left((\phi,\theta),\ec{\xi}\mathbb{U}_k\right)=\left[\Phi_S^+\left((\phi,\theta),\ec{\xi}\right)\right]_k\]
 On remarque que $\se{S}{+k}=[\; ]_k\circ\se{S}{+}$ donc la section $\se{S}{+k}$ est continue. %
 La continuit\'e de $\gk$ permet d'en d\'eduire que $\Phi_S^{+k}$ est continue ; le cas de $\Phi_N^{+k}$ se traite de la m\^eme mani\`ere.
+
 \par
 Il reste \`a prouver la continuit\'e des fonctions de phase $\psi_S^{+k}$ et $\psi_N^{+k}$, %
 qui vont de $\mathcal{U}_S^k$ et $\mathcal{U}_N^k$ respectivement, vers $\dfrac{\mathbb{U}}{\mathbb{U}_k}$.
+
 \par
 On remarque que : \[\forall (z_1,z_2)\in\mathbb{S}^3 , %
 \left\{\begin{array}{lcr}%
@@ -426,8 +522,9 @@ Autrement dit les deux diagrammes :
 }%
 \]
 sont commutatifs.
+
 \par
-Or les applications $\psi_S^+$ et $\psi_N^+$ sont continues d'apr\`es la sous-section\ref{fis}, %
+Or les applications $\psi_S^+$ et $\psi_N^+$ sont continues d'apr\`es la sous-section \ref{fis}, %
 de m\^eme que la projection canonique de $\mathbb{U}$ sur $\dfrac{\mathbb{U}}{\mathbb{U}_k}$ ; %
 $[\; ]_k$ est une application ouverte.
 \par
@@ -435,22 +532,28 @@ Le raisonnement utilis\'e pour d\'emontrer la continuit\'e de l'action $\gk$ per
 \etoile
 \emph{Nous avons construit un fibr\'e principal de base $\mathbb{S}^2$ et de groupe de structure $\dfrac{\mathbb{U}}{\mathbb{U}_k}$, %
 \`a l'aide des deux ouverts de trivialisation $U_S$ et $U_N$, l'espace de phases est $\lt$, muni de l'action $\gk$}.
+
 \par
 Pour construire un $\mathbb{U}-$fibr\'e \`a l'aide de la structure qui pr\'ed\`ede en utilisant l'identification entre $\dfrac{\mathbb{U}}{\mathbb{U}_k}$ et $\mathbb{U}$ \'etabli au d\'ebut de la section, %
 on consid\`ere l'action $\delta_k$ de $\mathbb{U}$ sur $\lt$ et on compose les fonctions de phase $\psi_S^{+k}$ et $\psi_N^{+k}$ \`a gauche par $h_k$ ; %
 on note $\left(\lt ,\mathbb{S}^2,\mathcal{P}^{+k},\mathbb{U}\right)$ le fibr\'e ainsi d\'efini.
+
 \ligneinter
 Bien s\^ur, la construction qui pr\'ec\`ede est possible \`a partir de la projection $\mathcal{P}^-$. %
-On note que $\se{S}{-k}(\phi,\theta)=\pla{\cos\frac{\phi}{2}\ec{(-\theta)}}{\sin\frac{\phi}{2}}$ et $\se{N}{-k}(\phi,\theta)=\pla{\cos\frac{\phi}{2}}{\sin\frac{\phi}{2}\ec{\theta}}$.
+On note que $\se{S}{-k}(\phi,\theta)=\pla{\cos\frac{\phi}{2}\ec{(-\theta)}}{\sin\frac{\phi}{2}}$ %
+et $\se{N}{-k}(\phi,\theta)=\pla{\cos\frac{\phi}{2}}{\sin\frac{\phi}{2}\ec{\theta}}$.
+
 \par
 \emph{Il existe ainsi une famille $\left(\lt[\abs{k}],\mathbb{S}^2,\mathcal{P}^k,\mathbb{U}\right)_k$, index\'ee par $\mathbb{Z}\setminus\{0\}$, de fibr\'es principaux de base $\mathbb{S}^2$ et de groupe de structure $\mathbb{U}$. %
 De plus, nous allons voir que ces fibr\'es sont \emph{non isomorphes} deux \`a deux.} -on identifie $\mathbb{S}^3$ \`a $\lt[1]$.
 
 \paragraph{Fonctions de transition pour les fibr\'es $\left(\lt[\abs{k}],\mathbb{S}^2,\mathcal{P}^k,\mathbb{U}\right)_k$ : actions $\gk$ et $\delta_k$.}~\\
-\par
+
+%\par
 Les formules qui pr\'ec\g{e}dent concernant $\se{S}{+k}$, $\se{N}{+k}$, $\se{S}{-k}$ et $\se{N}{-k}$ nous donnent, avec la notation idoine pour $g_{SN}^{+k}$ et $g_{SN}^{-k}$ :
 \[g_{SN}^{+k}(\phi ,\theta)=\ec{\theta}\cdot\mathbb{U}_k\text{ et }g_{SN}^{-k}(\phi ,\theta)=\ec{(-\theta)}\cdot\mathbb{U}_k\]
 quels que soient les r\'eels $\phi$ et $\theta$ tels que : $\phi\in ]0,\pi[$.
+
 \ligneinter
 Les fonctions de transition $g_{SN}^{k,\delta_{\abs{k}}}$ des fibr\'es de la famille $\left(\lt[\abs{k}],\mathbb{S}^2,\mathcal{P}^k,\mathbb{U}\right)_{k\in\mathbb{Z}\setminus\{0\}}$ %
 s'en d\'eduisent via le morphisme de groupes topologiques $h_k$ :
