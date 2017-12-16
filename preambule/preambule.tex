@@ -30,6 +30,7 @@
 
 \usepackage{parskip}
 \setlength{\parindent}{0cm}
+%\setlength{\parskip}{0.5cm}
 
 %Je veux une mise en page pour les théorèmes lemmes preuves, définitions etc, suffisamment aérée. Est-il possible de commander un encadrement systématique ?
 
@@ -87,7 +88,7 @@
 
 {
 \theoremstyle{break}
-\theoremprework{\vspace{0.2cm}\begin{minipage}{\textwidth}} %Pris en compte uniquement pour le premier newtheorem
+\theoremprework{\vspace{0.2cm}\begin{minipage}{\textwidth}\setlength{\parskip}{0.2cm}} % Pris en compte uniquement pour le premier newtheorem. parskip seulement à l'intérieur de la définition.
 \theorempostwork{\ligneinter\end{minipage}} %Même chose
 \theoremheaderfont{\scshape}
 \theorembodyfont{\itshape}
@@ -99,7 +100,7 @@
 
 {%
 \theoremstyle{break}
-\theoremprework{\vspace{0.2cm}\begin{minipage}{\textwidth}} %Pris en compte uniquement pour le premier newtheorem
+\theoremprework{\vspace{0.2cm}\begin{minipage}{\textwidth}\setlength{\parskip}{0.15cm}} %Pris en compte uniquement pour le premier newtheorem
 \theorempostwork{\ligneinter\end{minipage}} %Même chose
 \theoremheaderfont{\bfseries}
 \theorembodyfont{\itshape}
@@ -127,12 +128,12 @@
 \theorembodyfont{\normalfont}
 \theoremseparator{ :\newline\vspace{0.2cm}}
 %\newtheorem{lemm}{Lemme}[section]
-\newframedtheorem{theo}{Théor\`eme}[section]
+\newframedtheorem{theo}{Th\'eor\`eme}[section]
 }
 
 {%
 \theoremstyle{break}
-\theoremprework{\vspace{0.2cm}\begin{minipage}{\textwidth}}
+\theoremprework{\vspace{0.2cm}\begin{minipage}{\textwidth}\setlength{\parskip}{0.1cm}}
 \theorempostwork{\ligneinter\end{minipage}}
 \theoremheaderfont{\scshape}
 \theorembodyfont{\itshape}
@@ -142,7 +143,7 @@
   
 {%
 \theoremstyle{break}
-%\theoremprework{\begin{tabular}{|p{\textwidth}|}\hline}
+\theoremprework{\setlength{\parskip}{0.1cm}}%\begin{tabular}{|p{\textwidth}|}\hline}
 %\theorempostwork{\\ \hline\end{tabular}}
 \theoremheaderfont{\scshape}
 \theorembodyfont{\itshape}
