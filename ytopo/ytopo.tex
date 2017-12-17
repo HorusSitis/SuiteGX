@@ -1,7 +1,14 @@
-\chapter{Fibr\'es localement triviaux}\label{an}
+%\newpage
+\chapter{Pr\'erequis en math\'ematiques et en physique}
+
+\section{Un peu de topologie}\label{an_y}
+
+\subsection{Fibr\'es localement triviaux, rev\^etements}
 
 \begin{defi}
-Soient $X$ et $Y$ deux espaces topologiques s\'epar\'es.\\
+Soient $X$ et $Y$ deux espaces topologiques s\'epar\'es.
+
+\par
 Un fibr\'e localement trivial sur $X$, de fibre $Y$, est d\'efini par :
 \begin{itemize}
 \item un espace topologique $P$, appel\'e espace total,% et une action \`a droite, continue, de $G$ sur $P$,
@@ -11,9 +18,12 @@ tels que pour tout point $x$ de la base $X$ %
 il existe un voisinage ouvert de $x$ et un hom\'eomorphisme $\Phi$ de $V\times Y$ sur $\mathcal{P}^{-1}(V)$ v\'erifiant :
 %soit muni d'un voisinage ouvert $V$, associÃ© Ã  un homÃ©omorphisme $\Phi$ de $\mathcal{P}^{-1}(V)$ sur $V \times G$ tel que:
 \[\forall (v,y)\in v\times Y , \mathcal{P}(\Phi (v,y))=v\]
+
 Un tel couple $(V, \Phi)$ est appel\'e trivialisation locale du fibr\'e -botte de fibres. %Nous Ã©tudierons explicitement le terme de phase $\psi$ dans les problÃšmes de physique que nous rencontrerons.\\
 On sh\'ematise par $Y \hookrightarrow P \overset{\mathcal{P}}{\twoheadrightarrow} X$ le fibr\'e ainsi d\'efini, %
-que nous noterons formellement \Fiy.\\
+que nous noterons formellement \Fiy.
+
+\par
 On adoptera souvent la notation $\Phi$, $\Psi$ pour l'homorphisme de trivialisation et sa r\'eciproque.
 \end{defi}
 
@@ -26,18 +36,18 @@ o\`u $(U_x^i)_i$ est une famille, disjointe, d'ouverts de $\tilde{X}$ telle que 
 On peut montrer qu'un rev\^etement d\'efinit un fibr\'e localement trivial, dont la fibre est discr\`ete.
 \end{exem}
 
-%\newpage
-
-\section{Un peu de topologie}
-
 \subsection{Rel\`evement d'applications}
 
-Il est ais\'e de montrer que, lorsque \Fiy est un fibr\'e localement trivial, tel que $X$ et $Y$ sont connexe, alors l'espace total $P$ est connnexe. %
-La d\'emonstration de la m\^eme propri\'et\'e concernant la connexit\'e par arcs est la premi\`ere occasion de relever une application continue d'un espace connexe, \`a valeurs dans $X$, %
-par une fonction \`a valeurs dnas $P$.
+\begin{comment}
+Il est ais\'e de montrer que, lorsque \Fiy est un fibr\'e localement trivial, tel que $X$ et $Y$ sont connexes, alors l'espace total $P$ est connnexe. %
+La d\'emonstration de la m\^eme propri\'et\'e concernant la connexit\'e par arcs est la premi\`ere occasion de relever une application continue d'un espace connexe, %
+\`a valeurs dans $X$, %
+par une fonction \`a valeurs dans $P$.
+\end{comment}
 
-\begin{prop}\label{rchefiy}
-Soient \Fiy un fibr\'e localement trivial de fibre $Y$ connexe par arcs, et $\alpha$ un chemin de $X$, %
+\begin{theo}[Rel\g{e}vement de chemins]\label{rchefiy}
+Soient \Fiy un fibr\'e localement trivial de fibre $Y$ %connexe par arcs,
+et $\alpha$ un chemin de $X$, %
 c'est- \`a-dire une application continue de $[0,1]$ dans $X$. %
 Soit de plus $\tilde{x_0}$ un \'el\'ement de la fibre de $\alpha (0)$.
 
@@ -46,14 +56,15 @@ Alors il existe un chemin $\tilde{\alpha}$ de $P$ tel que :
 \item $\tilde{\alpha}(0)=\tilde{x_0}$
 \item $\forall t \in [0,1] , \mathcal{P}(\tilde{\alpha}(t))=\alpha (t)$
 \end{itemize}
-\end{prop}
+\end{theo}
 
-\begin{proof}[\es]
-$V_i$ trivialisation au-dessus des \'el\'ements de $\alpha ([0,1])$, %
-$V_j$ fini Borel-lebesgue puis $U_j$ images r\'eciproques, %
-$(I_k)$ avec les composantes connexes et encore Borel-Lebesgue, famille simple quitte \`a restreindre,
-puis on construit $(J_l)_l$ intervalles ouverts, au plus deux se rencontrent simultan\'ement ...
+\begin{proof}
+Voir \cite{NaberF}
 \end{proof}
+
+\begin{coro}
+Si \Fiy est un fibr\'e localement trivial et si $X$ et $Y$ sont connexes par arcs, alors $P$ est connexe par arcs.
+\end{coro}
 
 Si \Fiy est un rev\^etement, on d\'emontre que ce rel\`evement est unique. On peut m\^eme facilement d\'emontrer un peu plus :
 
@@ -82,6 +93,43 @@ $z_0$, $x_0$ et $\tilde{x_0}$ des \'el\'ements de $Z$, $X$ et $\tilde{X}$ respec
 Si $f$ est une application continue entre les espaces point\'es $(Z,z_0)$ et $(X,x_0)$ qui admet un rel\`evement $\tilde{f}$, %
 d\'efini entre les espaces point\'es $(\tilde{X},\tilde{x_0})$, alors ce rel\`evement est unique.
 \end{rema}
+
+\begin{proof}
+Supposons l'existence de deux rel\g{e}vements $\tilde{f}_1$ et $\tilde{f}_2$ de $f$ qui satisfont les propri\'et\'es \'enonc\'ees. Soit :
+
+\[F:=\{z\in Z|\tilde{f}_1(z)=\tilde{f}_2(z)\}\]
+Comme $\tilde{X}$ est s\'epar\'e cet ensemble est un ferm\'e de $Z$. Montrons qu'il est aussi ouvert.
+
+\par
+Soit : $z\in F$. Il existe un ouvert $U$ de $X$ contenant $z$ et une famille disjointe $(\mathcal{U}_i)_i$ d'ouverts de $\tilde{X}$ tels que :
+
+\begin{itemize}
+\item $\mathcal{P}$ induit un hom\'eomorphisme de $\mathcal{U}_i$ sur pour tout $i$ ;
+\item $\mathcal{P}^{-1}(U)=\bigsqcup\limits_i \mathcal{U}_i$.
+\end{itemize}
+
+Par hypoth\g{e}se sur $z$, $\tilde{f}_1(z)=\tilde{f}_2(z)$, on note $i_0$ l'unique indice pour $(\mathcal{U}_i)_i$ tel que $\tilde{f}_1(z)\in\mathcal{U}_{i_0}$.
+
+\par
+On note que les images r\'eciproques de $\mathcal{U}_{i_0}$ par $\tilde{f}_1$ et $\tilde{f}_2$ sont ouvertes dans $Z$ : soit
+
+\[O_z=\tilde{f}_1^{-1}(\mathcal{U}_{i_0}\cap \tilde{f}_2^{-1}(\mathcal{U}_{i_0}\]
+Cet ensemble est aussi un ouvert de $Z$.
+
+Soit enfin : $a\in O_z$. On peut \'ecrire :
+
+\[%
+\begin{array}{ccc}
+f(a)&\in&U\\
+(\tilde{f}_1(a),\tilde{f}_2(a))&\in&\mathcal{U}_{i_0}^2
+\end{array}
+\]
+
+Il s'ensuit que : $\tilde{f}_1(a)=\tilde{f}_2(a)$. On en d\'eduit : $O_z\subset F$, cela prouve que $F$ est un ouvert.
+
+\par
+$F$ est donc un ouvert et ferm\'e de l'espace connexe $Z$, non vide puisqu'il contient $z_0$. Cet ensemble est donc \'egal \g{a} $Z$, ce qui nous donne l'unicit\'e recherch\'ee.
+\end{proof}
 
 L'existence s'\'etablit avec le lemme de Zorn :
 
@@ -123,7 +171,8 @@ est en fait valable si l'on prend n'importe quel espace topologique connexe et c
 \end{rema}
 
 \bigskip
-Mentionnons mainenant une cons\'equence connue de la proposition \ref{rchefiy} :
+Mentionnons mainenant une cons\'equence connue %de la proposition 
+du th\'eor\g{e}me \ref{rchefiy} :
 
 \begin{prop}[Th\'eor\`eme de rel\`evement, exponentielle complexe]
 Soit $f$ une application continue, d\'efinie sur un un intervalle r\'eel $I$, qui prend ses valeurs dans $\mathbb{U}$. %
@@ -192,7 +241,7 @@ est une application $H$ de $X\times [0,1]$ dans $Y$, continue, telle que :
 \item $\forall t \in [0,1] , \forall a \in A , H(a,t)=f(a)$
 \end{itemize}
 Si une telle homotopie existe, on dit que $f$ et $g$ sont homotopes relativement \`a $A$, %
-et on note : $f\simeq g \text{rel} A$.
+et on note : $f\simeq g \text{ rel } A$.
 \end{defi}
 
 \begin{prop}
@@ -212,7 +261,7 @@ Cette fois-ci $X$ est le segment $[0,1]$, $\alpha$ et $\alpha '$ sont deux chemi
 %$A$ est choisi comme \'etant l'ensemble $\{0,1\}$.\\
 
 Sauf mention explicite du contraire, une homotopie entre $\alpha$ et $\alpha '$ d\'esigne toujours une homotopie, relativement \`a $\{0,1\}$, %
-entre les applications continues $\alpha$ et $\alpha '$ de $[0,1]$ vers $Y$. On note encore $\alpha\simeq\alpha ' \text{rel}\{0,1\}$.
+entre les applications continues $\alpha$ et $\alpha '$ de $[0,1]$ vers $Y$. On note encore $\alpha\simeq\alpha ' \text{ rel }\{0,1\}$.
 
 Pour qu'une telle homotopie existe, il faut en particulier que $\alpha(0)=\alpha '(0)$ et $\alpha(1)=\alpha '(1)$.
 \end{exem}
@@ -226,10 +275,10 @@ Les espaces qui suivent sont courants en topologie alg\'ebrique, nous les retrou
 
 \begin{prefi}[Espace contractile]
 Un espace topologique $Y$ est dit contractile lorqu'il v\'erifie l'une des deux caract\'erisations, \'equivalentes, qui suivent :
-\begin{itemize}
+\begin{enumerate}[label=(C\arabic *)]
 \item[C1] $Id_Y$ est homotope \`a z\'ero ;
 \item[C2] deux applications continues d'un espace topologique $X$ dans $Y$ sont toujours homotopes entre elles.
-\end{itemize}
+\end{enumerate}
 \end{prefi}
 
 La deuxi\`eme caract\'erisation entra\^ine notamment qu'un espace contractile est connexe par arcs.
@@ -413,7 +462,7 @@ $\mathcal{P}^{[0,1]}$ est une surjection continue de $[0,1]$ vers $\mathbb{U}$, 
 Il s'ensuit notamment que $\mathcal{Q}^{[0,1]}$ encoie un ouvert satur\'e de $[0,1]$ sur un ouvert de $\mathbb{U}$.
 De plus, cette application identifie $0$ et $1$, et seulement ces deux points.
 
-\begin{prop}
+\begin{prop}\label{la_s1}
 Soit $(X,x_0)$ un espace topologique point\'e, et $p_0$ un point de la sph\g{e}re $\mathbb{S}^1$ de l'espace euclidien $\mathbb{R}^2$.
 
 \par
@@ -651,7 +700,8 @@ Enfin : $\mathbb{S}^1\simeq\mathbb{U}$ \g{a} hom\'eomorphisme pr\g{e}s, il s'ens
 
 \subsubsection{Pour finir ...}
 
-On peut aller plus loin et constater que le groupe fondamental est un \textbf{invariant homotopique}, c'est-\g{a}-dire qu'il peut \^etre transport\'e par une \'equivalence homotopique entre deux espaces point\'es.
+On peut aller plus loin et constater que le groupe fondamental est un \textbf{invariant homotopique}, %
+c'est-\g{a}-dire qu'il peut \^etre transport\'e par une \'equivalence homotopique entre deux espaces point\'es.
 
 \begin{prop}
 Soient $(X,x_0)$ un espace topologique point\'e, $Y$ un autre espace topologique, on suppose qu'il existe une \'equivalence homotopique $h$ de $X$ vers $Y$.
@@ -669,38 +719,58 @@ et on montre, par exemple, que l'espace $\mathbb{R}^2\setminus\{(0,0)\}$ admet c
 \par
 C'est aussi le cas de n'importe quelle couronne de $\mathbb{R}^2$.
 
-\subsection{Un th\'eor\`eme de rel\`evement homotopique}
-
-\begin{theo}[Th\'eor\`eme de rel\`evement homotopique]
-Soit \Fiy un fibr\'e localement trivial.
-On fixe un entier naturel non nul $n$.
-
-\par
-On suppose qu'il existe une application continue $f$ de $[0,1]^n$ dans $X$ qui se rel\`eve sur $P$ en une application $\tilde{f}$ de $[0,1]^n$ dans $P$, %
-de sorte que le diagrame ci-dessous soit commutatif :
-\[\xymatrix{ &P \ar[d]^{\mathcal{P}} \\ [0,1]^n \ar[r]^{f} \ar[ru]^{\tilde{f}} & X}\]
-
-On suppose de plus l'existence d'une homotopie $F$ dans $[0,1]^n$ \`a valeurs dans $X$, telle que :
-\[\forall y \in [0,1]^n , F(y,0) = f(y)\]
-
-Alors $F$ admet un rel\`evement $\tilde{F}$ sur $P$, autrement dit une homotopie $\tilde{F}$ d\'efinie sur $[0,1]^n \times [0,1]$ et \`a valeurs dans $P$, telle que $F = \mathcal{P} \circ \tilde{F}$, qui v\'erifie encore :
-\[\forall y \in [0,1]^n , \tilde{F}(y,0) = \tilde{f}(y)\]
-
-En particulier le diagrammme suivant est commutatif :
-\[\xymatrix{ &P \ar[d]^{\mathcal{P}} \\ [0,1]^n \times [0,1] \ar[r]^{F} \ar[ru]^{\tilde{F}} & X}\]
-\end{theo}
-
-\begin{proof}[\tr]
-%\dots \null
-\end{proof}
-
 \subsection{Groupes d'homotopie sup\'erieurs}
-
-
 
 
 %Exemples : $z\mapsto z^2$ etc ?
 
 
 
-\section{Sph\g{e}res euclidiennes}
+%\subsubsection{Lacets en dimension $n$ et sph\g{e}res point\'ees}
+
+
+
+
+
+%\section{Sph\g{e}res $\mathbb{S}^n$}%euclidiennes}
+
+\subsubsection{Lacets en dimension $n$ et sph\g{e}res point\'ees}
+
+La propri\'et\'e \ref{la_s1} se g\'en\'eralise aux dimensions sup\'erieures. %
+Cela s'av\g{e}re utile dans la classification des fibr\'es principaux au-dessus des sph\g{e}res.
+%
+%On remarque que les groupes d'homotopie supérieurs sont naturellement associés aux classes d'homotopie d'applications continues depuis des sphères pointées.
+
+\par
+Soit en effet $n$ un entier naturel non nul.
+
+\par
+Le cube $[0,1]^n$, que l'on identifie à la boule-unité $B_n$ de l'espace normé $(\mathbb{R}^n,\| \|_{\infty})$ par une transformation affine, est homéomorphe à la boule-unité de $\mathbb{R}^n$ via l'application:\\
+$\mathbb{R}^n \rightarrow\mathbb{R}^n : x \mapsto \frac{\|x\|_{\infty}}{\|x\|_2}x$, de changement de norme si l'on peut ainsi dire.
+
+\par
+On remarque que cette correspondance, entre deux espaces compacts, envoie la sphère $\partial{[0,1]^n}$ sur la sphère euclidienne de $\mathbb{R}^n$. %
+On connait par ailleurs la bijection explicite :
+
+\[b : B_n - \partial{B_n} \rightarrow \mathbb{R}^n : x \mapsto \frac{x}{(1-\|x\|^2)^{\frac{1}{2}}}\]
+
+Si l'on compose cette fonction $b$ par la projection stéréographique inverse $\varphi_S^{-1}$ %
+on associe, \g{a} un vecteur $(x_i)_{i \in [1,n]}$ le point de $\mathbb{S}^n$ dont les coordonnées s'écrivent :
+
+\[((2x_i\sqrt{1-\|x\|^2})_{i \in [1,n]},2(1-\|x\|^2))\]
+
+on remarque, comme dans le calcul avec les fibrations de Hopf dans la section précédente, %
+que la même formule est définie sur la frontière $\partial{B_n}$ de $B_n$, et associe le pôle sud à chacun de ces points.
+
+\par
+Quitte \g{a} composer cette dernière application par une rotation de la sphère $\mathbb{S}^n$ %
+nous avons défini une surjection continue $\beta$ entre les espaces $(B_n,\partial{B_n})$ et $\mathbb{S}^n - \{x_0\}$, %
+où $x_0$ est un point quelconque de la sphère $\mathbb{S}^n$ à la place du pôle $S$.
+
+\par
+Cette surjection, continue entre deux compacts donc également ouverte, %
+composée à celle que j'ai évoquée au début de ce paragraphe définit enfin un isomorphisme $\mathcal{C}_0$ %
+entre les espaces $([0,1]^n,\partial{[0,1]^n})$ et $(\mathbb{S}^n,x_0)$.
+
+%Ce résultat permet d'utiliser le calcul, difficile, des groupes d'homotopie supérieurs dans le cadre de la classification des fibrés principaux au-dessus des sphères, %
+%à l'aide de l'invariant construit à la section suivante.
