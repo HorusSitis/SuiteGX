@@ -97,7 +97,7 @@ d\'efini entre les espaces point\'es $(\tilde{X},\tilde{x_0})$, alors ce rel\`ev
 \begin{proof}
 Supposons l'existence de deux rel\g{e}vements $\tilde{f}_1$ et $\tilde{f}_2$ de $f$ qui satisfont les propri\'et\'es \'enonc\'ees. Soit :
 
-\[F:=\{z\in Z|\tilde{f}_1(z)=\tilde{f}_2(z)\}\]
+\[F:=\left\{z\in Z|\tilde{f}_1(z)=\tilde{f}_2(z)\right\}\]
 Comme $\tilde{X}$ est s\'epar\'e cet ensemble est un ferm\'e de $Z$. Montrons qu'il est aussi ouvert.
 
 \par
@@ -111,9 +111,12 @@ Soit : $z\in F$. Il existe un ouvert $U$ de $X$ contenant $z$ et une famille dis
 Par hypoth\g{e}se sur $z$, $\tilde{f}_1(z)=\tilde{f}_2(z)$, on note $i_0$ l'unique indice pour $(\mathcal{U}_i)_i$ tel que $\tilde{f}_1(z)\in\mathcal{U}_{i_0}$.
 
 \par
-On note que les images r\'eciproques de $\mathcal{U}_{i_0}$ par $\tilde{f}_1$ et $\tilde{f}_2$ sont ouvertes dans $Z$ : soit
+On note que les images r\'eciproques de $\mathcal{U}_{i_0}$ par $\tilde{f}_1$ et $\tilde{f}_2$ sont ouvertes dans $Z$.
 
-\[O_z=\tilde{f}_1^{-1}(\mathcal{U}_{i_0}\cap \tilde{f}_2^{-1}(\mathcal{U}_{i_0}\]
+\par
+Soit :
+
+\[O_z=\tilde{f}_1^{-1}(\mathcal{U}_{i_0})\cap \tilde{f}_2^{-1}(\mathcal{U}_{i_0})\]
 Cet ensemble est aussi un ouvert de $Z$.
 
 Soit enfin : $a\in O_z$. On peut \'ecrire :
@@ -121,7 +124,7 @@ Soit enfin : $a\in O_z$. On peut \'ecrire :
 \[%
 \begin{array}{ccc}
 f(a)&\in&U\\
-(\tilde{f}_1(a),\tilde{f}_2(a))&\in&\mathcal{U}_{i_0}^2
+(\tilde{f}_1(a),\tilde{f}_2(a))&\in&\mathcal{U}_{i_0}\times\mathcal{U}_{i_0}
 \end{array}
 \]
 
@@ -131,7 +134,9 @@ Il s'ensuit que : $\tilde{f}_1(a)=\tilde{f}_2(a)$. On en d\'eduit : $O_z\subset 
 $F$ est donc un ouvert et ferm\'e de l'espace connexe $Z$, non vide puisqu'il contient $z_0$. Cet ensemble est donc \'egal \g{a} $Z$, ce qui nous donne l'unicit\'e recherch\'ee.
 \end{proof}
 
-L'existence s'\'etablit avec le lemme de Zorn :
+\begin{comment}
+L'existence s'\'etablit avec le lemme de Zorn : FAUX, il faut une hypothèse additionnelle biscornue,pour avoir desintersections connexes d'ouverts de relèvement.
+C-exemple : on ne peut pas relever sur \mathbb{R} l'application identti\'e de \mathbb{U} dans lui-m\^eme, via l'exponentielle complexe, après un choix d'image pour un point de  cette sphère.
 
 \begin{prop}
 Avec les hypoth\`eses de la proposition qui pr\'ec\`ede concernant $f$, $z_0$ et $x_0$, il existe (au moins) une application continue $\tilde{f}$ de $Z$ vers $P$, %
@@ -148,11 +153,12 @@ Rel\g{e}vements locaux, un rel\g{e}vement d\'efini sur un ouvert strictement inc
 %de m\^eme que dans une autre d\'emonstration que nous verrons pour le rel\`evement d'une homotopie dans un rev\^etement, %
 %le recours au lemme de Zorn est \'evit\'e gr\^ace \`a un argument de compacit\'e.
 %\end{rema}
+\end{comment}
 
 La proposition suivante sera utile pour la sous-sous section \ref{gs1}.% Un argument de compacit\'e permet d'\'eviter, dans sa d\'emonstration, le recours au lemme de Zorn.
 
 \begin{prop}\label{red2}
-Soient $\tilde{X}\overset{\mathcal{P}}{\longrightarrow} X$ un rev\^etement, tel que $\mathcal{P}(\tilde{x_0})=x_0$ por deux \'el\'ements de $\tilde{X}$ et $X$. %
+Soient $\tilde{X}\overset{\mathcal{P}}{\longrightarrow} X$ un rev\^etement, tel que $\mathcal{P}(\tilde{x_0})=x_0$ pour deux \'el\'ements de $\tilde{X}$ et $X$. %
 Soit de plus $F$ une application continue entre les espaces point\'es $([0,1]^2,(0,0))$ et $(X,x_0)$.
 
 \par
